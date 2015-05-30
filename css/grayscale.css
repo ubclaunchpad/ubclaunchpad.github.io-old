@@ -62,7 +62,7 @@ p {
   color: #333;
 }
 
-@media(min-width:768px) {
+@media screen and (min-width:768px) {
     p {
         margin: 0 0 35px;
         font-size: 20px;
@@ -200,7 +200,7 @@ a:focus {
     font-size: 18px;
 }
 
-@media(min-width:768px) {
+@media screen and (min-width:768px) {
     .intro {
         height: 100%;
         padding: 0;
@@ -311,7 +311,7 @@ a:focus {
     -o-background-size: cover;
 }
 
-@media(min-width:767px) {
+@media screen and (min-width:767px) {
     .content-section {
         padding-top: 150px;
     }
@@ -349,13 +349,13 @@ ul.banner-social-buttons {
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
+@media screen and (max-width:1199px) {
     ul.banner-social-buttons {
         margin-top: 15px;
     }
 }
 
-@media(max-width:767px) {
+@media screen and (max-width:767px) {
     ul.banner-social-buttons li {
         display: block;
         margin-bottom: 20px;
@@ -432,7 +432,7 @@ body {
     font-size: 18px;
 }
 
-@media(min-width:768px) {
+@media screen and (min-width:768px) {
     .join{
         height: 100%;
         padding: 0;
@@ -491,7 +491,7 @@ body {
     font-size: 18px;
 }
 
-@media(min-width:768px) {
+@media screen and (min-width:768px) {
     .teamstructure {
         height: 100%;
         padding: 0;
@@ -568,7 +568,7 @@ body {
     font-size: 18px;
 }
 
-@media(min-width:768px) {
+@media screen and (min-width:768px) {
     .apply {
         height: 100%;
         padding: 0;
@@ -582,4 +582,23 @@ body {
         font-size: 26px;
     }
 }
+
+@media screen and (max-width: 375px) {
+    #mission-statement {
+        padding-top: 75px;
+        padding-bottom: 130px;
+    }
+
+    #contact {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    #about-text {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+}
+
+
 
