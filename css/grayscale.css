@@ -62,60 +62,6 @@ p {
   color: #333;
 }
 
-/*
-p {
-    margin: 0 0 25px;
-    font-size: 18px;
-    line-height: 1.5;
-}
-*/
-
-/*
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, a, .td-name, td {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue","Open Sans",Arial,sans-serif;
-}
-
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  font-weight: 400;
-  margin: 30px 0 15px;
-}
-
-h1, .h1 {
-  font-size: 52px;
-}
-
-h2, .h2 {
-  font-size: 36px;
-}
-
-h3, .h3 {
-  font-size: 28px;
-  margin: 20px 0 10px;
-}
-
-h4, .h4 {
-  font-size: 22px;
-  line-height: 30px;
-}
-
-h5, .h5 {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-h6, .h6 {
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-*/
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
@@ -365,12 +311,6 @@ a:focus {
     -o-background-size: cover;
 }
 
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}
-
 @media(min-width:767px) {
     .content-section {
         padding-top: 150px;
@@ -507,6 +447,11 @@ body {
     }
 }
 
+#contact {
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
 .teamstructure {
     display: table;
     width: 100%;
@@ -624,7 +569,7 @@ body {
 }
 
 @media(min-width:768px) {
-    .apply{
+    .apply {
         height: 100%;
         padding: 0;
     }
@@ -637,7 +582,4 @@ body {
         font-size: 26px;
     }
 }
-
-
-
 
