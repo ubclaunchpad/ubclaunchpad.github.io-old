@@ -652,9 +652,7 @@ body {
 .social-icons.icon-flat .fa{
     border-radius: 0;
 }
-/* ---- Hover Actions for Social Icons ---- */  
 
-/*
 .social-icons .fa:hover, .social-icons .fa:active {
     color: #FFF;
     -webkit-box-shadow: 1px 1px 3px #333;
@@ -675,9 +673,8 @@ body {
     -o-transform: scale(1.1) rotate(360deg);
     transform: scale(1.1) rotate(360deg);
 }
- */
 
- /**/
+ 
 .social-icons .fa-adn{background-color:#504e54;} 
 .social-icons .fa-apple{background-color:#aeb5c5;} 
 .social-icons .fa-android{background-color:#A5C63B;}  
