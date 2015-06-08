@@ -368,7 +368,7 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 15px 0;
 }
 
 footer p {
@@ -430,6 +430,46 @@ body {
 
 .join .join .join-text {
     font-size: 18px;
+}
+
+/* Overview Section */
+
+.overview {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background-color: #333;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Nunito', sans-serif;
+}
+
+.overview img{
+    width: 100%;
+}
+
+.overview .overview-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.overview .overview-body .overview-heading {
+    font-size: 40px;
+}
+
+.overview .overview .overview-text {
+    font-size: 18px;
+}
+
+#position-title {
+    color: white;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 @media screen and (min-width:768px) {
@@ -603,6 +643,10 @@ body {
 #about-text {
     padding-top: 150px;
     padding-bottom: 125px;
+}
+
+#overview {
+    background-color: blue;
 }
 
 /*----- Genral Classes start ------*/
