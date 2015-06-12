@@ -434,6 +434,16 @@ body {
 
 /* Overview Section */
 
+.positions-link {
+    color:#333;  
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.positions-link:hover {
+    color:white;
+}
+
+
 .overview {
     display: table;
     width: 100%;
@@ -441,7 +451,7 @@ body {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/overview.jpg) no-repeat bottom center scroll;
     background-color: #333;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -467,10 +477,24 @@ body {
     font-size: 18px;
 }
 
+#choose-your-fit {
+    margin-bottom:100px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 
-#position-title {
-    color: white;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+@media screen and (max-width:768px) {
+    #choose-your-fit {
+         margin-bottom:25px;   
+    }
+    
+    .positions-link {
+        color:#ffffff;   
+    }
+    
+    .position-icon {
+        margin-top:15px;
+        margin-bottom: 15px;
+    }
 }
 
 /* Developers Section */
@@ -482,8 +506,7 @@ body {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/developers.jpg) no-repeat bottom center scroll;
-    background-color: #333;
+    background-color: rgba(245, 241, 222, 0.22);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -498,6 +521,7 @@ body {
 .developers .developers-body {
     display: table-cell;
     vertical-align: middle;
+    color:rgba(0, 0, 0, 0.76);
 }
 
 .developers .developers-body .developers-heading {
@@ -506,6 +530,49 @@ body {
 
 .developers .developers-text {
     font-size: 18px;
+    text-align: left;
+}
+
+.developers-body hr {
+    border-color:black;
+    width: 260px;
+}
+
+#developers-title {
+    color:black;   
+}
+
+#scrum-intro-text {
+    margin-top:40px;
+    margin-bottom:20px;
+    margin-left:70px;
+    margin-right:70px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:rgba(0, 0, 0, 0.76);
+}
+
+@media screen and (max-width:768px) { 
+    #scrum-intro-text {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: rgba(0, 0, 0, 0.76);
+        letter-spacing: -1px;
+        font-size: 20px;
+        line-height: 130%;
+    }
+    
+    .developers .developers-text {
+        letter-spacing: -1px;
+        line-height: 1.5;
+    }
+    
+    .description-div {
+        margin-top:20px;
+        margin-bottom:40px;
+    }
 }
 
 @media screen and (min-width:768px) {
