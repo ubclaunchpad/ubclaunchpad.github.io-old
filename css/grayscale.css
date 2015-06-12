@@ -564,7 +564,7 @@ body {
         line-height: 130%;
     }
     
-    .developers .developers-text {
+    .developers .developers-text .designers {
         letter-spacing: -1px;
         line-height: 1.5;
     }
@@ -573,6 +573,59 @@ body {
         margin-top:20px;
         margin-bottom:40px;
     }
+}
+
+@media screen and (min-width:1300px) {
+    #scrum-intro-text {
+    margin-left: 250px;
+    margin-right: 250px;
+    }
+}
+
+/* Designers Section */
+
+.designers {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Nunito', sans-serif;
+}
+
+.designers img{
+    width: 100%;
+}
+
+.designers .designers-body {
+    display: table-cell;
+    vertical-align: middle;
+    color:rgba(0, 0, 0, 0.76);
+}
+
+.designers .designers-body .designers-heading {
+    font-size: 40px;
+}
+
+.designers .designers-text {
+    font-size: 18px;
+    text-align: left;
+}
+
+.designers-body hr {
+    margin-bottom: 40px;
+    border-color:black;
+    width: 260px;
+}
+
+#designers-title {
+    color:black;   
 }
 
 @media screen and (min-width:768px) {
