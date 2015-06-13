@@ -399,6 +399,23 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
+.about {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/rocketlaunch.jpg) no-repeat bottom center scroll;
+    background-color: #333;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Nunito', sans-serif;
+}
+
+
 .join {
     display: table;
     width: 100%;
@@ -406,7 +423,7 @@ body {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/rocketlaunch.jpg) no-repeat bottom center scroll;*/
+    background: url(../img/rocketlaunch.jpg) no-repeat bottom center scroll;
     background-color: #333;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -430,7 +447,7 @@ body {
 
 .join .join .join-text {
     font-size: 18px;
-}
+}   
 
 /* Overview Section */
 
@@ -487,10 +504,6 @@ body {
          margin-bottom:25px;   
     }
     
-    .positions-link {
-        color:#ffffff;   
-    }
-    
     .position-icon {
         margin-top:15px;
         margin-bottom: 15px;
@@ -536,6 +549,7 @@ body {
 .developers-body hr {
     border-color:black;
     width: 260px;
+    margin-bottom: 30px;
 }
 
 #developers-title {
@@ -798,11 +812,7 @@ body {
 
 #about-text {
     padding-top: 150px;
-    padding-bottom: 125px;
-}
-
-#overview {
-    background-color: blue;
+    padding-bottom: 200px;
 }
 
 /*----- Genral Classes start ------*/
