@@ -547,8 +547,8 @@ body {
 }
 
 .developers-body hr {
-    border-color:black;
-    width: 260px;
+    border-color: rgba(121, 121, 121, 0.44);
+    /*width: 260px;*/
     margin-bottom: 30px;
 }
 
@@ -634,8 +634,8 @@ body {
 
 .designers-body hr {
     margin-bottom: 40px;
-    border-color:black;
-    width: 260px;
+    border-color: rgba(121, 121, 121, 0.44);
+    /*width: 260px;*/
 }
 
 #designers-title {
@@ -919,6 +919,16 @@ body {
 .social-icons .fa-xing,.social-icons .fa-xing-square{background-color:#00555C;} 
 .social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
 .social-icons .fa-envelope-o,.social-icons .fa-envelope-o-square{background-color:#42dca3;}  
+
+.position-title {
+  color: #1CA57A;
+}
+
+.position-requirements{
+  margin-bottom: 20px;
+  letter-spacing: -0.75px;
+  font-size: 18px;
+}
 
 
 
