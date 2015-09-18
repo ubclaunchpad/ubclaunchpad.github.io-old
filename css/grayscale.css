@@ -815,6 +815,51 @@ body {
     padding-bottom: 200px;
 }
 
+.intro-sponsorships {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/sponsorships.jpg) no-repeat bottom center scroll;
+    background-color: #333;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Nunito', sans-serif;
+}
+
+.intro-sponsorships img{
+    width: 100%;
+}
+
+.intro-sponsorships .intro-sponsorships-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro-sponsorships .intro-sponsorships-body .intro-sponsorships-heading {
+    font-size: 40px;
+}
+
+.intro-sponsorships .intro-sponsorships-text {
+    font-size: 18px;
+}
+
+.sponsorships {
+    margin-bottom:100px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .sponsorships {
+         margin-bottom:25px;   
+    }
+}
+
 /*----- Genral Classes start ------*/
 
 .wrapper,.copyright {
@@ -930,6 +975,9 @@ body {
   font-size: 18px;
 }
 
-
-
+#benefits p{
+    font-size: 14px; 
+    text-align: left;
+    margin: 0px;
+}
 
