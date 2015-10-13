@@ -31,6 +31,23 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script>(function() {
+    var _fbq = window._fbq || (window._fbq = []);
+    if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+    }
+    _fbq.push(['addPixelId', '1033059730059290']);
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', 'PixelInitialized', {}]);
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1033059730059290&amp;ev=PixelInitialized" /></noscript>
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -81,35 +98,38 @@
             <h2 id="choose-your-fit">Our Team.</h2>
             <div class="container" style="margin-bottom:100px;">
                 <div class="row">
-                    <div class="col-md-2 col-md-offset-1 position-icon">
+                    <div class="col-md-4 position-icon">
                         <span class="fa-stack fa-5x">
                           <i style="color:rgba(76, 76, 76, 0.56)" class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
                         </span>
                         <h3><a class="positions-link page-scroll"href="#exec">Exec</a></h3>
                     </div>
-                    <div class="col-md-2 position-icon">
+                    <div class="col-md-4 position-icon">
                         <span class="fa-stack fa-5x">
                           <i style="color:rgba(76, 76, 76, 0.56)" class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-apple fa-stack-1x fa-inverse"></i>
                         </span>
                         <h3><a class="positions-link page-scroll" href="#ios">iOS</a></h3>
                     </div>
-                    <div class="col-md-2 position-icon">
+                    <div class="col-md-4 position-icon">
                         <span class="fa-stack fa-5x">
                           <i style="color:rgba(76, 76, 76, 0.56)" class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-android fa-stack-1x fa-inverse"></i>
                         </span>
                         <h3><a class="positions-link page-scroll"href="#android">Android</a></h3>
                     </div>
-                    <div class="col-md-2 col-md-offset-2 position-icon">
+                 </div>
+            </div>
+            <div class="row" style="margin-bottom:25px;">
+                    <div class="col-md-4 col-md-offset-2 position-icon">
                         <span class="fa-stack fa-5x">
                           <i style="color:rgba(76, 76, 76, 0.56)" class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
                         <h3><a class="positions-link page-scroll"href="#devbrew">DevBrew</a></h3>
                     </div>
-                    <div class="col-md-2 position-icon">
+                    <div class="col-md-4 position-icon">
                         <span class="fa-stack fa-5x">
                           <i style="color:rgba(76, 76, 76, 0.56)" class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
@@ -117,7 +137,6 @@
                         <h3><a class="positions-link page-scroll" href="#asp_mob">ASP Mob</a></h3>
                     </div>
                  </div>
-            </div>
             </div>
         </div>
     </section>
