@@ -397,7 +397,7 @@ $(function() {
 	   // firstName = name.split(' ').slice(0, -1).join(' ');
     //      }        
 	 $.ajax({
-                url: "contact_me.php",
+              url: "contact_me.php",
             	type: "POST",
             	data: {first_name: first_name, last_name: last_name, email: email, message: message},
             	cache: false,
@@ -414,7 +414,8 @@ $(function() {
  		  //clear all fields
  		  $('#contactForm').trigger("reset");
  	      },
- 	   error: function() {		
+ 	   error: function() {
+     console.log("Failure");		
  		// Fail message
  		 $('#success').html("<div class='alert alert-danger'>");
             	$('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
