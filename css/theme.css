@@ -1196,7 +1196,7 @@ section .login-overlay {
   bottom: 0;
   top: 0;
   max-width: 80%;
-  max-height: 25%;
+  max-height: 65%;
   z-index: 10;
   margin: auto;
   text-align: center;
@@ -2407,10 +2407,10 @@ footer.footer .icon {
   }
 }
 @media (max-width: 1199px) {
-  #intro .carousel-caption-center,
+/*  #intro .carousel-caption-center,
   #intro-video .carousel-caption-center {
     max-height: 258px;
-  }
+  }*/
   #intro .carousel-caption-center p,
   #intro-video .carousel-caption-center p {
     margin: 1em 2em;
@@ -2503,10 +2503,10 @@ footer.footer .icon {
   .cbp-af-header .nav a.btn {
     display: inline-block;
   }
-  #intro .carousel-caption-center,
+/*  #intro .carousel-caption-center,
   #intro-video .carousel-caption-center {
     max-height: 255px;
-  }
+  }*/
   #intro .carousel-caption-center h1,
   #intro-video .carousel-caption-center h1 {
     font-size: 1.7em;
@@ -2682,4 +2682,10 @@ footer.footer .icon {
   .overlay #contactForm input {
     padding: 1.5em 1em;
   }
+}
+
+@media screen and (max-width: 767px) {
+    #intro .carousel-caption-center, #intro-video .carousel-caption-center {
+      max-height: 45%;
+    }
 }
