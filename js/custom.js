@@ -443,3 +443,7 @@ $(function() {
 $('#name').focus(function() {
      $('#success').html('');
   });
+
+document.getElementById("team").onclick = function () {
+    location.href = "team.html";
+};
