@@ -447,3 +447,11 @@ $('#name').focus(function() {
 document.getElementById("team").onclick = function () {
     location.href = "team.html";
 };
+
+document.getElementById("aboutLink").onclick = function () {
+    location.href = "about.html";
+};
+
+document.getElementById("servicesLink").onclick = function () {
+    location.href = "services.html";
+};
