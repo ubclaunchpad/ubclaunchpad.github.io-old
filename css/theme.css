@@ -1480,6 +1480,12 @@ section {
   padding: 4em 0;
   position: relative;
 }
+
+#our-team {
+	padding: 1em 0;
+	position: relative;
+}
+
 section:before,
 section:after {
   position: absolute;
