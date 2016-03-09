@@ -1197,7 +1197,7 @@ section .login-overlay {
   bottom: 0;
   top: 0;
   max-width: 80%;
-  max-height: 65%;
+  max-height: 30%;
   z-index: 10;
   margin: auto;
   text-align: center;
