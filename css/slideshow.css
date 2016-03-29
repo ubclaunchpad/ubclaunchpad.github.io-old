@@ -1,0 +1,33 @@
+.fadein { 
+	position:relative; 
+	height:400px; 
+	width:600px; 
+	top: 50%;
+	left: 24%;
+}
+	
+.fadein img { 
+	position:absolute; 
+	left:0px; 
+	top:0px; 
+	transition:opacity 2s; 
+	opacity:1; 
+	border-radius: 8px;
+	
+	/*-moz-box-shadow: 1px 2px 15px 15px #ffffff;
+	-webkit-box-shadow: 1px 2px 15px 15px #ffffff;
+	box-shadow: 1px 2px 15px 15px #ffffff;
+	box-shadow: 50px 50px 113px;
+	-webkit-linear-gradient(left, 
+                rgba(0,0,0,0.65) 0%, 
+                rgba(0,0,0,0) 20%,
+                rgba(0,0,0,0) 80%,
+                rgba(0,0,0,0.65) 100%
+    );
+	box-shadow: 50px inset #000000;*/
+}
+
+.fadein img.is-hidden { 
+	opacity:0; 
+}
+
