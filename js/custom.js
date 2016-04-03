@@ -442,7 +442,7 @@ $(function() {
 /*When clicking on Full hide fail/success boxes */ 
 $('#name').focus(function() {
      $('#success').html('');
-  });
+});
 
 document.getElementById("team").onclick = function () {
     location.href = "team.html";
@@ -454,4 +454,8 @@ document.getElementById("aboutLink").onclick = function () {
 
 document.getElementById("servicesLink").onclick = function () {
     location.href = "services.html";
+};
+
+document.getElementById("team-club").onclick = function () {
+    location.href = "team-club.html";
 };
