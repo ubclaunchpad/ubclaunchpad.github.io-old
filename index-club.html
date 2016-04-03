@@ -65,15 +65,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <h1><a class="navbar-brand scroll" href="index.html">UBC Launch Pad</a></h1>
+              <h1><a class="navbar-brand scroll" href="index-club.html">UBC Launch Pad</a></h1>
             </div>
             
             <div class="navbar-collapse collapse">
         
               <ul class="nav navbar-nav pull-right">
                 <li><a href="#missionvision">About</a></li>
-                <li><a href="team.html" id="team">Team</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="team-club.html" id="team-club">Team</a></li>
+                <li><a href="#join-us">Join</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
@@ -100,17 +100,18 @@
         <div class="overlay-bg"></div>
     </div>
   </div>
-  
+
   <!-- Mission/Vision Section
   ================================================== -->
   <section id="missionvision" class="light content">
     <div class="container">
-        <div class="row">
+        <div class="row" style="text-align:center;">
           <div class="col-sm-6 text-center overlay-text icons">
             <h1>About Us</h1><br>
               <p style="font-size:20px;">We aim to be the leading organization on campus for students to learn and work on innovative projects and technologies.</p>
               <p style="font-size:20px;">Over the the past year, we've grown our devepment team from four to over forty members, hosted a coding workshop, and developed multiple applications.</p>
           </div>
+          <p><a class="btn btn-lg btn-success scroll" href="team-club.html" role="button">See Our Team</a></p>
       </div>
   </section>
 
@@ -141,27 +142,38 @@
         </div>
       </div>
     </div>
-
     <div class="overlay-bg light"></div>
+  </section>
+
+  <!-- Call to Action
+  ================================================== -->
+  <section class="cta text-center" id="join">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>We're currently looking for students to join our summer team</h2>
+          <p style="text-align:center;"><a class="btn btn-lg btn-primary scroll" href="" role="button">See Our Roles</a></p>
+        </div>
+      </div>
+    </div>
 
   </section>
 
-
-    <!-- Footer
-    ================================================== -->
-    <footer id="contact" class="footer" style="padding: 2em 0;">
-      <div class="container">    
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <a class="icon" href="http://www.facebook.com/ubclaunchpad" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a class="icon" href="https://www.linkedin.com/company/ubc-launch-pad" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a class="icon" href="https://www.instagram.com/ubclaunchpad" target="_blank"><i class="fa fa-instagram"></i><a>
-            <a class="icon" href="mailto:business@ubclaunchpad.com" target="_blank"><i class="fa fa-envelope"></i><a>
-          </div>
+  <!-- Footer
+  ================================================== -->
+  <footer id="contact" class="footer" style="padding: 2em 0;">
+    <div class="container">    
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <a class="icon" href="http://www.facebook.com/ubclaunchpad" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a class="icon" href="https://www.linkedin.com/company/ubc-launch-pad" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a class="icon" href="https://www.instagram.com/ubclaunchpad" target="_blank"><i class="fa fa-instagram"></i><a>
+          <a class="icon" href="mailto:president@ubclaunchpad.com" target="_blank"><i class="fa fa-envelope"></i><a>
         </div>
       </div>
+    </div>
 
-    </footer>
+  </footer>
 
  
   
@@ -201,6 +213,12 @@
      ga('create', 'UA-63529563-1', 'auto');
      ga('send', 'pageview');
 
+    </script>
+
+    <script type="text/javascript">
+      document.getElementById("team-club").onclick = function () {
+          location.href = "team-club.html";
+      };
     </script>
 
   </body>
