@@ -1197,7 +1197,7 @@ section .login-overlay {
   bottom: 0;
   top: 0;
   max-width: 80%;
-  max-height: 30%;
+  max-height: 70%;
   z-index: 10;
   margin: auto;
   text-align: center;
@@ -2702,5 +2702,5 @@ footer.footer .icon {
 }
 
 #launch-pad-logo-div {
-  
+  margin-top:20%;
 }
