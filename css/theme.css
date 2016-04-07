@@ -2701,6 +2701,12 @@ footer.footer .icon {
     }
 }
 
+@media screen and (max-width: 500px) {
+  .position-desc {
+    text-align: left;
+  }
+}
+
 #main-logo {
   width:90%;
 }
