@@ -2691,9 +2691,13 @@ footer.footer .icon {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
     #intro .carousel-caption-center, #intro-video .carousel-caption-center {
       max-height: 45%;
+    }
+
+    #careers-img {
+      display:none;
     }
 }
 
