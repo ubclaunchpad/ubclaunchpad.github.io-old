@@ -444,6 +444,8 @@ $('#name').focus(function() {
      $('#success').html('');
 });
 
+/* Custom JS */
+
 document.getElementById("team").onclick = function () {
     location.href = "team.html";
 };
@@ -459,3 +461,11 @@ document.getElementById("servicesLink").onclick = function () {
 document.getElementById("team-club").onclick = function () {
     location.href = "team-club.html";
 };
+
+function digitalocean_logo_hover(element) {
+    element.setAttribute('src', 'img/sponsor_logos/digitalocean-logo-blue.png');
+}
+
+function digitalocean_logo_unhover(element) {
+    element.setAttribute('src', 'img/sponsor_logos/digitalocean-logo-black.png');
+}
