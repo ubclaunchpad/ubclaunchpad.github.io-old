@@ -2715,6 +2715,10 @@ footer.footer .icon {
   margin-top:20%;
 }
 
-#digitalocean-logo {
+.sponsor-logos {
   width:250px;
+}
+
+#github-logo {
+  margin-top: 5%;
 }
