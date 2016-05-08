@@ -4,15 +4,16 @@
 <!--[if IE 10]> <html class="ie10" lang="en"> <![endif]-->
 <!--[if (gt IE 10)|!(IE)]> <html lang="en"> <![endif]-->
   <head>
+    <!--<meta http-equiv="refresh" content="0; URL='http://ubclaunchpad.com'" />-->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta http-equiv="refresh" content="0; URL='http://ubclaunchpad.com/index-club'" />
+    <meta name="description" content="Launch Pad is UBC's one and only student-run software incubator. Here we implement software projects in a collaborative and professional environment">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="ico/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
 
-    <title>Launch Pad at UBC</title>
+    <title>UBC Launch Pad</title>
 
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -26,7 +27,7 @@
     <link href="css/magnific-popup.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
@@ -55,12 +56,6 @@
     ================================================== -->
     <div class="navbar-wrapper cbp-af-header">
       <div class="container">
-      
-<!--          <div class="launchpad-logo" id="launch-pad-logo-div">
-          <img src="img/launchpadlogo.png" alt="launch_pad_logo" width="200" style="width: 7%;" col>
-          </div>
-          -->
-
         <!-- Fixed navbar -->
         <div class="navbar cbp-af-inner" role="navigation">
           <div class="container">
@@ -72,15 +67,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <h1><a class="navbar-brand scroll" href="index.html">Launch Pad</a></h1>
+              <h1><a class="navbar-brand scroll" href="index-club">UBC Launch Pad</a></h1>
             </div>
             
             <div class="navbar-collapse collapse">
         
               <ul class="nav navbar-nav pull-right">
                 <li><a href="#missionvision">About</a></li>
-                <li><a href="team.html" id="team">Team</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="team-club" id="team-club">Team</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#join">Join</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
@@ -91,219 +87,121 @@
     </div>
 
 
-    <!-- Hero Banner
-    ================================================== -->
-    <div id="intro-video" style="background-image: url( 'img/bg-videofallback.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-      <a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=dum1Gh-FE9Q',containment:'#intro-video',autoPlay:true, mute:true, startAt:0, printUrl:false,showControls:false, opacity:1, quality: 'highres'}"></a>
-        <div class="item">
-          <div class="container">
-            <div class="row">
-              <div class="carousel-caption-center colour-white" id="launch-pad-logo-div">
-
-                <img src="img/launch-pad-logo-words.png" alt="launch_pad_logo" style="width: 90%;">
-                <h1 class="rw-sentence"> <span>Energizing</span>
-                  <div class="rw-words rw-words-1" style="margin-right: 260px;">
-                    <span>entrepreneurship</span>
-                    <span>industries</span>
-                    <span>organizations</span>
-                    <span>universities</span>
-                    <span>You</span>
-                  </div>
-                  <div>through technical and business development</div>
-                <!--<p><a class="btn btn-lg btn-primary scroll" href="#missionvision" role="button">Learn more</a></p>-->
-
-              </div>
+  <!-- Hero Banner
+  ================================================== -->
+  <div id="intro-video" style="background-image: url( 'img/bg-videofallback.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=QaE810-uRBs',containment:'#intro-video',autoPlay:true, mute:true, startAt:0, printUrl:false,showControls:false, opacity:1, quality: 'highres'}"></a>
+      <div class="item">
+        <div class="container">
+          <div class="row">
+            <div class="carousel-caption-center colour-white" id="launch-pad-logo-div">
+              <img id="main-logo" src="img/launch_pad_logo.png" alt="Launch Pad Logo">
+              <p>Launch Pad is UBC's one and only student-run software incubator. Our club implements software projects in a collaborative and professional environment.</p>
             </div>
           </div>
-          <div class="overlay-bg"></div>
         </div>
+        <div class="overlay-bg"></div>
+    </div>
+  </div>
+
+  <!-- Mission/Vision Section
+  ================================================== -->
+  <section id="missionvision" class="light content">
+    <div class="container">
+        <div class="row" style="text-align:center;">
+          <div class="col-sm-6 text-center overlay-text icons">
+            <h1>About Us</h1><br>
+              <p style="font-size:20px;">We aim to be the leading organization on campus for students to learn and work on innovative projects and technologies.</p>
+              <p style="font-size:20px;">Our multiple platform teams work together on original ideas from conceptualization to release. Over the the past year, we've grown our development team from four to over forty members, hosted a coding workshop, and developed multiple test applications.</p>
+          </div>
+          <p><a class="btn btn-lg btn-primary scroll" href="team-club" role="button">See Our Team</a></p>
+      </div>
+  </section>
+
+  <!-- What You Can Do Section -->
+  <section id="services" class="content text-center light">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 text-center overlay-text icons">
+          <div class="icon-wrapper">
+            <i class="fa fa-mobile icon-large"></i>
+          </div>
+          <h3>Platform Teams</h3>
+          <p>Let's make the next big app and come join our platform specific teams. We're currently working on iOS, Android, Node, and Django apps.</p>
+        </div>
+        <div class="col-sm-4 text-center overlay-text icons">
+          <div class="icon-wrapper">
+            <i class="fa fa-rocket icon-large"></i>
+          </div>
+          <h3>Moonshot</h3>
+          <p>Our resident R&D division, our Moonshot Team is responsible for exploring cutting edge technologies. Think artificial intelligence, IoT, big data.</p>
+        </div>
+        <div class="col-sm-4 text-center overlay-text icons">
+          <div class="icon-wrapper">
+            <i class="fa fa-graduation-cap icon-large"></i>
+          </div>
+          <h3>Coding Workshops</h3>
+          <p>Our first coding workshop, <a href="https://www.facebook.com/events/1582864315370164/" target="_blank">Tech 101</a>, was incredibly successful. We're looking to do many, many more in the coming months.</p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay-bg light"></div>
+  </section>
+
+  <!-- Call to Action
+  ================================================== -->
+  <section class="cta text-center" id="sponsors">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Sponsored By</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 col-md-offset-2">
+                    <a href="http://www.digitalocean.com" target="_blank"><img onmouseover="digitalocean_logo_hover(this)"  class="sponsor-logos"  
+                    onmouseout="digitalocean_logo_unhover(this)" src="img/sponsor_logos/digitalocean-logo-black.png" alt="" id="digitalocean-logo"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="http://www.github.com" target="_blank"><img src="img/sponsor_logos/github-logo.png" alt="" class="sponsor-logos" id="github-logo"></a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Mission/Vision Section
-    ================================================== -->
-    <section id="missionvision" class="light content">
-    <div class="container">
-        <div class="row">
-        <div class="col-sm-6 text-center overlay-text icons">
-        <h1>We are building the bridge between students and the tech industry.</h1>
-        <p style="font-size:20px;">Using our unique approach to software development, we have began a grass roots organization to address the most pressing issues we face as computer engineers, students, entrepreneurs, and the greater Vancouver community.</p>
-        <p style="font-size:20px;">Our team consists of a impassioned executive and 40 students who work part-time to complete impactful community projects through code. We attempt to break the common ideology that surrounds tech by taking initiative.</p>
-        <p style="text-align:center;"><a class="btn btn-lg btn-primary scroll" href="about.html" role="button">Our History</a></p>  
-      </div>
-      </div>
-    <!--<div class="overlay-bg black"></div>
--->
   </section>
 
-  <section id = "missionvision" class="dark with-bg" style="background-image: url( 'img/vision_img.jpg' );">
+  <!-- Call to Action
+  ================================================== -->
+  <section class="cta text-center light" id="join">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 overlay-text" style="text-align:center;">
-            <h2>High-end tech solutions that won't break the bank.</h2>
-          </div><!-- /.col-lg-12 -->
-        <div class="col-sm-6 text-center overlay-text icons">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>We're currently looking for students to join our team starting in May</h2>
+          <p style="text-align:center;"><a class="btn btn-lg btn-primary scroll" href="careers-club" role="button">See Our Roles</a></p>
+        </div>
+      </div>
+    </div>
 
-      </div>
-      </div>
   </section>
 
-    <!-- About/Services Section
-    ================================================== -->
-    <section id="services" class="content text-center light">
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-sm-4 text-center overlay-text icons">
-            <div class="icon-wrapper">
-              <i class="fa fa-desktop icon-large"></i>
-            </div>
-            <h3><a href="services.html">Web</a></h3>
-            <p>The majority of our experience lies in developing web applications with beautiful front-end design and rigid back-end frameworks. This ensures high quality responsive designs with fully customized functionality for our clients.</p>
-          </div>
-          <div class="col-sm-4 text-center overlay-text icons">
-            <div class="icon-wrapper">
-              <i class="fa fa-mobile icon-large"></i>
-            </div>
-            <h3><a href="services.html">Mobile</a></h3>
-            <p>Mobile is taking over the future of how we interact with technology. We build immersive, fluid, and dynamic application on iOS and Android from simple utility apps to complex user experiences using databases, REST API's, and more. </p>
-          </div>
-          <div class="col-sm-4 text-center overlay-text icons">
-            <div class="icon-wrapper">
-              <i class="fa fa-cogs icon-large"></i>
-            </div>
-            <h3><a href="services.html">Internet of Things</a></h3>
-            <p>The internet is growing as we accumulate data from the world around us. New technologies such as Arduino or Raspberry PI have made it possible to easily integrate IOT into our technology solutions. We can leverage these to create a more interactive experience for your tech solution.</p>
-          </div>
-        </div><!-- /.row -->
-       <!-- <p><a ref="wwww.ubclaunchpad.com" href="#featured1" role="button">Learn more</a></p> -->
-      </div>
-
-      <div class="overlay-bg light"></div>
-
-    </section>
-
-        <section id = "missionvision" class="dark with-bg" style="background-image: url( 'img/vision_img.jpg' );">
-    <div class="container">
-        <div class="row">
-                  <div class="col-lg-12 overlay-text" style="text-align:center;">
-            <h2>Make Launch Pad your partner.</h2>
-          </div><!-- /.col-lg-12 -->
-        <div class="col-sm-6 text-center overlay-text icons">
-
-      </div>
-      </div>
-    <!--<div class="overlay-bg black"></div>
--->
-  </section>
-
-    <!-- About/Services Section
-    ================================================== -->
-    <section id="services" class="content text-center">
-
-      <div class="container">
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-
-        </div><!-- /.row -->
-
-        <div class="row">
-          <div class="col-sm-4 text-center overlay-text icons">
-            <div class="icon-wrapper">
-              <i class="fa fa-users icon-large"></i>
-            </div>
-            <h3><a href="services.html">Management</a></h3>
-            <p>We provide full consulting services to meet your needs. If you are lacking a technical background and simply need some assistance in your business by understanding, implementing, or hiring anything within tech, we are your one-stop solution. We also do free business evaluations for early-stage tech entrepreneurs looking to gain insights or validation of their revenue models, user acquisition strategies, and more.</p>
-          </div>
-          <div class="col-sm-4 text-center overlay-text icons">
-            <div class="icon-wrapper">
-              <i class="fa fa-code icon-large"></i>
-            </div>
-            <h3><a href="services.html">IT</a></h3>
-            <p>Need small or frequent changes on your website? What about understanding why your laptop won’t work? Considering a new tech upgrade in your organization and need help in evaluating if it will pay-off? We can do small or large contracts to assist you with any of your IT needs. </p>
-          </div>
-          <div class="col-sm-4 text-center overlay-text icons">
-            <div class="icon-wrapper">
-              <i class="fa fa-comments icon-large"></i>
-            </div>
-            <h3><a href="services.html">Networking</a></h3>
-            <p>You can reach out to our amazing network of VC’s, incubators, educators, and more to assist you in achieving your goals. Our partners thrive in Vancouver’s growing tech community, and we can plug you in.</p>
-          </div>
-        </div><!-- /.row -->
-       <!-- <p><a ref="wwww.ubclaunchpad.com" href="#featured1" role="button">Learn more</a></p>-->
-      </div>
-
-      <div class="overlay-bg light"></div>
-
-    </section>
-
-    <!-- Call to Action
-    ================================================== -->
-    <section class="cta text-center">
-
-      <div class="container">
-        
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>Have a great idea? Want to get in touch? <span class="highlight">Shoot us a message!</span></h2>
-            
-            <p style="text-align:center;"><a class="btn btn-lg btn-primary scroll" href="https://docs.google.com/a/ubclaunchpad.com/forms/d/1vnuGv6OfcANE0F4OaOqp0cjt536pOxTPLxAlDjhrOV8/viewform?usp=send_form" role="button">Contact Us</a></p>
-            
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- Footer
-    ================================================== -->
-    <footer id="contact" class="footer">
-
-      <div class="container">    
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="col-sm-3 col-md-3">
-              <div class="footer-logo">
-                <h2>Launch Pad</h2>
-                <p>2329 West Mall, Vancouver, BC V6T 1Z4, Canada</p>
-                <br>
-                <p class="muted">Launchpad Technologies Ltd.</p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-md-offset-1">
-              <h3>About</h3>
-              <ul class="list-unstyled">
-                <li><a href="#missionvision">Our History</a></li>
-                <!-- <li><a href="#">Projects</a></li> -->
-                <li><a href="team.html">Team</a></li> 
-                <li><a href="careers.html">Careers</a></li>            
-              </ul>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <h3>Company</h3>
-              <ul class="list-unstyled">
-                <!--<li><a href="#">Community</a></li>-->
-                <li><a href="https://docs.google.com/a/ubclaunchpad.com/forms/d/1vnuGv6OfcANE0F4OaOqp0cjt536pOxTPLxAlDjhrOV8/viewform?usp=send_form">Contact</a></li>
-                <li><a href="#services">Services</a></li>
-                <!--<li><a href="#">Jobs&emsp;<span class="label label-info">We're hiring!</span></a></li>-->           
-              </ul>
-            </div> 
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2> Join the community through our social media</h2>
-            <a class="icon" href="http://www.facebook.com/ubclaunchpad" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a class="icon" href="https://www.linkedin.com/company/ubc-launch-pad" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a class="icon" href="https://www.instagram.com/ubclaunchpad" target="_blank"><i class="fa fa-instagram"></i><a>
-            <a class="icon" href="mailto:business@ubclaunchpad.com" target="_blank"><i class="fa fa-envelope"></i><a>
-          </div>
+  <!-- Footer
+  ================================================== -->
+  <footer id="contact" class="footer" style="padding: 2em 0;">
+    <div class="container">    
+      <h1 style="text-align:center;">Contact Us</h1>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <a class="icon" href="http://www.facebook.com/ubclaunchpad" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a class="icon" href="https://www.linkedin.com/company/ubc-launch-pad" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a class="icon" href="https://www.instagram.com/ubclaunchpad" target="_blank"><i class="fa fa-instagram"></i><a>
+          <a class="icon" href="mailto:president@ubclaunchpad.com" target="_blank"><i class="fa fa-envelope"></i><a>
         </div>
       </div>
+    </div>
 
-    </footer>
+  </footer>
 
  
   
@@ -332,6 +230,12 @@
         isotope();
       });
 
+    </script>
+
+    <script type="text/javascript">
+      document.getElementById("team-club").onclick = function () {
+          location.href = "team-club.html";
+      };
     </script>
 
   </body>
