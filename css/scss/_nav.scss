@@ -1,0 +1,163 @@
+@import '_colors.scss';
+@import './utils/_animation.scss';
+
+$navbar-height: 80pt;
+$collapsed-navbar-height: 60pt;
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  font-family: 'Montserrat', sans-serif;
+
+  &.collapsed {
+    animation-name: navbar-collapse;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+    h1 a {
+      animation-name: navbar-header-collapse;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+
+    li a {
+      animation-name: navbar-nav-collapse;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &.enlarged {
+    animation-name: navbar-enlarge;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+    h1 a {
+      animation-name: navbar-header-enlarge;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+
+    li a {
+      animation-name: navbar-nav-enlarge;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+#navbar-header {
+  padding-left: 6em;
+
+  h1 {
+    letter-spacing: 4pt;
+    font-weight: 400;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+#navbar-nav {
+  padding-right: 6em;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline;
+
+    a {
+      padding-left: 1em;
+      padding-right: 1em;
+      text-decoration: none;
+      letter-spacing: 2pt;
+      font-size: $collapsed-navbar-height / 4;
+      font-weight: 400;
+    }
+  }
+}
+
+@include keyframe(navbar-collapse) {
+  from {
+    background-color: transparent;
+    height: $navbar-height;
+  }
+  to {
+    background-color: white;
+    height: $collapsed-navbar-height;
+    border-bottom: 0.5px solid $light-grey;
+  }
+}
+
+@include keyframe(navbar-enlarge) {
+  from {
+    background-color: white;
+    height: $collapsed-navbar-height;
+    border-bottom: 1px solid $light-grey;
+  }
+  to {
+    background-color: transparent;
+    height: $navbar-height;
+  }
+}
+
+@include keyframe(navbar-header-enlarge) {
+  from {
+    font-size: $collapsed-navbar-height / 4;
+    line-height: $collapsed-navbar-height;
+    color: $dark-grey;
+  }
+  to {
+    font-size: $navbar-height / 4;
+    line-height: $navbar-height;
+    color: white;
+  }
+}
+
+@include keyframe(navbar-header-collapse) {
+  from {
+    font-size: $navbar-height / 4;
+    line-height: $navbar-height;
+    color: white;
+  }
+  to {
+    font-size: $collapsed-navbar-height / 4;
+    line-height: $collapsed-navbar-height;
+    color: $dark-grey;
+  }
+}
+
+@include keyframe(navbar-nav-enlarge) {
+  from {
+    line-height: $collapsed-navbar-height;
+    padding-top: $collapsed-navbar-height * 3/8;
+    padding-bottom: $collapsed-navbar-height * 3/8;
+    color: $dark-grey;
+  }
+  to {
+    line-height: $navbar-height;
+    padding-top: $navbar-height * 3/8;
+    padding-bottom: $navbar-height * 3/8;
+    color: white;
+  }
+}
+
+@include keyframe(navbar-nav-collapse) {
+  from {
+    line-height: $navbar-height;
+    padding-top: $navbar-height * 3/8;
+    padding-bottom: $navbar-height * 3/8;
+    color: white;
+  }
+  to {
+    line-height: $collapsed-navbar-height;
+    padding-top: $collapsed-navbar-height * 3/8;
+    padding-bottom: $collapsed-navbar-height * 3/8;
+    color: $dark-grey;
+  }
+}

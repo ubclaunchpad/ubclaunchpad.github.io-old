@@ -1,0 +1,43 @@
+@import './utils/_animation.scss';
+
+#banner {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.banner-brand {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  &:before {
+    animation-name: banner;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/launchpad-logo.png');
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+}
+
+.banner-video {
+  z-index: -100;
+  width: 100%;
+  height: auto;
+}
+
+@include keyframe(banner) {
+  from {
+    background-color: $light-grey;
+  }
+  to {
+    background-color: $banner;
+  }
+}
