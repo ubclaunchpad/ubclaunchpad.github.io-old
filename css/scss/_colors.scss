@@ -2,12 +2,13 @@ $primary: rgb(0, 172, 125);
 
 $base-grey: rgb(48, 56, 52);
 
-$darkest-grey: rgba($base-grey, 1);
-$dark-grey: rgba($base-grey, 0.8);
-$grey: rgba($base-grey, 0.6);
-$light-grey: rgba($base-grey, 0.4);
-$lightest-grey: rgba($base-grey, 0.2);
+$darkest-grey: lighten($base-grey, 1);
+$dark-grey: lighten($base-grey, 0.8);
+$grey: lighten($base-grey, 0.6);
+$light-grey: lighten($base-grey, 0.4);
+$lightest-grey: lighten($base-grey, 0.2);
 
-$background: rgba($base-grey, 0.05);
+$background: lighten($base-grey, 0.05);
 
-$banner: rgba(black, 0.8);
+$banner-dark: rgba(black, 0.8);
+$banner-light: rgba(black, 0.6);

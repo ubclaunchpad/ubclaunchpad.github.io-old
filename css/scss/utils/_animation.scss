@@ -16,24 +16,20 @@
     }
 }
 
-@mixin animation ($delay, $duration, $animation) {
-    -webkit-animation-delay: $delay;
+@mixin animation ($animation, $duration) {
     -webkit-animation-duration: $duration;
     -webkit-animation-name: $animation;
-    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    -webkit-animation-fill-mode: forwards;
 
-    -moz-animation-delay: $delay;
     -moz-animation-duration: $duration;
     -moz-animation-name: $animation;
-    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    -moz-animation-fill-mode: forwards;
 
-    -o-animation-delay: $delay;
     -o-animation-duration: $duration;
     -o-animation-name: $animation;
-    -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    -o-animation-fill-mode: forwards;
 
-    animation-delay: $delay;
     animation-duration: $duration;
     animation-name: $animation;
-    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+    animation-fill-mode: forwards;
 }

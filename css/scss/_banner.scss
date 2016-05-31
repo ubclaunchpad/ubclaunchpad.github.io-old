@@ -1,43 +1,60 @@
 @import './utils/_animation.scss';
 
 #banner {
+  // Allows this node to be the width/height reference for its children
+  position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
-  z-index: -100;
 }
 
 .banner-brand {
+  position: relative;
   width: 100%;
   height: auto;
-  position: relative;
 
   &:before {
-    animation-name: banner;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-    content: '';
+    @include animation(banner, 5s);
     position: absolute;
     width: 100%;
     height: 100%;
+
     background-image: url('/img/launchpad-logo.png');
-    background-position: center;
+    background-position: 50% 35%;
     background-size: 60%;
     background-repeat: no-repeat;
+    content: '';
   }
 }
 
 .banner-video {
-  z-index: -100;
   width: 100%;
   height: auto;
+  z-index: -100;
 }
 
+.banner-tagline {
+  position: absolute;
+  width: 100%;
+  top: 75%;
+  z-index: 100;
+
+  p {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.8em;
+    text-align: center;
+    color: white;
+    margin: 0 20%;
+  }
+}
+
+// Animate video overlay from light to dark grey on page load
 @include keyframe(banner) {
   from {
-    background-color: $light-grey;
+    background-color: $banner-light;
   }
   to {
-    background-color: $banner;
+    background-color: $banner-dark;
   }
 }

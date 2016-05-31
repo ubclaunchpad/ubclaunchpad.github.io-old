@@ -7,43 +7,34 @@ $collapsed-navbar-height: 60pt;
 #navbar {
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 500;
+  font-family: "Lato", sans-serif;
 
-  font-family: 'Montserrat', sans-serif;
+  a {
+    text-decoration: none;
+  }
 
   &.collapsed {
-    animation-name: navbar-collapse;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    @include animation(navbar-collapse, 0.5s);
 
     h1 a {
-      animation-name: navbar-header-collapse;
-      animation-duration: 0.5s;
-      animation-fill-mode: forwards;
+      @include animation(navbar-header-collapse, 0.5s);
     }
 
     li a {
-      animation-name: navbar-nav-collapse;
-      animation-duration: 0.5s;
-      animation-fill-mode: forwards;
+      @include animation(navbar-nav-collapse, 0.5s);
     }
   }
 
   &.enlarged {
-    animation-name: navbar-enlarge;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    @include animation(navbar-enlarge, 0.5s);
 
     h1 a {
-      animation-name: navbar-header-enlarge;
-      animation-duration: 0.5s;
-      animation-fill-mode: forwards;
+      @include animation(navbar-header-enlarge, 0.5s);
     }
 
     li a {
-      animation-name: navbar-nav-enlarge;
-      animation-duration: 0.5s;
-      animation-fill-mode: forwards;
+      @include animation(navbar-nav-enlarge, 0.5s);
     }
   }
 }
@@ -53,11 +44,7 @@ $collapsed-navbar-height: 60pt;
 
   h1 {
     letter-spacing: 4pt;
-    font-weight: 400;
-  }
-
-  a {
-    text-decoration: none;
+    font-weight: 300;
   }
 }
 
@@ -72,15 +59,19 @@ $collapsed-navbar-height: 60pt;
     display: inline;
 
     a {
-      padding-left: 1em;
-      padding-right: 1em;
-      text-decoration: none;
+      padding: 0 1em;
       letter-spacing: 2pt;
-      font-size: $collapsed-navbar-height / 4;
+      font-size: $collapsed-navbar-height / 5;
       font-weight: 400;
     }
   }
 }
+
+/**
+  Animation keyframes for collapsing and enlarging the
+  navigation bar when scrolling to and away from the top
+  of the page.
+**/
 
 @include keyframe(navbar-collapse) {
   from {
@@ -123,11 +114,15 @@ $collapsed-navbar-height: 60pt;
   from {
     font-size: $navbar-height / 4;
     line-height: $navbar-height;
+    padding-top: $navbar-height * 3/8;
+    padding-bottom: $navbar-height * 3/8;
     color: white;
   }
   to {
     font-size: $collapsed-navbar-height / 4;
     line-height: $collapsed-navbar-height;
+    padding-top: $collapsed-navbar-height * 3/8;
+    padding-bottom: $collapsed-navbar-height * 3/8;
     color: $dark-grey;
   }
 }
