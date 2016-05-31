@@ -1,3 +1,6 @@
+// Handles the collapse/enlarge animations of the nav bar.
+// Adds a listener to the scroll event which adds/removes a
+// class to the navbar which initiates the animation.
 (function () {
   var nav = document.getElementById('navbar');
   var cl = nav.classList;
