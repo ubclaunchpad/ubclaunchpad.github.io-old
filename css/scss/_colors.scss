@@ -1,14 +1,16 @@
 $primary: rgb(0, 172, 125);
+$primary-light: lighten($primary, 10%);
+$primary-lighter: lighten($primary, 15%);
 
-$base-grey: rgb(48, 56, 52);
-
-$darkest-grey: lighten($base-grey, 1);
-$dark-grey: lighten($base-grey, 0.8);
-$grey: lighten($base-grey, 0.6);
-$light-grey: lighten($base-grey, 0.4);
-$lightest-grey: lighten($base-grey, 0.2);
-
-$background: lighten($base-grey, 0.05);
+$darkest-grey: rgb(48, 56, 52);
+$dark-grey: lighten($darkest-grey, 20%);
+$grey: lighten($darkest-grey, 40%);
+$light-grey: lighten($darkest-grey, 60%);
+$lightest-grey: lighten($darkest-grey, 70%);
+$background: lighten($darkest-grey, 72.5%);
+$light-background: lighten($darkest-grey, 75%);
+$lightest-background: lighten($darkest-grey, 77.5%);
+$asdfasdasdfasdffasdf: white;
 
 $banner-dark: rgba(black, 0.8);
 $banner-light: rgba(black, 0.6);

@@ -11,8 +11,24 @@ html {
   color: $dark-grey;
 }
 
+h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+  letter-spacing: 2pt;
+  color: $darkest-grey;
+  padding-bottom: 1em;
+}
+
+p {
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 2em;
+  padding-bottom: 2em;
+}
+
 a {
   font-size: inherit;
+  text-decoration: none;
 }
 
 .right {

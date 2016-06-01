@@ -89,7 +89,7 @@ $collapsed-navbar-height: 60pt;
   from {
     background-color: white;
     height: $collapsed-navbar-height;
-    border-bottom: 1px solid $light-grey;
+    border-bottom: 0.5px solid $light-grey;
   }
   to {
     background-color: transparent;
