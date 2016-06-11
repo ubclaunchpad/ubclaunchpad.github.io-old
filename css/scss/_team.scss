@@ -1,9 +1,11 @@
 #team {
+	display: block;
 	position: relative;
   text-align: center;
 
 	img.banner {
 		width: 100%;
+		display: block;
 	}
 }
 
@@ -15,23 +17,23 @@ h1.team {
 	top: 1em;
 }
 
-// To account for space between image and accordions
-.accordions {
-	position: relative;
-	top: -0.5em;
-}
-
 a.accordion {
 	width: 100%;
 	text-align: left;
 	box-sizing: border-box;
 	border-radius: 0;
+	color: $darkest-grey;
+	background-color: $background;
+
+	&:hover {
+		background-color: $primary-lighter;
+	}
 
 	&:nth-child(4n-1) {
-		background-color: $primary-accent;
+		background-color: $background-light;
 
 		&:hover {
-			background-color: $primary-light;
+			background-color: $primary-lighter;
 		}
 	}
 
