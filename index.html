@@ -9,12 +9,13 @@
     <title>UBC Launch Pad</title>
 
     <link href="css/stylesheets/site.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
-    <!-- NAVBAR -->
+    <!-- NAV -->
     <div id="navbar" class="enlarged">
       <div id="navbar-header" class="left">
         <h1>
@@ -27,10 +28,10 @@
             <a href="#about">ABOUT</a>
           </li>
           <li>
-            <a href="#sponsors">SPONSORS</a>
+            <a href="#team">TEAM</a>
           </li>
           <li>
-            <a href="#join">JOIN</a>
+            <a href="#sponsors">SPONSORS</a>
           </li>
           <li>
             <a href="#contact">CONTACT</a>
@@ -39,7 +40,7 @@
       </div>
     </div>
 
-    <!-- HERO BANNER -->
+    <!-- BANNER -->
     <div id="banner">
       <div class="banner-brand">
         <video preload loop muted autoplay poster="img/banner-video-fallback.jpg" class="banner-video">
@@ -58,20 +59,86 @@
     <!-- ABOUT -->
     <div id="about">
       <h1>About Us</h1>
-      <p>
+      <p class="large">
         We aim to be the leading organization on campus for students to
         learn and work on innovative projects and technologies.
       </p>
-      <p>
+      <p class="large">
         Our multiple platform teams work together on original ideas from conceptualization to release.<br />
         Over the the past year, we've grown our development team from four to over forty members,
         hosted a coding workshop, and developed multiple test applications.
       </p>
-      <a class="button" href="/team">See Our Team</a>
+      <div class="row">
+        <div class="col">
+          <div class="icon-container">
+            <i class="fa fa-mobile icon-large"></i>
+          </div>
+          <h2>PLATFORM TEAMS</h2>
+          <p class="small">
+            Let's make the next big app and come join our platform specific teams.
+            We're currently working on iOS, Android, Node, and Django apps.
+          </p>
+        </div>
+        <div class="col">
+          <div class="icon-container">
+            <i class="fa fa-rocket icon-large"></i>
+          </div>
+          <h2>MOONSHOT</h2>
+          <p class="small">
+            Our resident R&amp;D division, our Moonshot Team is responsible for exploring cutting edge technologies.
+            Think artificial intelligence, IoT, big data.
+          </p>
+        </div>
+        <div class="col">
+          <div class="icon-container">
+            <i class="fa fa-graduation-cap icon-large"></i>
+          </div>
+          <h2>CODING WORKSHOPS</h2>
+          <p class="small">
+            Our first coding workshop,
+            <a href="https://www.facebook.com/events/1582864315370164/">Tech 101</a>,
+            was incredibly successful. We're looking to do many, many more in the coming months.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEAM -->
+    <div id="team">
+      <h1 class="team">Our Team</h2>
+      <img class="banner" src="/img/team.jpg" />
+      <div class="accordions">
+        <a class="button accordion" id="executive">Executive<i class="right fa fa-caret-right"></i></a>
+        <div class="panel">
+          <div class="member">
+            <img class="member-photo" src="/img/team/kelvin-chan.jpg" />
+            <h1 class="member-name">Kelvin Chan</h1>
+            <h2 class="member-position">Co-President</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/jon-mercer.jpg" />
+            <h1 class="member-name">Jon Mercer</h1>
+            <h2 class="member-position">Co-President</h2>
+          </div>
+        </div>
+        <a class="button accordion" id="ios">iOS<i class="right fa fa-caret-right"></i></a>
+        <div class="panel"></div>
+        <a class="button accordion" id="android">Android<i class="right fa fa-caret-right"></i></a>
+        <div class="panel"></div>
+        <a class="button accordion" id="javascript">JavaScript<i class="right fa fa-caret-right"></i></a>
+        <div class="panel"></div>
+        <a class="button accordion" id="django">Django<i class="right fa fa-caret-right"></i></a>
+        <div class="panel"></div>
+        <a class="button accordion" id="rails">Rails<i class="right fa fa-caret-right"></i></a>
+        <div class="panel"></div>
+        <a class="button accordion" id="ui-ux">UI/UX<i class="right fa fa-caret-right"></i></a>
+        <div class="panel"></div>
+      </div>
     </div>
 
     <div style="height: 1000px; background-color: white"></div>
 
-    <script src="/js/nav.js"></script>
+    <script src="/js/_nav.js"></script>
+    <script src="/js/_accordion.js"></script>
   </body>
 </html>

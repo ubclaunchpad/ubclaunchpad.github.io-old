@@ -67,11 +67,9 @@ $collapsed-navbar-height: 60pt;
   }
 }
 
-/**
-  Animation keyframes for collapsing and enlarging the
-  navigation bar when scrolling to and away from the top
-  of the page.
-**/
+// Animation keyframes for collapsing and enlarging the
+// navigation bar when scrolling to and away from the top
+// of the page.
 
 @include keyframe(navbar-collapse) {
   from {

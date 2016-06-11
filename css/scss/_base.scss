@@ -19,11 +19,31 @@ h1 {
   padding-bottom: 1em;
 }
 
+h2 {
+  font-size: 1em;
+  letter-spacing: 2pt;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  color: $primary;
+}
+
 p {
-  font-size: 1.25em;
   font-weight: 300;
-  line-height: 2em;
-  padding-bottom: 2em;
+  line-height: 1.5em;
+
+  &.large {
+    font-size: 1.25em;
+    line-height: 2em;
+    padding-bottom: 2em;
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+
+  &.small {
+    padding: 0 2em;
+    line-height: 2em;
+  }
 }
 
 a {
@@ -37,4 +57,14 @@ a {
 
 .left {
   float: left;
+}
+
+.row {
+  width: 100%;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
 }

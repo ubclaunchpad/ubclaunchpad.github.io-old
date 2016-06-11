@@ -1,11 +1,28 @@
 @import './_colors.scss';
 
+$icon-size: 8em;
+
 #about {
   background-color: $background;
-  padding: 4em 12em;
+  padding: 4em;
   text-align: center;
 
   button {
     margin: 0 auto;
+  }
+
+  .icon-container {
+    display: inline-block;
+    margin: 0 auto;
+    width: $icon-size;
+    height: $icon-size;
+    border-radius: $icon-size / 2;
+    background-color: $primary-light;
+  }
+
+  .icon-large {
+    color: $background;
+    font-size: $icon-size / 3;
+    padding: $icon-size/8 0;
   }
 }
