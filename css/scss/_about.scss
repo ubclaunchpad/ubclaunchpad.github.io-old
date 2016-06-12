@@ -6,6 +6,9 @@ $icon-size: 8em;
   background-color: $background;
   padding: 4em;
   text-align: center;
+  @media screen and (max-width: $tablet) {
+    padding: 2em;
+  }
 
   button {
     margin: 0 auto;

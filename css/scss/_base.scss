@@ -1,4 +1,5 @@
 @import '_colors.scss';
+@import './utils/_constants.scss';
 
 * {
   margin: 0;
@@ -17,6 +18,14 @@ h1 {
   letter-spacing: 2pt;
   color: $darkest-grey;
   padding-bottom: 1em;
+
+  @media screen and (max-width: $laptop) {
+    font-size: 1.75em;
+  }
+
+  @media screen and (max-width: $phablet) {
+    font-size: 1.5em;
+  }
 }
 
 h2 {
@@ -38,11 +47,27 @@ p {
     padding-bottom: 2em;
     padding-left: 8em;
     padding-right: 8em;
+
+    @media screen and (max-width: $desktop) {
+      padding-left: 4em;
+      padding-right: 4em;
+    }
+
+    @media screen and (max-width: $laptop) {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 1em;
+    }
   }
 
   &.small {
     padding: 0 2em;
     line-height: 2em;
+
+    @media screen and (max-width: $tablet) {
+      padding: 0 1em;
+      line-height: 1.5em;
+    }
   }
 }
 
@@ -61,10 +86,18 @@ a {
 
 .row {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  @media screen and (max-width: $phablet) {
+    flex-direction: column;
+  }
 }
 
 .col {
   display: inline-block;
   vertical-align: top;
-  width: 33%;
+  @media screen and (max-width: $phablet) {
+    padding: 1em;
+  }
 }

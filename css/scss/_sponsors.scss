@@ -1,0 +1,36 @@
+@import './utils/_constants.scss';
+
+#sponsors {
+	background-color: $background-lighter;
+	text-align: center;
+	padding: 4em;
+	@media screen and (max-width: $tablet) {
+		padding: 2em;
+	}
+}
+
+.sponsor {
+	display: inline-block;
+	width: 35%;
+	margin: 1em;
+	height: 12em;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	@media screen and (max-width: $tablet) {
+		height: 8em;
+	}
+
+	@media screen and (max-width: $phablet) {
+		width: 60%;
+	}
+
+	&#digital-ocean {
+		background-image: url('/img/sponsors/digital-ocean.png');
+	}
+
+	&#github {
+		background-image: url('/img/sponsors/github.png');
+	}
+}

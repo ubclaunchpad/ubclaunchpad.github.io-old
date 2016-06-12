@@ -2,8 +2,6 @@ $primary: rgb(0, 172, 125);
 $primary-light: mix($primary, white, 75%);
 $primary-lighter: mix($primary, white, 50%);
 
-$primary-accent: mix($primary, white, 90%);
-
 $darkest-grey: rgb(48, 56, 52);
 $dark-grey: mix($darkest-grey, white, 80%);
 $grey: mix($darkest-grey, white, 60%);
