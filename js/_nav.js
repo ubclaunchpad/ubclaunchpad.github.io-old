@@ -18,3 +18,15 @@
 
   window.addEventListener('scroll', scrollListener);
 })();
+
+// Handles opening and closing the hamburger menu on small screens.
+(function () {
+  var hamburger = document.getElementById('hamburger');
+  var hamburgerMenu = document.getElementById('hamburger-menu');
+  var cl = hamburgerMenu.classList;
+
+  hamburger.addEventListener('click', function () {
+    if (cl.contains('active')) cl.remove('active');
+    else cl.add('active');
+  });
+})();
