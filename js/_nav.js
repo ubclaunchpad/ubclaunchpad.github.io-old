@@ -19,14 +19,56 @@
   window.addEventListener('scroll', scrollListener);
 })();
 
-// Handles opening and closing the hamburger menu on small screens.
+// Handles highlighting nav items when their sections are scrolled over
 (function () {
-  var hamburger = document.getElementById('hamburger');
-  var hamburgerMenu = document.getElementById('hamburger-menu');
-  var cl = hamburgerMenu.classList;
+  var sections = getSections();
+  console.log(sections);
 
-  hamburger.addEventListener('click', function () {
-    if (cl.contains('active')) cl.remove('active');
-    else cl.add('active');
+  function scrollListener (event) {
+    var top = window.pageYOffset || document.documentElement.scrollTop;
+    var navbarHeight = document.getElementById('navbar').offsetHeight;
+    var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    var effectiveHeight = top + navbarHeight + (viewportHeight / 3);
+
+    sections.forEach(function(section, i) {
+      var cl = section.navElement.classList;
+      if (effectiveHeight > section.start && effectiveHeight <= section.stop) {
+        if (!cl.contains('active')) cl.add('active');
+      } else {
+        if (cl.contains('active')) cl.remove('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', scrollListener);
+}());
+
+// Returns an array of section elements, `start`, the height
+// at which to start highlighting them, and `stop`, the height
+// at which to stop highlighting them.
+function getSections () {
+  var cumulativeHeight = document.getElementById('banner').offsetHeight;
+  var elements = [];
+
+  ['about', 'team', 'sponsors', 'contact'].forEach(function(id, i) {
+    var el = document.getElementById(id);
+    var navEl = document.getElementById('nav-' + id);
+
+    var start = cumulativeHeight;
+    cumulativeHeight += el.offsetHeight;
+    var stop = cumulativeHeight;
+
+    // Special case for last sections
+    if (i === 3) stop = Infinity;
+
+    elements.push({
+      id: id,
+      element: el,
+      navElement: navEl,
+      start: start,
+      stop: stop
+    });
   });
-})();
+
+  return elements;
+}

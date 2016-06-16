@@ -26,9 +26,19 @@
     background-repeat: no-repeat;
     content: '';
 
-    @media screen and (max-width: $laptop) {
+    @media screen and (min-width: $phablet) and (max-width: $laptop) {
       background-position: 50% 40%;
       background-size: 50%;
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: $phablet) {
+      background-position: 50% 25%;
+      background-size: 60%;
+    }
+
+    @media screen and (max-width: $mobile) {
+      background-position: 50% 20%;
+      background-size: 60%;
     }
   }
 }
@@ -45,8 +55,12 @@
   top: 75%;
   z-index: 100;
 
-  @media screen and (max-width: $laptop) {
+  @media screen and (min-width: $mobile) and (max-width: $laptop) {
     top: 70%
+  }
+
+  @media screen and (max-width: $mobile) {
+    top: 65%;
   }
 
   p {
@@ -57,21 +71,23 @@
     color: white;
     margin: 0 20%;
 
-    @media screen and (max-width: $laptop) {
+    @media screen and (min-width: $tablet) and (max-width: $laptop) {
       margin: 0 10%
     }
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (min-width: $phablet) and (max-width: $tablet) {
       font-size: 1em;
       margin: 0 5%;
     }
 
-    @media screen and (max-width: $phablet) {
-      font-size: 0.8em;
+    @media screen and (min-width: $mobile) and (max-width: $phablet) {
+      font-size: 0.9em;
+      margin: 0 5%;
     }
 
     @media screen and (max-width: $mobile) {
-      font-size: 0.7em;
+      font-size: 0.75em;
+      margin: 0 5%;
     }
   }
 }
