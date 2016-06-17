@@ -1,244 +1,342 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
-<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
-<!--[if IE 10]> <html class="ie10" lang="en"> <![endif]-->
-<!--[if (gt IE 10)|!(IE)]> <html lang="en"> <![endif]-->
   <head>
-    <!--<meta http-equiv="refresh" content="0; URL='http://ubclaunchpad.com'" />-->
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Launch Pad is UBC's one and only student-run software incubator. Here we implement software projects in a collaborative and professional environment">
-    <meta name="author" content="">
+    <meta name="description" content="Launch Pad is UBC's one and only student-run software incubator.">
     <link rel="shortcut icon" href="img/favicon.ico">
 
     <title>UBC Launch Pad</title>
 
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/modernizr.custom.72111.js"></script>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/theme.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/magnific-popup.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <script src="js/modernizr.custom.js"></script>
+    <link href="css/stylesheets/site.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
-
-    <div class="preloader">
-       <div class="spinner">
-          <div class="bounce1"></div>
-          <div class="bounce2"></div>
-          <div class="bounce3"></div>
-        </div>
-    </div>
-
-
-    <!-- NAVBAR
-    ================================================== -->
-    <div class="navbar-wrapper cbp-af-header">
-      <div class="container">
-        <!-- Fixed navbar -->
-        <div class="navbar cbp-af-inner" role="navigation">
-          <div class="container">
-   
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <h1><a class="navbar-brand scroll" href="index-club">UBC Launch Pad</a></h1>
-            </div>
-            
-            <div class="navbar-collapse collapse">
-        
-              <ul class="nav navbar-nav pull-right">
-                <li><a href="#missionvision">About</a></li>
-                <li><a href="team-club" id="team-club">Team</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-                <!--<li><a href="#join">Join</a></li>-->
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <!-- NAV -->
+    <div id="navbar" class="enlarged">
+      <div id="navbar-header" class="left">
+        <h1>
+          <a href="/" class="navbar header">UBC LAUNCH PAD</a>
+        </h1>
       </div>
-      
-    </div>
-
-
-  <!-- Hero Banner
-  ================================================== -->
-  <div id="intro-video" style="background-image: url( 'img/bg-videofallback.jpg' ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-    <a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=QaE810-uRBs',containment:'#intro-video',autoPlay:true, mute:true, startAt:0, printUrl:false,showControls:false, opacity:1, quality: 'highres'}"></a>
-      <div class="item">
-        <div class="container">
-          <div class="row">
-            <div class="carousel-caption-center colour-white" id="launch-pad-logo-div">
-              <img id="main-logo" src="img/launch_pad_logo.png" alt="Launch Pad Logo">
-              <p>Launch Pad is UBC's one and only student-run software incubator. Our club implements software projects in a collaborative and professional environment.</p>
-            </div>
-          </div>
-        </div>
-        <div class="overlay-bg"></div>
-    </div>
-  </div>
-
-  <!-- Mission/Vision Section
-  ================================================== -->
-  <section id="missionvision" class="light content">
-    <div class="container">
-        <div class="row" style="text-align:center;">
-          <div class="col-sm-6 text-center overlay-text icons">
-            <h1>About Us</h1><br>
-              <p style="font-size:20px;">We aim to be the leading organization on campus for students to learn and work on innovative projects and technologies.</p>
-              <p style="font-size:20px;">Our multiple platform teams work together on original ideas from conceptualization to release. Over the the past year, we've grown our development team from four to over forty members, hosted a coding workshop, and developed multiple test applications.</p>
-          </div>
-          <p><a class="btn btn-lg btn-primary scroll" href="team-club" role="button">See Our Team</a></p>
+      <div id="navbar-nav" class="right">
+        <ul>
+          <li>
+            <a id="nav-about" href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a id="nav-team" href="#team">TEAM</a>
+          </li>
+          <li>
+            <a id="nav-sponsors" href="#sponsors">SPONSORS</a>
+          </li>
+          <li>
+            <a id="nav-contact" href="#contact">CONTACT</a>
+          </li>
+        </ul>
       </div>
-  </section>
+    </div>
 
-  <!-- What You Can Do Section -->
-  <section id="services" class="content text-center light">
-    <div class="container">
+    <!-- BANNER -->
+    <div id="banner">
+      <div class="banner-brand">
+        <video preload loop muted autoplay poster="img/banner-video-fallback.jpg" class="banner-video">
+            <source src="/media/banner-video720.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="banner-tagline">
+        <p>
+          Launch Pad is UBC's one and only student-run software incubator.<br />
+          Our club implements software projects in a collaborative and<br />
+          professional environment.
+        </p>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+      <h1>About Us</h1>
+      <p class="large">
+        We aim to be the leading organization on campus for students to
+        learn and work on innovative projects and technologies.
+      </p>
+      <p class="large">
+        Our multiple platform teams work together on original ideas from conceptualization to release.<br />
+        Over the the past year, we've grown our development team from four to over forty members,
+        hosted a coding workshop, and developed multiple test applications.
+      </p>
       <div class="row">
-        <div class="col-sm-4 text-center overlay-text icons">
-          <div class="icon-wrapper">
+        <div class="col">
+          <div class="icon-container">
             <i class="fa fa-mobile icon-large"></i>
           </div>
-          <h3>Platform Teams</h3>
-          <p>Let's make the next big app and come join our platform specific teams. We're currently working on iOS, Android, Node, and Django apps.</p>
+          <h2>PLATFORM TEAMS</h2>
+          <p class="small">
+            Let's make the next big app and come join our platform specific teams.
+            We're currently working on iOS, Android, Node, and Django apps.
+          </p>
         </div>
-        <div class="col-sm-4 text-center overlay-text icons">
-          <div class="icon-wrapper">
+        <div class="col">
+          <div class="icon-container">
             <i class="fa fa-rocket icon-large"></i>
           </div>
-          <h3>Moonshot</h3>
-          <p>Our resident R&D division, our Moonshot Team is responsible for exploring cutting edge technologies. Think artificial intelligence, IoT, big data.</p>
+          <h2>MOONSHOT</h2>
+          <p class="small">
+            Our resident R&amp;D division, our Moonshot Team is responsible for exploring cutting edge technologies.
+            Think artificial intelligence, IoT, big data.
+          </p>
         </div>
-        <div class="col-sm-4 text-center overlay-text icons">
-          <div class="icon-wrapper">
+        <div class="col">
+          <div class="icon-container">
             <i class="fa fa-graduation-cap icon-large"></i>
           </div>
-          <h3>Coding Workshops</h3>
-          <p>Our first coding workshop, <a href="https://www.facebook.com/events/1582864315370164/" target="_blank">Tech 101</a>, was incredibly successful. We're looking to do many, many more in the coming months.</p>
+          <h2>CODING WORKSHOPS</h2>
+          <p class="small">
+            Our first coding workshop,
+            <a href="https://www.facebook.com/events/1582864315370164/">Tech 101</a>,
+            was incredibly successful. We're looking to do many, many more in the coming months.
+          </p>
         </div>
       </div>
     </div>
-    <div class="overlay-bg light"></div>
-  </section>
 
-  <!-- Call to Action
-  ================================================== -->
-  <section class="cta text-center" id="sponsors">
-    <div class="container">
+    <!-- TEAM -->
+    <div id="team">
+      <h1 class="team">Our Team</h2>
+      <img class="banner" src="/img/team.jpg" />
+      <div class="accordions">
+        <a class="button accordion" id="executive">Executive<i class="right fa fa-caret-right"></i></a>
+        <div class="panel">
+          <div class="member">
+            <img class="member-photo" src="/img/team/kelvin-chan.jpg" />
+            <h1 class="member-name">Kelvin Chan</h1>
+            <h2 class="member-position">Co-President</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/jon-mercer.jpg" />
+            <h1 class="member-name">Jon Mercer</h1>
+            <h2 class="member-position">Co-President</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/david-julien.jpg" />
+            <h1 class="member-name">David Julien</h1>
+            <h2 class="member-position">Co-Founder</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/arnold-lam.jpg" />
+            <h1 class="member-name">Arnold Lam</h1>
+            <h2 class="member-position">Co-Founder</h2>
+          </div>
+        </div>
+        <a class="button accordion" id="ios">iOS<i class="right fa fa-caret-right"></i></a>
+        <div class="panel">
+          <div class="member">
+            <img class="member-photo" src="/img/team/jon-mercer.jpg" />
+            <h1 class="member-name">Jon Mercer</h1>
+            <h2 class="member-position">Tech Lead</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/gabriel-uribe.jpg" />
+            <h1 class="member-name">Gabriel Uribe</h1>
+            <h2 class="member-position">Tech Lead</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/james-park.jpg" />
+            <h1 class="member-name">James Park</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/milton-leung.jpg" />
+            <h1 class="member-name">Milton Leung</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/ahmed-elmaghraby.jpg" />
+            <h1 class="member-name">Ahmed Elmaghraby</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/mohamed-ali.jpg" />
+            <h1 class="member-name">Mohamed Ali</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/grace-liang.jpg" />
+            <h1 class="member-name">Grace Liang</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/ali-haghani.jpg" />
+            <h1 class="member-name">Ali Haghani</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+        </div>
+        <a class="button accordion" id="android">Android<i class="right fa fa-caret-right"></i></a>
+        <div class="panel">
+          <div class="member">
+            <img class="member-photo" src="/img/team/chris-li.jpg" />
+            <h1 class="member-name">Chris Li</h1>
+            <h2 class="member-position">Tech Lead</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/kelvin-chan.jpg" />
+            <h1 class="member-name">Kelvin Chan</h1>
+            <h2 class="member-position">Tech Lead</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/raj-kambo.jpg" />
+            <h1 class="member-name">Raj Kambo</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/jessica-yeung.jpg" />
+            <h1 class="member-name">Jessica Yeung</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/ben-gee.jpg" />
+            <h1 class="member-name">Ben Gee</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/maverick-cuyugan.jpg" />
+            <h1 class="member-name">Maverick Cuyugan</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/vladislav-magay.jpg" />
+            <h1 class="member-name">Vladislav Magay</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/stella-fang.jpg" />
+            <h1 class="member-name">Stella Fang</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+        </div>
+        <a class="button accordion" id="javascript">JavaScript<i class="right fa fa-caret-right"></i></a>
+        <div class="panel">
+          <div class="member">
+            <img class="member-photo" src="/img/team/arabelle-hou.jpg" />
+            <h1 class="member-name">Arabelle Hou</h1>
+            <h2 class="member-position">Tech Lead</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/jordan-schalm.jpg" />
+            <h1 class="member-name">Jordn Schalm</h1>
+            <h2 class="member-position">Tech Lead</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/elaine-feng.jpg" />
+            <h1 class="member-name">Elaine Feng</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/eric-stroczynski.jpg" />
+            <h1 class="member-name">Eric Stroczynski</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+        </div>
+        <a class="button accordion" id="django">Django<i class="right fa fa-caret-right"></i></a>
+        <div class="panel">
+          <div class="member">
+            <img class="member-photo" src="/img/team/colby-song.jpg" />
+            <h1 class="member-name">Colby Song</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/steven-wallace.jpg" />
+            <h1 class="member-name">Steven Wallace</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/xenia-chiru.jpg" />
+            <h1 class="member-name">Xenia Chiru</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/matthew-siu.jpg" />
+            <h1 class="member-name">Matthew Siu</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+        </div>
+        <a class="button accordion" id="rails">Rails<i class="right fa fa-caret-right"></i></a>
+        <div class="panel">
+          <div class="member">
+            <img class="member-photo" src="/img/team/daniel-chawla.jpg" />
+            <h1 class="member-name">Daniel Chawla</h1>
+            <h2 class="member-position">Tech Lead</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/bryden-fogelman.jpg" />
+            <h1 class="member-name">Bryden Fogelman</h1>
+            <h2 class="member-position">Tech Lead</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/shavon-zhang.jpg" />
+            <h1 class="member-name">Shavon Zhang</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/justin-toh.jpg" />
+            <h1 class="member-name">Justin Toh</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/atiq-ullah.jpg" />
+            <h1 class="member-name">Atiq Ullah</h1>
+            <h2 class="member-position">Developer</h2>
+          </div>
+        </div>
+        <a class="button accordion" id="ui-ux">UI/UX<i class="right fa fa-caret-right"></i></a>
+        <div class="panel">
+          <div class="member">
+            <img class="member-photo" src="/img/team/montse-slim.jpg" />
+            <h1 class="member-name">Montse Slim</h1>
+            <h2 class="member-position">Designer</h2>
+          </div>
+          <div class="member">
+            <img class="member-photo" src="/img/team/shirley-xie.jpg" />
+            <h1 class="member-name">Shirley Xie</h1>
+            <h2 class="member-position">Designer</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sponsors">
+      <h1>Sponsored By</h1>
+      <div class="sponsor" id="digital-ocean"></div>
+      <div class="sponsor" id="github"></div>
+    </div>
+    <div id="contact">
+      <h1>Contact Us</h1>
       <div class="row">
-        <div class="col-lg-12">
-          <h2>Sponsored By</h2>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4 col-md-offset-2">
-                    <a href="http://www.digitalocean.com" target="_blank"><img onmouseover="digitalocean_logo_hover(this)"  class="sponsor-logos"  
-                    onmouseout="digitalocean_logo_unhover(this)" src="img/sponsor_logos/digitalocean-logo-black.png" alt="" id="digitalocean-logo"></a>
-                </div>
-                <div class="col-md-4">
-                    <a href="http://www.github.com" target="_blank"><img src="img/sponsor_logos/github-logo.png" alt="" class="sponsor-logos" id="github-logo"></a>
-                </div>
-              </div>
-            </div>
+        <div class="icon">
+          <a href="https://www.facebook.com/ubclaunchpad">
+            <i class="fa fa-lg fa-facebook"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://www.instagram.com/ubclaunchpad/">
+            <i class="fa fa-lg fa-instagram"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://www.linkedin.com/company/ubc-launch-pad">
+            <i class="fa fa-lg fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="mailto:president@ubclaunchpad.com">
+            <i class="fa fa-lg fa-envelope"></i>
+          </a>
         </div>
       </div>
     </div>
-
-  </section>
-
-  <!-- Call to Action
-  ================================================== -->
-  <!--
-  <section class="cta text-center light" id="join">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h2>We're currently looking for students to join our team starting in May</h2>
-          <p style="text-align:center;"><a class="btn btn-lg btn-primary scroll" href="careers-club" role="button">See Our Roles</a></p>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  -->
-
-  <!-- Footer
-  ================================================== -->
-  <footer id="contact" class="footer" style="padding: 2em 0;">
-    <div class="container">    
-      <h1 style="text-align:center;">Contact Us</h1>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <a class="icon" href="http://www.facebook.com/ubclaunchpad" target="_blank"><i class="fa fa-facebook"></i></a>
-          <a class="icon" href="https://www.linkedin.com/company/ubc-launch-pad" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a class="icon" href="https://www.instagram.com/ubclaunchpad" target="_blank"><i class="fa fa-instagram"></i><a>
-          <a class="icon" href="mailto:president@ubclaunchpad.com" target="_blank"><i class="fa fa-envelope"></i><a>
-        </div>
-      </div>
-    </div>
-
-  </footer>
-
- 
-  
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.min.js"></script>
-    <script src="js/jquery.mb.YTPlayer.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/scrollReveal.js"></script>
-    <script src="js/isotope.min.js" defer="defer"></script>
-    <script src="js/imagesloaded.pkgd.min.js" defer="defer"></script>
-    <script src="js/jquery.scrollTo.js" defer="defer"></script>
-    <script src="js/jquery.nav.js" defer="defer"></script>
-    <script src="js/jquery.magnific-popup.min.js" defer="defer"></script>
-    <script src="js/jqBootstrapValidation.js" defer="defer"></script>
-    <script src="js/custom.js"></script>
-
-    <script>
-
-      $(document).ready(function(){
-        $(".player").mb_YTPlayer();
-        isotope();
-      });
-
-    </script>
-
-    <script type="text/javascript">
-      document.getElementById("team-club").onclick = function () {
-          location.href = "team-club.html";
-      };
-    </script>
-
+    <script src="/js/_nav.js"></script>
+    <script src="/js/_accordion.js"></script>
   </body>
 </html>

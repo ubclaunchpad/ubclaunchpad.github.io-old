@@ -1,0 +1,16 @@
+$primary: rgb(28, 165, 122);
+$primary-light: mix($primary, white, 75%);
+$primary-lighter: mix($primary, white, 50%);
+
+$darkest-grey: rgb(48, 56, 52);
+$dark-grey: mix($darkest-grey, white, 80%);
+$grey: mix($darkest-grey, white, 60%);
+$light-grey: mix($darkest-grey, white, 40%);
+$lightest-grey: mix($darkest-grey, white, 20%);
+
+$background: mix($darkest-grey, white, 10%);
+$background-light: mix($darkest-grey, white, 6.66%);
+$background-lighter: mix($darkest-grey, white, 3.33%);
+
+$banner-dark: rgba(black, 0.8);
+$banner-light: rgba(black, 0.6);

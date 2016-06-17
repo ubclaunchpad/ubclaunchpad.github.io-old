@@ -1,0 +1,74 @@
+#team {
+	display: block;
+	position: relative;
+  text-align: center;
+
+	img.banner {
+		width: 100%;
+		display: block;
+	}
+}
+
+h1.team {
+	position: absolute;
+	display: block;
+	width: 100%;
+	text-align: center;
+	top: 1em;
+}
+
+a.accordion {
+	width: 100%;
+	text-align: left;
+	box-sizing: border-box;
+	border-radius: 0;
+	color: $darkest-grey;
+	background-color: $background;
+
+	&:hover {
+		background-color: $primary-lighter;
+	}
+
+	&:nth-child(4n-1) {
+		background-color: $background-light;
+
+		&:hover {
+			background-color: $primary-lighter;
+		}
+	}
+
+	&.active {
+		background-color: $primary-light;
+	}
+}
+
+.panel {
+	display: none;
+
+	&.active {
+		display: flex;
+		flex-direction: row;
+		padding: 1em 2em;
+	}
+}
+
+.member {
+	padding: 2em;
+}
+
+.member-photo {
+	width: 16em;
+	height: 16em;
+	border-radius: 8em;
+}
+
+h1.member-name {
+	font-size: 1.5em;
+	padding-top: 0.75em;
+	padding-bottom: 0em;
+}
+
+h2.member-position {
+	text-transform: uppercase;;
+	padding-top: 0.25em;
+}
