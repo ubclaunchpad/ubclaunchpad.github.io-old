@@ -1,10 +1,13 @@
+// Highlight `Sponsors` section with the sponsor's theme color when the
+// logo is moused over
+
 (function () {
 	var section = document.getElementById('sponsors');
 	var cl = section.classList;
 	console.log(section);
 
-	var github = section.getElementById('github');
-	var digitalOcean = section.getElementById('digital-ocean');
+	var github = document.getElementById('github');
+	var digitalOcean = document.getElementById('digital-ocean');
 	console.log(github);
 	console.log(digitalOcean);
 

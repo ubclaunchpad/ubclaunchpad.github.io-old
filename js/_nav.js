@@ -20,14 +20,23 @@
 })();
 
 // Handles highlighting nav items when their sections are scrolled over
+// NOTE: not currently used, but we can highlight the section before its
+// div reaches the top of the screen by using the viewPort height.
 (function () {
   var sections = getSections();
+  var navbar = document.getElementById('navbar');
 
-  function scrollListener (event) {
+  onElementHeightChange(document.body, function () {
+    sections = getSections();
+  });
+
+  // Listens on scroll events and highlights nav bar links when scrolling
+  // over the corresponding section
+  function scrollListener () {
     var top = window.pageYOffset || document.documentElement.scrollTop;
-    var navbarHeight = document.getElementById('navbar').offsetHeight;
-    var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    var effectiveHeight = top + navbarHeight + (viewportHeight / 3);
+    var navbarHeight = navbar.offsetHeight;
+    // var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    var effectiveHeight = top + navbarHeight;
 
     sections.forEach(function(section, i) {
       var cl = section.navElement.classList;
@@ -39,8 +48,37 @@
     });
   }
 
+  // Handles scrolling to the correct place relative to the current navbar size
+  // when clicking a navbar link.
+  sections.forEach(function(section, i) {
+    var j = i;
+    section.navElement.addEventListener('click', function (event) {
+      event.preventDefault();
+      window.scrollTo(0, sections[j].start - navbar.offsetHeight + 1);
+      setTimeout(scrollListener, 1);
+    });
+  });
+
   window.addEventListener('scroll', scrollListener);
 }());
+
+// Calls the callback whenever the document changes height
+// Used to ensure our reference to relative heights of various
+// sections are correct.
+function onElementHeightChange(el, callback){
+    var lastHeight = el.clientHeight, newHeight;
+    (function run(){
+        newHeight = el.clientHeight;
+        if( lastHeight != newHeight )
+            callback();
+        lastHeight = newHeight;
+
+        if( el.onElementHeightChangeTimer )
+            clearTimeout(el.onElementHeightChangeTimer);
+
+        el.onElementHeightChangeTimer = setTimeout(run, 200);
+    })();
+}
 
 // Returns an array of section elements, `start`, the height
 // at which to start highlighting them, and `stop`, the height
@@ -49,7 +87,7 @@ function getSections () {
   var cumulativeHeight = document.getElementById('banner').offsetHeight;
   var elements = [];
 
-  ['about', 'team', 'sponsors', 'contact'].forEach(function(id, i) {
+  return ['about', 'team', 'sponsors', 'contact'].map(function(id, i) {
     var el = document.getElementById(id);
     var navEl = document.getElementById('nav-' + id);
 
@@ -57,15 +95,13 @@ function getSections () {
     cumulativeHeight += el.offsetHeight;
     var stop = cumulativeHeight;
 
-    // Special case for last sections
+    // Special case for last section
     if (i === 3) stop = Infinity;
 
-    elements.push({
+    return {
       navElement: navEl,
       start: start,
       stop: stop
-    });
+    };
   });
-
-  return elements;
 }

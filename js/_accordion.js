@@ -1,3 +1,5 @@
+// Handle opening and closing accordion components
+
 (function () {
 	var buttons = document.getElementsByClassName('accordion');
 	var panels = document.getElementsByClassName('panel');
