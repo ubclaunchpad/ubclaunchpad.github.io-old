@@ -22,7 +22,6 @@
 // Handles highlighting nav items when their sections are scrolled over
 (function () {
   var sections = getSections();
-  console.log(sections);
 
   function scrollListener (event) {
     var top = window.pageYOffset || document.documentElement.scrollTop;
