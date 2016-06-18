@@ -1,4 +1,6 @@
-@import './utils/_constants.scss';
+// Styles for the `Sponsors` section
+
+@import './utils/_breakpoints.scss';
 
 #sponsors {
 	background-color: $background-lighter;

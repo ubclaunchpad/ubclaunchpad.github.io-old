@@ -1,3 +1,5 @@
+// Styles for the `Team` section
+
 #team {
 	display: block;
 	position: relative;
@@ -17,6 +19,7 @@ h1.team {
 	top: 1em;
 }
 
+// Full-width cell that opens to reveal a submenu
 a.accordion {
 	width: 100%;
 	text-align: left;
@@ -42,12 +45,15 @@ a.accordion {
 	}
 }
 
+// Revealed when an accordion is clicked
 .panel {
 	display: none;
 
 	&.active {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
 		padding: 1em 2em;
 	}
 }

@@ -1,5 +1,7 @@
+// Base styles
+
 @import '_colors.scss';
-@import './utils/_constants.scss';
+@import './utils/_breakpoints.scss';
 
 * {
   margin: 0;

@@ -62,8 +62,6 @@ function getSections () {
     if (i === 3) stop = Infinity;
 
     elements.push({
-      id: id,
-      element: el,
       navElement: navEl,
       start: start,
       stop: stop
