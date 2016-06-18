@@ -61,6 +61,7 @@ CSS: `_team.scss`
 ### Sponsors
 HTML: `<div id="sponsors">…</div>`
 CSS: `_sponsors.scss`
+JavaScrip: `_sponsors.js`
 
 ### Contact
 HTML: `<div id="contact">…</div>`
