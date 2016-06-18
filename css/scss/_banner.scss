@@ -1,5 +1,7 @@
+// Styles for the `Banner` section
+
 @import './utils/_animation.scss';
-@import './utils/_constants.scss';
+@import './utils/_breakpoints.scss';
 
 #banner {
   // Allows this node to be the width/height reference for its children
@@ -14,6 +16,7 @@
   width: 100%;
   height: auto;
 
+  // Adds logo over the background video
   &:before {
     @include animation(banner, 5s);
     position: absolute;

@@ -1,6 +1,8 @@
+// Styles for the navigation bar
+
 @import '_colors.scss';
 @import './utils/_animation.scss';
-@import './utils/_constants.scss';
+@import './utils/_breakpoints.scss';
 
 // Navbar element font sizes are determined based on navbar height
 $navbar-height: 80pt;
