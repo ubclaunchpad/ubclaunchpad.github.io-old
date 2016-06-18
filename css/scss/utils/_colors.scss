@@ -1,0 +1,28 @@
+// Site theme colours
+
+// Buttons and links
+$primary: rgb(28, 165, 122);
+$primary-light: mix($primary, white, 75%);
+$primary-lighter: mix($primary, white, 50%);
+
+// Text
+$darkest-grey: rgb(39, 45, 44);
+$dark-grey: mix($darkest-grey, white, 80%);
+$grey: mix($darkest-grey, white, 60%);
+$light-grey: mix($darkest-grey, white, 40%);
+$lightest-grey: mix($darkest-grey, white, 20%);
+
+// Backgrounds
+$background: mix($darkest-grey, white, 10%);
+$background-light: mix($darkest-grey, white, 6.66%);
+$background-lighter: mix($darkest-grey, white, 3.33%);
+
+// Bannery opacity
+$banner-dark: rgba(black, 0.8);
+$banner-light: rgba(black, 0.6);
+
+// Sponsors
+$github: #00B079
+$github-transparent: rgba($github, 0.5);
+$digital-ocean: #0088EF
+$digital-ocean-transparent: rgba($digital-ocean, 0.5);
