@@ -1,6 +1,7 @@
 // Styles for the `Sponsors` section
 
 @import './utils/_breakpoints.scss';
+@import './utils/_colors.sccs';
 
 #sponsors {
 	background-color: $background-lighter;
@@ -8,6 +9,16 @@
 	padding: 4em;
 	@media screen and (max-width: $tablet) {
 		padding: 2em;
+	}
+
+	transition: background-color, 1s;
+
+	&.digital-ocean {
+		background-color: $digital-ocean-transparent;
+	}
+
+	&.github {
+		background-color: $github-transparent;
 	}
 }
 
