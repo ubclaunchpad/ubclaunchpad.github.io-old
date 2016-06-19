@@ -26,6 +26,7 @@
   var sections = getSections();
   var navbar = document.getElementById('navbar');
 
+  // Update our reference to the section heights whenever the document body height changes.
   onElementHeightChange(document.body, function () {
     sections = getSections();
   });
@@ -62,22 +63,24 @@
   window.addEventListener('scroll', scrollListener);
 }());
 
-// Calls the callback whenever the document changes height
-// Used to ensure our reference to relative heights of various
-// sections are correct.
-function onElementHeightChange(el, callback){
-    var lastHeight = el.clientHeight, newHeight;
-    (function run(){
-        newHeight = el.clientHeight;
-        if( lastHeight != newHeight )
-            callback();
-        lastHeight = newHeight;
+// Calls the callback whenever the input element `el` changes height
+function onElementHeightChange (el, callback) {
+  var lastHeight = el.clientHeight;
+  var newHeight;
 
-        if( el.onElementHeightChangeTimer )
-            clearTimeout(el.onElementHeightChangeTimer);
+  (function run () {
+    newHeight = el.clientHeight;
+    if (lastHeight != newHeight) {
+      callback();
+      lastHeight = newHeight;
+    }
 
-        el.onElementHeightChangeTimer = setTimeout(run, 200);
-    })();
+    if (el.onElementHeightChangeTimer) {
+      clearTimeout(el.onElementHeightChangeTimer);
+    }
+
+    el.onElementHeightChangeTimer = setTimeout(run, 200);
+  })();
 }
 
 // Returns an array of section elements, `start`, the height

@@ -80,6 +80,11 @@ ul {
 a {
   font-size: inherit;
   text-decoration: none;
+  color: $complementary;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .right {

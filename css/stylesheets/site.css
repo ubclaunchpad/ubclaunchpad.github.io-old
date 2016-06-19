@@ -92,19 +92,24 @@ ul {
 a {
   font-size: inherit;
   text-decoration: none;
+  color: #e72750;
+}
+/* line 85, ../scss/_base.scss */
+a:hover {
+  text-decoration: underline;
 }
 
-/* line 85, ../scss/_base.scss */
+/* line 90, ../scss/_base.scss */
 .right {
   float: right;
 }
 
-/* line 89, ../scss/_base.scss */
+/* line 94, ../scss/_base.scss */
 .left {
   float: left;
 }
 
-/* line 93, ../scss/_base.scss */
+/* line 98, ../scss/_base.scss */
 .row {
   width: 100%;
   display: flex;
@@ -112,19 +117,19 @@ a {
   justify-content: center;
 }
 @media screen and (max-width: 680px) {
-  /* line 93, ../scss/_base.scss */
+  /* line 98, ../scss/_base.scss */
   .row {
     flex-direction: column;
   }
 }
 
-/* line 103, ../scss/_base.scss */
+/* line 108, ../scss/_base.scss */
 .col {
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (max-width: 680px) {
-  /* line 103, ../scss/_base.scss */
+  /* line 108, ../scss/_base.scss */
   .col {
     padding: 1em;
   }
@@ -559,33 +564,34 @@ h1.team {
 a.accordion {
   width: 100%;
   text-align: left;
+  text-decoration: none;
   box-sizing: border-box;
   border-radius: 0;
   color: #272d2c;
   background-color: #e9eaea;
 }
-/* line 31, ../scss/_team.scss */
+/* line 32, ../scss/_team.scss */
 a.accordion:hover {
   background-color: #8ed2bd;
 }
-/* line 35, ../scss/_team.scss */
+/* line 36, ../scss/_team.scss */
 a.accordion:nth-child(4n-1) {
   background-color: #f1f1f1;
 }
-/* line 38, ../scss/_team.scss */
+/* line 39, ../scss/_team.scss */
 a.accordion:nth-child(4n-1):hover {
   background-color: #8ed2bd;
 }
-/* line 43, ../scss/_team.scss */
+/* line 44, ../scss/_team.scss */
 a.accordion.active {
   background-color: #55bc9b;
 }
 
-/* line 49, ../scss/_team.scss */
+/* line 50, ../scss/_team.scss */
 .panel {
   display: none;
 }
-/* line 52, ../scss/_team.scss */
+/* line 53, ../scss/_team.scss */
 .panel.active {
   display: flex;
   flex-direction: row;
@@ -594,26 +600,26 @@ a.accordion.active {
   padding: 1em 2em;
 }
 
-/* line 61, ../scss/_team.scss */
+/* line 62, ../scss/_team.scss */
 .member {
   padding: 2em;
 }
 
-/* line 65, ../scss/_team.scss */
+/* line 66, ../scss/_team.scss */
 .member-photo {
   width: 16em;
   height: 16em;
   border-radius: 8em;
 }
 
-/* line 71, ../scss/_team.scss */
+/* line 72, ../scss/_team.scss */
 h1.member-name {
   font-size: 1.5em;
   padding-top: 0.75em;
   padding-bottom: 0em;
 }
 
-/* line 77, ../scss/_team.scss */
+/* line 78, ../scss/_team.scss */
 h2.member-position {
   text-transform: uppercase;
   padding-top: 0.25em;
@@ -624,7 +630,7 @@ h2.member-position {
   background-color: #f8f8f8;
   text-align: center;
   padding: 4em;
-  transition: background-color, 1s;
+  transition: background-color, 0.75s;
 }
 @media screen and (max-width: 840px) {
   /* line 6, ../scss/_sponsors.scss */

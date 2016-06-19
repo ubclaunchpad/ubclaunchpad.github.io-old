@@ -1,4 +1,4 @@
-// Handle opening and closing accordion components
+// Handle opening and closing accordion panels when they are clicked
 
 (function () {
 	var buttons = document.getElementsByClassName('accordion');

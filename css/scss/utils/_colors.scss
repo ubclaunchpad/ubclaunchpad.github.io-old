@@ -5,6 +5,10 @@ $primary: rgb(28, 165, 122);
 $primary-light: mix($primary, white, 75%);
 $primary-lighter: mix($primary, white, 50%);
 
+$complementary: rgb(231, 39, 80);
+$complementary-light: mix($complementary, white, 75%);
+$complementary-lighter: mix($complementary, white, 50%);
+
 // Text
 $darkest-grey: rgb(39, 45, 44);
 $dark-grey: mix($darkest-grey, white, 80%);

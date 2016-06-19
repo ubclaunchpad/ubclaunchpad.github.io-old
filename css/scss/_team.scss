@@ -3,7 +3,7 @@
 #team {
 	display: block;
 	position: relative;
-  text-align: center;
+	text-align: center;
 
 	img.banner {
 		width: 100%;
@@ -23,6 +23,7 @@ h1.team {
 a.accordion {
 	width: 100%;
 	text-align: left;
+	text-decoration: none;
 	box-sizing: border-box;
 	border-radius: 0;
 	color: $darkest-grey;
@@ -75,6 +76,6 @@ h1.member-name {
 }
 
 h2.member-position {
-	text-transform: uppercase;;
+	text-transform: uppercase;
 	padding-top: 0.25em;
 }
