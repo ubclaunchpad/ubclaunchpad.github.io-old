@@ -1,0 +1,183 @@
+// Styles for the navigation bar
+
+@import 'utils/_colors.scss';
+@import './utils/_animation.scss';
+@import './utils/_breakpoints.scss';
+
+// Navbar element font sizes are determined based on navbar height
+$navbar-height: 80pt;
+$collapsed-navbar-height: 60pt;
+
+$tablet-navbar-height: 70pt;
+$tablet-collapsed-navbar-height: 50pt;
+
+$phablet-navbar-height: 60pt;
+$phablet-collapsed-navbar-height: 40pt;
+
+// Horizontal navbar padding
+$navbar-padding: 6em;
+$navbar-padding-tablet: 2em;
+$navbar-padding-phablet: 1em;
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  font-family: "Lato", sans-serif;
+
+  @media screen and (max-width: $phablet) {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  transition: background-color 0.5s, height 0.5s;
+
+  h1 a {
+    transition: font-size 0.5s, line-height 0.5s, color 0.5s;
+  }
+
+  li a {
+    transition: line-height 0.5s, padding 0.5s, color 0.5s;
+  }
+
+  &.collapsed {
+    background-color: white;
+    height: $collapsed-navbar-height;
+    border-bottom: 0.5px solid $lightest-grey;
+
+    @media screen and (min-width: $tablet) and (max-width: $laptop) {
+      height: $tablet-collapsed-navbar-height;
+    }
+
+    @media screen and (min-width: $phablet) and (max-width: $tablet) {
+      height: $phablet-collapsed-navbar-height;
+    }
+
+    h1 a {
+      font-size: $collapsed-navbar-height / 4;
+      line-height: $collapsed-navbar-height;
+      color: $dark-grey;
+
+      @media screen and (min-width: $tablet) and (max-width: $laptop) {
+        font-size: $tablet-collapsed-navbar-height / 4;
+        line-height: $tablet-collapsed-navbar-height;
+      }
+
+      @media screen and (min-width: $phablet) and (max-width: $tablet) {
+        font-size: $phablet-collapsed-navbar-height / 4;
+        line-height: $phablet-collapsed-navbar-height;
+      }
+    }
+
+    #navbar-nav li a {
+      line-height: $collapsed-navbar-height;
+      padding-top: $collapsed-navbar-height * 3/8;
+      padding-bottom: $collapsed-navbar-height * 3/8;
+      color: $dark-grey;
+
+      &.active {
+        color: $primary;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $laptop) {
+        line-height: $tablet-collapsed-navbar-height;
+        padding-top: $tablet-collapsed-navbar-height * 3/8;
+        padding-bottom: $tablet-collapsed-navbar-height * 3/8;
+      }
+
+      @media screen and (min-width: $phablet) and (max-width: $tablet) {
+        line-height: $phablet-collapsed-navbar-height;
+        padding-top: $phablet-collapsed-navbar-height * 3/8;
+        padding-bottom: $phablet-collapsed-navbar-height
+      }
+    }
+  }
+
+  &.enlarged {
+    background-color: transparent;
+    height: $navbar-height;
+
+    h1 a {
+      font-size: $navbar-height / 4;
+      line-height: $navbar-height;
+      color: white;
+
+      @media screen and (min-width: $tablet) and (max-width: $laptop) {
+        font-size: $tablet-navbar-height / 4;
+        line-height: $tablet-navbar-height;
+      }
+
+      @media screen and (min-width: $phablet) and (max-width: $tablet) {
+        font-size: $phablet-navbar-height / 4;
+        line-height: $phablet-navbar-height;
+      }
+    }
+
+    #navbar-nav li a {
+      line-height: $navbar-height;
+      padding-top: $navbar-height * 3/8;
+      padding-bottom: $navbar-height * 3/8;
+      color: white;
+
+      &.active {
+        color: $primary;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: $laptop) {
+        line-height: $tablet-navbar-height;
+        padding-top: $tablet-navbar-height * 3/8;
+        padding-bottom: $tablet-navbar-height * 3/8;
+      }
+
+      @media screen and (min-width: $phablet) and (max-width: $tablet) {
+        line-height: $phablet-navbar-height;
+        padding-top: $phablet-navbar-height * 3/8;
+        padding-bottom: $phablet-navbar-height
+      }
+    }
+  }
+}
+
+#navbar-header {
+  padding-left: $navbar-padding;
+  @media screen and (min-width: $tablet) and (max-width: $laptop) {
+    padding-left: $navbar-padding-tablet;
+  }
+
+  @media screen and (min-width: $phablet) and (max-width: $tablet) {
+    padding-left: $navbar-padding-phablet;
+  }
+
+  h1 {
+    letter-spacing: 4pt;
+    font-weight: 300;
+  }
+}
+
+#navbar-nav {
+  padding-right: $navbar-padding;
+  @media screen and (min-width: $tablet) and (max-width: $laptop) {
+    padding-right: $navbar-padding-tablet;
+  }
+
+  @media screen and (min-width: $phablet) and (max-width: $tablet) {
+    padding-right: $navbar-padding-phablet;
+  }
+
+  li {
+    display: inline;
+
+    a {
+      padding: 0 1em;
+      letter-spacing: 2pt;
+      font-weight: 400;
+
+      @media screen and (min-width: $phablet) and (max-width: $tablet) {
+        padding: 0 0.5em;
+      }
+    }
+  }
+}

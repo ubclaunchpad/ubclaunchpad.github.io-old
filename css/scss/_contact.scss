@@ -1,0 +1,32 @@
+// Styles for the `Contact` section
+
+#contact {
+	background-color: $darkest-grey;
+	padding: 2em;
+	text-align: center;
+
+	h1 {
+		color: $background-lighter;
+	}
+
+	.row {
+		flex-direction: row;
+	}
+
+	.icon {
+		display: inline-block;
+		padding: 1em;
+
+		a {
+			color: $background-lighter;
+
+			&:hover {
+				color: $primary-lighter;
+			}
+
+			&:active, &:focus {
+				color: $primary-light;
+			}
+		}
+	}
+}
