@@ -1,0 +1,23 @@
+---
+  stylesheets:
+    - /css/blog.css
+---
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header-blog.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+  </body>
+
+  {% include scripts.html %}
+
+</html>

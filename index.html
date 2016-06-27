@@ -1,44 +1,21 @@
+---
+  scripts:
+    - /js/nav.js
+    - /js/sponsors.js
+    - /js/accordion.js
+
+  stylesheets:
+    - /css/site.css
+---
+
 <!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Launch Pad is UBC's one and only student-run software incubator.">
-    <link rel="shortcut icon" href="img/favicon.ico">
+<html>
 
-    <title>UBC Launch Pad</title>
-
-    <link href="css/stylesheets/site.css" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-  </head>
+  {% include head.html %}
 
   <body>
-    <!-- NAV -->
-    <div id="navbar" class="enlarged">
-      <div id="navbar-header" class="left">
-        <h1>
-          <a href="/" class="navbar header">UBC LAUNCH PAD</a>
-        </h1>
-      </div>
-      <div id="navbar-nav" class="right">
-        <ul>
-          <li>
-            <a id="nav-about" href="#about">ABOUT</a>
-          </li>
-          <li>
-            <a id="nav-team" href="#team">TEAM</a>
-          </li>
-          <li>
-            <a id="nav-sponsors" href="#sponsors">SPONSORS</a>
-          </li>
-          <li>
-            <a id="nav-contact" href="#contact">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+
+    {% include header-home.html %}
 
     <!-- BANNER -->
     <div id="banner">
@@ -315,33 +292,9 @@
         <div class="sponsor" id="github"></div>
       </a>
     </div>
-    <div id="contact">
-      <h1>Contact Us</h1>
-      <div class="row">
-        <div class="icon">
-          <a href="https://www.facebook.com/ubclaunchpad">
-            <i class="fa fa-lg fa-facebook"></i>
-          </a>
-        </div>
-        <div class="icon">
-          <a href="https://www.instagram.com/ubclaunchpad/">
-            <i class="fa fa-lg fa-instagram"></i>
-          </a>
-        </div>
-        <div class="icon">
-          <a href="https://www.linkedin.com/company/ubc-launch-pad">
-            <i class="fa fa-lg fa-linkedin"></i>
-          </a>
-        </div>
-        <div class="icon">
-          <a href="mailto:president@ubclaunchpad.com">
-            <i class="fa fa-lg fa-envelope"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <script src="js/accordion.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/sponsors.js"></script>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+
   </body>
 </html>

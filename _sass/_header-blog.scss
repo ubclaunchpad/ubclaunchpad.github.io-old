@@ -1,0 +1,29 @@
+@import './utils/_colors.scss';
+
+#navbar {
+	font-family: "Lato", sans-serif;
+	height: 6em;
+	padding-left: 1em;
+	margin-top: 1em;
+
+	a {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+	}
+
+	img {
+		display: inline;
+		height: 4em;
+		width: 4em;
+		z-index: 100;
+	}
+
+	h1 {
+		display: inline;
+		font-size: 1.5em;
+		font-weight: 200;
+		padding: 0;
+		color: $dark-grey;
+	}
+}

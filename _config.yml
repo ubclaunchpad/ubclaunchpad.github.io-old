@@ -1,0 +1,25 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: UBC Launch Pad
+email: president@ubclaunchpad.com
+description: Launch Pad is UBC's one and only student-run software incubator.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: http://localhost:888
+# url: "http://www.ubclaunchpad.com" # the base hostname & protocol for your site
+permalink: /blog/:categories/:year/:month/:day/:title.html
+
+stylesheets:
+  - https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css
+  - http://fonts.googleapis.com/css?family=Lato:300,400
+  - http://fonts.googleapis.com/css?family=Open+Sans:300,400,700
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
