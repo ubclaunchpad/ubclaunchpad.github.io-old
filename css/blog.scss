@@ -1,6 +1,9 @@
 ---
+# YAML front matter required as this file is processed by Jekyll
 ---
 
 @import './_base.scss';
 @import './_header-blog.scss';
+@import './_blog.scss';
+@import './_post.scss';
 @import './_contact.scss';

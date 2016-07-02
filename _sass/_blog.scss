@@ -1,0 +1,16 @@
+// Styles for the blog homepage
+
+@import './utils/_colors.scss';
+@import './utils/_breakpoints.scss';
+
+.blog-container {
+	padding: 40pt 20%;
+
+	@media screen and (min-width: $phablet) and (max-width: $laptop) {
+		padding: 20pt 10%;
+	}
+
+	@media screen and (max-width: $phablet) {
+		padding: 10pt 5%;
+	}
+}

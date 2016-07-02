@@ -6,18 +6,20 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+	{% include head.html %}
 
-  <body>
+	<body>
 
-    {% include header-blog.html %}
+		{% include header-blog.html %}
 
-    {{ content }}
+		<div class="blog-container">
+			{{ content }}
+		</div>
 
-    {% include footer.html %}
+		{% include footer.html %}
 
-  </body>
+	</body>
 
-  {% include scripts.html %}
+	{% include scripts.html %}
 
 </html>

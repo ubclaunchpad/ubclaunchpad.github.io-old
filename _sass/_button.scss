@@ -3,25 +3,25 @@
 @import './utils/_colors.scss';
 
 a.button {
-  font-family: inherit;
-  font-size: 1.25em;
-  font-weight: 300;
-  letter-spacing: 1pt;
-  color: white;
+	font-family: inherit;
+	font-size: 1.25em;
+	font-weight: 300;
+	letter-spacing: 1pt;
+	color: white;
 
-  display: inline-block;
-  padding: 1em;
-  border-radius: 2px;
-  border-width: 0;
+	display: inline-block;
+	padding: 1em;
+	border-radius: 2px;
+	border-width: 0;
 
-  transition: background-color, 0.5s;
-  background-color: $primary;
+	transition: background-color, 0.5s;
+	background-color: $primary;
 
-  &:hover {
-    background-color: $primary-light;
-  }
+	&:hover {
+		background-color: $primary-light;
+	}
 
-  &:focus, &:active {
-    background-color: $primary-lighter;
-  }
+	&:focus, &:active {
+		background-color: $primary-lighter;
+	}
 }

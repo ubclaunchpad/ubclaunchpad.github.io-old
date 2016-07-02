@@ -1,0 +1,20 @@
+@import './utils/_colors.scss';
+@import './utils/_breakpoints.scss';
+
+header.post-header {
+	padding-bottom: 20pt;
+}
+
+h1.post-title {
+	padding: 0;
+	font-weight: 300;
+}
+
+p.post-meta {
+	font-weight: 400;
+	color: $light-grey;
+}
+
+.post-content > * {
+	padding-bottom: 12pt;
+}
