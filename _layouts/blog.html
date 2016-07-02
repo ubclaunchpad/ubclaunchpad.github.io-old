@@ -1,25 +1,11 @@
 ---
-  stylesheets:
-    - /css/blog.css
+layout: root
+stylesheets:
+  - /css/blog.css
 ---
 
-<!DOCTYPE html>
-<html>
+{% include header-blog.html %}
 
-	{% include head.html %}
-
-	<body>
-
-		{% include header-blog.html %}
-
-		<div class="blog-container">
-			{{ content }}
-		</div>
-
-		{% include footer.html %}
-
-	</body>
-
-	{% include scripts.html %}
-
-</html>
+<div class="blog-container">
+	{{ content }}
+</div>
