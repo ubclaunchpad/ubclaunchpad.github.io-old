@@ -1,6 +1,7 @@
 // Footer navigation
 
 footer {
+	font-family: "Lato", sans-serif;
 	@media screen and (max-width: $phablet) {
 		font-size: 0.75em;
 	}
@@ -13,7 +14,7 @@ footer {
 
 	a, p {
 		display: inline-block;
-		font-weight: 300;
+		font-weight: 100;
 		letter-spacing: 2pt;
 	}
 
