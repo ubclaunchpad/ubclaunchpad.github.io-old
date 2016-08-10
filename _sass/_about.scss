@@ -1,0 +1,29 @@
+// Styles for the `About` section
+
+@import './utils/_colors.scss';
+
+$icon-size: 8em;
+
+#about {
+	background-color: $background;
+	padding: 4em;
+	text-align: center;
+	@media screen and (max-width: $tablet) {
+		padding: 2em;
+	}
+
+	.icon-container {
+		display: inline-block;
+		margin: 0 auto;
+		width: $icon-size;
+		height: $icon-size;
+		border-radius: $icon-size / 2;
+		background-color: $primary-light;
+	}
+
+	.icon-large {
+		color: $background;
+		font-size: $icon-size / 3;
+		padding: $icon-size/8 0;
+	}
+}

@@ -1,0 +1,21 @@
+# This config file is meant for settings that affect the whole site.
+# If you need to edit this file, ensure you restart the Jekyll process.
+
+# Site settings
+title: UBC Launch Pad
+email: president@ubclaunchpad.com
+description: Launch Pad is UBC's one and only student-run software incubator.
+baseurl: ""
+url: http://localhost:888
+# url: "http://www.ubclaunchpad.com" # the base hostname & protocol for your site
+permalink: /blog/:categories/:year/:month/:day/:title.html
+
+stylesheets:
+  - https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css
+  - http://fonts.googleapis.com/css?family=Lato:100,300,400
+  - http://fonts.googleapis.com/css?family=Open+Sans:300,400
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass

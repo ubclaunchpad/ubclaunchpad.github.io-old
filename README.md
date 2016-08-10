@@ -4,33 +4,31 @@ Welcome to the source code for the Launch Pad site! The site is designed to look
 
 ## Installation
 
-Clone the repository
+Install Jekyll
+```sh
+gem install jekyll
 ```
+
+Clone the repository
+```sh
 git clone https://github.com/ubclaunchpad/ubclaunchpad.github.io.git
 cd ubclaunchpad.github.io
 ```
 
-Start a local server
-```
-python -m SimpleHTTPServer 8888
+Compile the site and start a local server
+```sh
+jekyll serve
 ```
 
-The site will now be running on port 8888.
+The site will now be running on port 4000. You can specify a different port with the `--port` flag.
 
 ## Development
 
+### Jekyll
+We use [Jekyll](https://jekyllrb.com) for compiling our repository to a well-formed static site that is easily deployable on Github Pages. Before making substantial changes to the site, read the [Jekyll docs](https://jekyllrb.com/docs/home/).
+
 ### CSS
-All CSS goes in the `css` directory. All stylesheets are written in [SCSS](http://sass-lang.com) and transpiled to CSS for distribution.
-
-To watch stylesheets for changes.
-```
-cd css && compass watch
-```
-
-If you don't happen to have Compass installed.
-```
-gem install compass
-```
+All stylesheets goes in the `_sass` directory. All stylesheets are written in [SCSS](http://sass-lang.com) and transpiled to CSS for distribution. Jekyll will automatically watch all `scss` files for changes and reload the site whenever a file is saved.
 
 ### JavaScript
 All JavaScript belongs in the `js` directory. We strictly use ES5 and no transpilation at the moment, so no funny business! As a general rule, if you can do something either in CSS or in JavaScript, do it in CSS.
@@ -41,29 +39,49 @@ Before contributing, please test the site on at least the current versions of Ch
 
 ## Structure
 
-### Navigation
-HTML: `<div id="navbar">…</div>`
-CSS: `_nav.scss`
-JavaScript: `nav.js`
+### Home Page
 
-### Banner
-HTML: `<div id="banner">…</div>`
-CSS: `_banner.scss`
+#### Header
+HTML: `<div id="navbar">...</div>`  
+CSS: `_header-home.scss`  
+JavaScript: `nav.js`  
 
-### About
-HTML: `<div id="about">…</div>`
-CSS: `_about.scss`
+#### Banner
+HTML: `<div id="banner">...</div>`  
+CSS: `_banner.scss`  
 
-### Team
-HTML: `<div id="team">…</div>`
-CSS: `_team.scss`
-JavaScript: `accordion.js`
+#### About
+HTML: `<div id="about">...</div>`  
+CSS: `_about.scss`  
 
-### Sponsors
-HTML: `<div id="sponsors">…</div>`
-CSS: `_sponsors.scss`
-JavaScript: `sponsors.js`
+#### Team
+HTML: `<div id="team">...</div>`  
+CSS: `_team.scss`  
+JavaScript: `accordion.js`  
 
-### Contact
-HTML: `<div id="contact">…</div>`
-CSS: `_contact.scss`
+#### Sponsors
+HTML: `<div id="sponsors">...</div>`  
+CSS: `_sponsors.scss`  
+JavaScript: `sponsors.js`  
+
+#### Footer
+HTML: `<footer>...</footer>`  
+CSS: `_contact.scss`, `_footer.scss`  
+
+### Blog
+
+#### Header
+HTML: `<div id="navbar">...</div>`  
+CSS: `_header-blog.scss`  
+
+#### Home
+HTML: `<div id="blog-home">...</div>`  
+CSS: `_blog.scss`  
+
+#### Post
+HTML: `<article class="post">...</article>`  
+CSS: `_post.scss`  
+
+#### Footer
+HTML: `<footer>...</footer>`  
+CSS: `_contact.scss`, `_footer.scss`  

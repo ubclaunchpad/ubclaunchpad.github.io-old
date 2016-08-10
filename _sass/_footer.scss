@@ -1,0 +1,24 @@
+// Footer navigation
+
+footer {
+	font-family: "Lato", sans-serif;
+	@media screen and (max-width: $phablet) {
+		font-size: 0.75em;
+	}
+}
+
+#nav-footer {
+	background-color: $darkest-grey;
+	padding-bottom: 2em;
+	text-align: center;
+
+	a, p {
+		display: inline-block;
+		font-weight: 100;
+		letter-spacing: 2pt;
+	}
+
+	p {
+		padding: 0 1em;
+	}
+}

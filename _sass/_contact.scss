@@ -2,11 +2,13 @@
 
 #contact {
 	background-color: $darkest-grey;
-	padding: 2em;
+	padding-top: 2em;
+	padding-bottom: 1em;
 	text-align: center;
 
 	h1 {
 		color: $background-lighter;
+		padding: 0;
 	}
 
 	.row {

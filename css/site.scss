@@ -1,8 +1,13 @@
+---
+# YAML font matter required as this file is processed by Jekyll
+---
+
 @import './_base.scss';
 @import './_button.scss';
-@import './_nav.scss';
+@import './_header-home.scss';
 @import './_banner.scss';
 @import './_about.scss';
 @import './_team.scss';
 @import './_sponsors.scss';
 @import './_contact.scss';
+@import './_footer.scss';
