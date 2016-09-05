@@ -90,7 +90,7 @@ function getSections () {
   var cumulativeHeight = document.getElementById('banner').offsetHeight;
   var elements = [];
 
-  return ['about', 'team', 'sponsors', 'contact'].map(function(id, i) {
+  return ['about', 'team', 'join', 'sponsors', 'contact'].map(function(id, i) {
     var el = document.getElementById(id);
     var navEl = document.getElementById('nav-' + id);
 
