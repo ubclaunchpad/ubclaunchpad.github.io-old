@@ -709,3 +709,30 @@ h2.member-position {
 #contact .icon a:active, #contact .icon a:focus {
   color: #55bc9b;
 }
+
+/* line 7, ../scss/_join.scss */
+#join {
+  padding: 4em;
+  text-align: center;
+}
+@media screen and (max-width: 840px) {
+  /* line 7, ../scss/_join.scss */
+  #join {
+    padding: 2em;
+  }
+}
+/* line 14, ../scss/_join.scss */
+#join .icon-container {
+  display: inline-block;
+  margin: 0 auto;
+  width: 8em;
+  height: 8em;
+  border-radius: 4em;
+  background-color: #55bc9b;
+}
+/* line 23, ../scss/_join.scss */
+#join .icon-large {
+  color: #e9eaea;
+  font-size: 2.66667em;
+  padding: 1em 0;
+}
