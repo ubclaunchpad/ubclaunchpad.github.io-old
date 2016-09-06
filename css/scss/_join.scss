@@ -1,6 +1,7 @@
 // Styles for the `Join` section
 
 @import './utils/_colors.scss';
+@import './utils/_breakpoints.scss';
 
 $icon-size: 8em;
 
@@ -11,18 +12,19 @@ $icon-size: 8em;
     padding: 2em;
   }
 
-  .icon-container {
-    display: inline-block;
-    margin: 0 auto;
-    width: $icon-size;
-    height: $icon-size;
-    border-radius: $icon-size / 2;
-    background-color: $primary-light;
-  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-  .icon-large {
-    color: $background;
-    font-size: $icon-size / 3;
-    padding: $icon-size/8 0;
+    a {
+      padding: 1em 2em;
+
+      @media screen and (max-width: $laptop) {
+        padding: 1em 1em;
+      }
+    }
   }
 }
