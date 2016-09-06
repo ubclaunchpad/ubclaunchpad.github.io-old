@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /sponsors.html
-Disallow: /sponsors
