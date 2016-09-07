@@ -90,7 +90,10 @@ function getSections () {
   var cumulativeHeight = document.getElementById('banner').offsetHeight;
   var elements = [];
 
-  return ['about', 'team', 'join', 'sponsors', 'contact'].map(function(id, i) {
+  // NOTE: when adding or removing nav sections, update this list.
+  var sections = ['about', 'team', 'join', 'sponsors', 'contact']
+
+  return sections.map(function (id, i) {
     var el = document.getElementById(id);
     var navEl = document.getElementById('nav-' + id);
 
@@ -99,7 +102,7 @@ function getSections () {
     var stop = cumulativeHeight;
 
     // Special case for last section
-    if (i === 3) stop = Infinity;
+    if (i === sections.length - 1) stop = Infinity;
 
     return {
       navElement: navEl,
