@@ -10,9 +10,10 @@ a.button {
   color: white;
 
   display: inline-block;
-  padding: 1em;
-  border-radius: 2px;
+  padding: 0.62em 1em;
+  border-radius: 4px;
   border-width: 0;
+  text-decoration: none;
 
   transition: background-color, 0.5s;
   background-color: $primary;

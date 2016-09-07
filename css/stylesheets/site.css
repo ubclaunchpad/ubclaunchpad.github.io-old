@@ -144,17 +144,18 @@ a.button {
   letter-spacing: 1pt;
   color: white;
   display: inline-block;
-  padding: 1em;
-  border-radius: 2px;
+  padding: 0.62em 1em;
+  border-radius: 4px;
   border-width: 0;
+  text-decoration: none;
   transition: background-color, 0.5s;
   background-color: #1ca57a;
 }
-/* line 20, ../scss/_button.scss */
+/* line 21, ../scss/_button.scss */
 a.button:hover {
   background-color: #55bc9b;
 }
-/* line 24, ../scss/_button.scss */
+/* line 25, ../scss/_button.scss */
 a.button:focus, a.button:active {
   background-color: #8ed2bd;
 }
@@ -577,7 +578,7 @@ a.accordion:hover {
 }
 /* line 36, ../scss/_team.scss */
 a.accordion:nth-child(4n-1) {
-  background-color: #f1f1f1;
+  background-color: #efefef;
 }
 /* line 39, ../scss/_team.scss */
 a.accordion:nth-child(4n-1):hover {
@@ -628,7 +629,7 @@ h2.member-position {
 
 /* line 6, ../scss/_sponsors.scss */
 #sponsors {
-  background-color: #f8f8f8;
+  background-color: #fafafa;
   text-align: center;
   padding: 4em;
   transition: background-color, 0.75s;
@@ -687,7 +688,7 @@ h2.member-position {
 }
 /* line 8, ../scss/_contact.scss */
 #contact h1 {
-  color: #f8f8f8;
+  color: #f4f5f4;
 }
 /* line 12, ../scss/_contact.scss */
 #contact .row {
@@ -700,7 +701,7 @@ h2.member-position {
 }
 /* line 20, ../scss/_contact.scss */
 #contact .icon a {
-  color: #f8f8f8;
+  color: #f4f5f4;
 }
 /* line 23, ../scss/_contact.scss */
 #contact .icon a:hover {
@@ -713,6 +714,7 @@ h2.member-position {
 
 /* line 8, ../scss/_join.scss */
 #join {
+  background-color: #f4f5f4;
   padding: 4em;
   text-align: center;
 }
@@ -722,7 +724,7 @@ h2.member-position {
     padding: 2em;
   }
 }
-/* line 15, ../scss/_join.scss */
+/* line 16, ../scss/_join.scss */
 #join .links {
   display: flex;
   align-items: center;
@@ -730,13 +732,26 @@ h2.member-position {
   flex-direction: row;
   flex-wrap: wrap;
 }
-/* line 22, ../scss/_join.scss */
+@media screen and (max-width: 480px) {
+  /* line 16, ../scss/_join.scss */
+  #join .links {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+/* line 28, ../scss/_join.scss */
 #join .links a {
-  padding: 1em 2em;
+  margin: 1em 1em;
 }
 @media screen and (max-width: 1080px) {
-  /* line 22, ../scss/_join.scss */
+  /* line 28, ../scss/_join.scss */
   #join .links a {
-    padding: 1em 1em;
+    margin: 0.75em 0.5em;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 28, ../scss/_join.scss */
+  #join .links a {
+    margin: 0.25em;
   }
 }

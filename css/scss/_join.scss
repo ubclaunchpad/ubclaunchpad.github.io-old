@@ -6,6 +6,7 @@
 $icon-size: 8em;
 
 #join {
+  background-color: $background-lighter;
   padding: 4em;
   text-align: center;
   @media screen and (max-width: $tablet) {
@@ -19,11 +20,20 @@ $icon-size: 8em;
     flex-direction: row;
     flex-wrap: wrap;
 
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
     a {
-      padding: 1em 2em;
+      margin: 1em 1em;
 
       @media screen and (max-width: $laptop) {
-        padding: 1em 1em;
+        margin: 0.75em 0.5em;
+      }
+
+      @media screen and (max-width: $mobile) {
+        margin: 0.25em;
       }
     }
   }

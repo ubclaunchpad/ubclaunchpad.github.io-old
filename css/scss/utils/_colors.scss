@@ -18,8 +18,9 @@ $lightest-grey: mix($darkest-grey, white, 20%);
 
 // Backgrounds
 $background: mix($darkest-grey, white, 10%);
-$background-light: mix($darkest-grey, white, 6.66%);
-$background-lighter: mix($darkest-grey, white, 3.33%);
+$background-light: mix($darkest-grey, white, 7.5%);
+$background-lighter: mix($darkest-grey, white, 5%);
+$background-lightest: mix($darkest-grey, white, 2.5%);
 
 // Bannery opacity
 $banner-dark: rgba(black, 0.8);
