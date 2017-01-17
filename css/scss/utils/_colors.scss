@@ -10,7 +10,9 @@ $complementary-light: mix($complementary, white, 75%);
 $complementary-lighter: mix($complementary, white, 50%);
 
 // Text
-$darkest-grey: rgb(39, 45, 44);
+//$darkest-grey: rgb(39, 45, 44);
+$darkest-grey: #222;
+
 $dark-grey: mix($darkest-grey, white, 80%);
 $grey: mix($darkest-grey, white, 60%);
 $light-grey: mix($darkest-grey, white, 40%);

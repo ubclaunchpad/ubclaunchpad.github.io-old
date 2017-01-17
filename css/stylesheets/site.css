@@ -26,14 +26,14 @@
 html {
   font-family: "Open Sans";
   font-size: 12pt;
-  color: #525756;
+  color: #4e4e4e;
 }
 
 /* line 32, ../scss/_base.scss */
 h1 {
   font-size: 1.8em;
   font-weight: 900;
-  color: #272d2c;
+  color: #222;
   padding-bottom: 1em;
   text-transform: uppercase;
 }
@@ -208,7 +208,7 @@ a.button:focus, a.button:active {
 #navbar.collapsed {
   background-color: white;
   height: 60pt;
-  border-bottom: 0.5px solid #d4d5d5;
+  border-bottom: 0.5px solid lightgray;
 }
 @media screen and (min-width: 900px) and (max-width: 1080px) {
   /* line 46, ../scss/_nav.scss */
@@ -226,7 +226,7 @@ a.button:focus, a.button:active {
 #navbar.collapsed h1 a {
   font-size: 15pt;
   line-height: 60pt;
-  color: #525756;
+  color: #4e4e4e;
 }
 @media screen and (min-width: 900px) and (max-width: 1080px) {
   /* line 59, ../scss/_nav.scss */
@@ -247,7 +247,7 @@ a.button:focus, a.button:active {
   line-height: 60pt;
   padding-top: 22.5pt;
   padding-bottom: 22.5pt;
-  color: #525756;
+  color: #4e4e4e;
 }
 /* line 81, ../scss/_nav.scss */
 #navbar.collapsed #navbar-nav li a.active {
@@ -533,7 +533,7 @@ a.button:focus, a.button:active {
 }
 /* line 7, ../scss/_about.scss */
 #about {
-  background-color: #e9eaea;
+  background-color: #e9e9e9;
   padding: 4em;
   text-align: center;
 }
@@ -554,7 +554,7 @@ a.button:focus, a.button:active {
 }
 /* line 24, ../scss/_about.scss */
 #about .icon-large {
-  color: #e9eaea;
+  color: #e9e9e9;
   font-size: 2.66667em;
   padding: 1em 0;
 }
@@ -587,8 +587,8 @@ a.accordion {
   text-decoration: none;
   box-sizing: border-box;
   border-radius: 0;
-  color: #272d2c;
-  background-color: #e9eaea;
+  color: #222;
+  background-color: #e9e9e9;
 }
 /* line 32, ../scss/_team.scss */
 a.accordion:hover {
@@ -596,7 +596,7 @@ a.accordion:hover {
 }
 /* line 36, ../scss/_team.scss */
 a.accordion:nth-child(4n-1) {
-  background-color: #efefef;
+  background-color: #eeeeee;
 }
 /* line 39, ../scss/_team.scss */
 a.accordion:nth-child(4n-1):hover {
@@ -647,7 +647,7 @@ h2.member-position {
 
 /* line 6, ../scss/_sponsors.scss */
 #sponsors {
-  background-color: #fafafa;
+  background-color: #f9f9f9;
   text-align: center;
   padding: 4em;
   transition: background-color, 0.75s;
@@ -700,43 +700,39 @@ h2.member-position {
 
 /* line 3, ../scss/_contact.scss */
 #contact {
-  background-color: #272d2c;
+  background-color: #222;
   padding: 2em;
   text-align: center;
 }
 /* line 8, ../scss/_contact.scss */
 #contact h1 {
-  color: #f4f5f4;
+  color: #f4f4f4;
 }
 /* line 12, ../scss/_contact.scss */
 #contact .row {
   flex-direction: row;
 }
 /* line 16, ../scss/_contact.scss */
-#contact .foot {
-  /*margin-left: 30%;*/
-}
-/* line 20, ../scss/_contact.scss */
 #contact .icon {
   display: inline-block;
   padding: 1em;
 }
-/* line 24, ../scss/_contact.scss */
+/* line 20, ../scss/_contact.scss */
 #contact .icon a {
-  color: #f4f5f4;
+  color: #f4f4f4;
 }
-/* line 27, ../scss/_contact.scss */
+/* line 23, ../scss/_contact.scss */
 #contact .icon a:hover {
   color: #8ed2bd;
 }
-/* line 31, ../scss/_contact.scss */
+/* line 27, ../scss/_contact.scss */
 #contact .icon a:active, #contact .icon a:focus {
   color: #55bc9b;
 }
 
 /* line 8, ../scss/_join.scss */
 #join {
-  background-color: #f4f5f4;
+  background-color: #f4f4f4;
   padding: 4em;
   text-align: center;
 }
