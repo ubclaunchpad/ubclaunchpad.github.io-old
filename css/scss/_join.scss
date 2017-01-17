@@ -37,4 +37,25 @@ $icon-size: 8em;
       }
     }
   }
+
+  .newPosition {
+    width: 30%;
+    cursor: pointer;
+    background: #eee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-bottom: 30px;
+    vertical-align: top;
+    display: inline-block;
+    height: 670px;
+    border: 1px solid #eee;
+    -webkit-transition: .6s;
+
+    &:hover {
+      box-shadow: #dedede 0px 0px 5px 5px;
+    }
+  }
+
 }

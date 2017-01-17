@@ -3,6 +3,21 @@
 @import 'utils/_colors.scss';
 @import './utils/_breakpoints.scss';
 
+::-moz-selection { 
+    color:$primary-light;
+    background: #dedede;
+}
+
+::-webkit-selection { 
+    color:$primary-light;
+    background: #dedede;
+}
+
+::selection {
+    color: $primary-light ;
+    background: #dedede;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +30,12 @@ html {
 }
 
 h1 {
-  font-size: 2.5em;
-  font-weight: 400;
-  letter-spacing: 2pt;
+  font-size: 1.8em;
+  font-weight: 900;
+  //letter-spacing: 2pt;
   color: $darkest-grey;
   padding-bottom: 1em;
+  text-transform: uppercase;
 
   @media screen and (max-width: $laptop) {
     font-size: 1.75em;

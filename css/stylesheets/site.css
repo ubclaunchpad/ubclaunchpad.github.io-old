@@ -1,38 +1,56 @@
 /* line 6, ../scss/_base.scss */
+::-moz-selection {
+  color: #55bc9b;
+  background: #dedede;
+}
+
+/* line 11, ../scss/_base.scss */
+::-webkit-selection {
+  color: #55bc9b;
+  background: #dedede;
+}
+
+/* line 16, ../scss/_base.scss */
+::selection {
+  color: #55bc9b;
+  background: #dedede;
+}
+
+/* line 21, ../scss/_base.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 11, ../scss/_base.scss */
+/* line 26, ../scss/_base.scss */
 html {
   font-family: "Open Sans";
   font-size: 12pt;
   color: #525756;
 }
 
-/* line 17, ../scss/_base.scss */
+/* line 32, ../scss/_base.scss */
 h1 {
-  font-size: 2.5em;
-  font-weight: 400;
-  letter-spacing: 2pt;
+  font-size: 1.8em;
+  font-weight: 900;
   color: #272d2c;
   padding-bottom: 1em;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 1080px) {
-  /* line 17, ../scss/_base.scss */
+  /* line 32, ../scss/_base.scss */
   h1 {
     font-size: 1.75em;
   }
 }
 @media screen and (max-width: 760px) {
-  /* line 17, ../scss/_base.scss */
+  /* line 32, ../scss/_base.scss */
   h1 {
     font-size: 1.5em;
   }
 }
 
-/* line 33, ../scss/_base.scss */
+/* line 49, ../scss/_base.scss */
 h2 {
   font-size: 1em;
   letter-spacing: 2pt;
@@ -43,12 +61,12 @@ h2 {
   color: #1ca57a;
 }
 
-/* line 43, ../scss/_base.scss */
+/* line 59, ../scss/_base.scss */
 p {
   font-weight: 300;
   line-height: 1.5em;
 }
-/* line 47, ../scss/_base.scss */
+/* line 63, ../scss/_base.scss */
 p.large {
   font-size: 1.25em;
   line-height: 2em;
@@ -57,60 +75,60 @@ p.large {
   padding-right: 8em;
 }
 @media screen and (max-width: 1300px) {
-  /* line 47, ../scss/_base.scss */
+  /* line 63, ../scss/_base.scss */
   p.large {
     padding-left: 4em;
     padding-right: 4em;
   }
 }
 @media screen and (max-width: 1080px) {
-  /* line 47, ../scss/_base.scss */
+  /* line 63, ../scss/_base.scss */
   p.large {
     padding-left: 0;
     padding-right: 0;
     font-size: 1em;
   }
 }
-/* line 66, ../scss/_base.scss */
+/* line 82, ../scss/_base.scss */
 p.small {
   padding: 0 2em;
   line-height: 2em;
 }
 @media screen and (max-width: 900px) {
-  /* line 66, ../scss/_base.scss */
+  /* line 82, ../scss/_base.scss */
   p.small {
     padding: 0 1em;
     line-height: 1.5em;
   }
 }
 
-/* line 77, ../scss/_base.scss */
+/* line 93, ../scss/_base.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 81, ../scss/_base.scss */
+/* line 97, ../scss/_base.scss */
 a {
   font-size: inherit;
   text-decoration: none;
   color: #e72750;
 }
-/* line 86, ../scss/_base.scss */
+/* line 102, ../scss/_base.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 91, ../scss/_base.scss */
+/* line 107, ../scss/_base.scss */
 .right {
   float: right;
 }
 
-/* line 95, ../scss/_base.scss */
+/* line 111, ../scss/_base.scss */
 .left {
   float: left;
 }
 
-/* line 99, ../scss/_base.scss */
+/* line 115, ../scss/_base.scss */
 .row {
   width: 100%;
   display: flex;
@@ -118,19 +136,19 @@ a:hover {
   justify-content: center;
 }
 @media screen and (max-width: 760px) {
-  /* line 99, ../scss/_base.scss */
+  /* line 115, ../scss/_base.scss */
   .row {
     flex-direction: column;
   }
 }
 
-/* line 109, ../scss/_base.scss */
+/* line 125, ../scss/_base.scss */
 .col {
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (max-width: 760px) {
-  /* line 109, ../scss/_base.scss */
+  /* line 125, ../scss/_base.scss */
   .col {
     padding: 1em;
   }
@@ -695,19 +713,23 @@ h2.member-position {
   flex-direction: row;
 }
 /* line 16, ../scss/_contact.scss */
+#contact .foot {
+  /*margin-left: 30%;*/
+}
+/* line 20, ../scss/_contact.scss */
 #contact .icon {
   display: inline-block;
   padding: 1em;
 }
-/* line 20, ../scss/_contact.scss */
+/* line 24, ../scss/_contact.scss */
 #contact .icon a {
   color: #f4f5f4;
 }
-/* line 23, ../scss/_contact.scss */
+/* line 27, ../scss/_contact.scss */
 #contact .icon a:hover {
   color: #8ed2bd;
 }
-/* line 27, ../scss/_contact.scss */
+/* line 31, ../scss/_contact.scss */
 #contact .icon a:active, #contact .icon a:focus {
   color: #55bc9b;
 }
@@ -754,4 +776,24 @@ h2.member-position {
   #join .links a {
     margin: 0.25em;
   }
+}
+/* line 41, ../scss/_join.scss */
+#join .newPosition {
+  width: 30%;
+  cursor: pointer;
+  background: #eee;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  margin: 10px;
+  margin-bottom: 30px;
+  vertical-align: top;
+  display: inline-block;
+  height: 670px;
+  border: 1px solid #eee;
+  -webkit-transition: .6s;
+}
+/* line 56, ../scss/_join.scss */
+#join .newPosition:hover {
+  box-shadow: #dedede 0px 0px 5px 5px;
 }
