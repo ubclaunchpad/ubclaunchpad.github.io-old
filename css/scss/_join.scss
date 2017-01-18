@@ -28,6 +28,13 @@ $icon-size: 8em;
           flex-shrink: 1;
           min-width: 300px;
           padding: 20px 0 20px 0;
+          -webkit-transition: all .6s;
+          -moz-transition: all .6s;
+          -o-transition: all .6s;
+
+          &:hover {
+            box-shadow: #dedede 0 0 10px 10px;
+          }
 
           @media screen and (max-width: $tablet) {
             width:40%;
