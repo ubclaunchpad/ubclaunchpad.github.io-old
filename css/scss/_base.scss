@@ -4,17 +4,17 @@
 @import './utils/_breakpoints.scss';
 
 ::-moz-selection { 
-    color:$primary-light;
+    //color:$primary-light;
     background: #dedede;
 }
 
 ::-webkit-selection { 
-    color:$primary-light;
+    //color:$primary-light;
     background: #dedede;
 }
 
 ::selection {
-    color: $primary-light ;
+    //color: $primary-light ;
     background: #dedede;
 }
 

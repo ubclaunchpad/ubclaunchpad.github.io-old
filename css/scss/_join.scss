@@ -13,6 +13,34 @@ $icon-size: 8em;
     padding: 2em;
   }
 
+  .contain {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contain .newPosition {
+    background: #eee;
+    margin: 10px;
+    width: 30%;
+    flex-shrink: 1;
+    min-width: 300px;
+    padding: 20px 0 20px 0;
+
+    @media screen and (max-width: $tablet) {
+      width:40%;
+    }
+
+    @media screen and (max-width: $mobile) {
+      width:80%;
+      background: none;
+    }    
+
+  }
+
   .links {
     display: flex;
     align-items: center;
@@ -35,26 +63,6 @@ $icon-size: 8em;
       @media screen and (max-width: $mobile) {
         margin: 0.25em;
       }
-    }
-  }
-
-  .newPosition {
-    width: 30%;
-    cursor: pointer;
-    background: #eee;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    box-sizing: border-box;
-    margin: 10px;
-    margin-bottom: 30px;
-    vertical-align: top;
-    display: inline-block;
-    height: 670px;
-    border: 1px solid #eee;
-    -webkit-transition: .6s;
-
-    &:hover {
-      box-shadow: #dedede 0px 0px 5px 5px;
     }
   }
 
