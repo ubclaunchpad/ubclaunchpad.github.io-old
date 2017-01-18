@@ -20,25 +20,24 @@ $icon-size: 8em;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  }
 
-  .contain .newPosition {
-    background: #eee;
-    margin: 10px;
-    width: 30%;
-    flex-shrink: 1;
-    min-width: 300px;
-    padding: 20px 0 20px 0;
+       .newPosition {
+          background: #eee;
+          margin: 10px;
+          width: 30%;
+          flex-shrink: 1;
+          min-width: 300px;
+          padding: 20px 0 20px 0;
 
-    @media screen and (max-width: $tablet) {
-      width:40%;
-    }
+          @media screen and (max-width: $tablet) {
+            width:40%;
+          }
 
-    @media screen and (max-width: $mobile) {
-      width:80%;
-      background: none;
-    }    
-
+          @media screen and (max-width: $mobile) {
+            width:80%;
+            background: none;
+          }    
+      }
   }
 
   .links {

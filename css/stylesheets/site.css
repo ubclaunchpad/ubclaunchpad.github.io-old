@@ -748,7 +748,7 @@ h2.member-position {
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 25, ../scss/_join.scss */
+/* line 24, ../scss/_join.scss */
 #join .contain .newPosition {
   background: #eee;
   margin: 10px;
@@ -758,19 +758,19 @@ h2.member-position {
   padding: 20px 0 20px 0;
 }
 @media screen and (max-width: 900px) {
-  /* line 25, ../scss/_join.scss */
+  /* line 24, ../scss/_join.scss */
   #join .contain .newPosition {
     width: 40%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 25, ../scss/_join.scss */
+  /* line 24, ../scss/_join.scss */
   #join .contain .newPosition {
     width: 80%;
     background: none;
   }
 }
-/* line 44, ../scss/_join.scss */
+/* line 43, ../scss/_join.scss */
 #join .links {
   display: flex;
   align-items: center;
@@ -779,24 +779,24 @@ h2.member-position {
   flex-wrap: wrap;
 }
 @media screen and (max-width: 480px) {
-  /* line 44, ../scss/_join.scss */
+  /* line 43, ../scss/_join.scss */
   #join .links {
     flex-direction: column;
     justify-content: flex-start;
   }
 }
-/* line 56, ../scss/_join.scss */
+/* line 55, ../scss/_join.scss */
 #join .links a {
   margin: 1em 1em;
 }
 @media screen and (max-width: 1080px) {
-  /* line 56, ../scss/_join.scss */
+  /* line 55, ../scss/_join.scss */
   #join .links a {
     margin: 0.75em 0.5em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 56, ../scss/_join.scss */
+  /* line 55, ../scss/_join.scss */
   #join .links a {
     margin: 0.25em;
   }
