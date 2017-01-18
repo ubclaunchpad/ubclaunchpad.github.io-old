@@ -756,13 +756,14 @@ h2.member-position {
   flex-shrink: 1;
   min-width: 300px;
   padding: 20px 0 20px 0;
+  cursor: pointer;
   -webkit-transition: all .6s;
   -moz-transition: all .6s;
   -o-transition: all .6s;
 }
-/* line 35, ../scss/_join.scss */
+/* line 36, ../scss/_join.scss */
 #join .contain .newPosition:hover {
-  box-shadow: #dedede 0 0 10px 10px;
+  box-shadow: #dedede 0 0 5px 5px;
 }
 @media screen and (max-width: 900px) {
   /* line 24, ../scss/_join.scss */
@@ -777,7 +778,7 @@ h2.member-position {
     background: none;
   }
 }
-/* line 50, ../scss/_join.scss */
+/* line 51, ../scss/_join.scss */
 #join .links {
   display: flex;
   align-items: center;
@@ -786,24 +787,24 @@ h2.member-position {
   flex-wrap: wrap;
 }
 @media screen and (max-width: 480px) {
-  /* line 50, ../scss/_join.scss */
+  /* line 51, ../scss/_join.scss */
   #join .links {
     flex-direction: column;
     justify-content: flex-start;
   }
 }
-/* line 62, ../scss/_join.scss */
+/* line 63, ../scss/_join.scss */
 #join .links a {
   margin: 1em 1em;
 }
 @media screen and (max-width: 1080px) {
-  /* line 62, ../scss/_join.scss */
+  /* line 63, ../scss/_join.scss */
   #join .links a {
     margin: 0.75em 0.5em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 62, ../scss/_join.scss */
+  /* line 63, ../scss/_join.scss */
   #join .links a {
     margin: 0.25em;
   }
