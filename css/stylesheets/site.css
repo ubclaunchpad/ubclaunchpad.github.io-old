@@ -663,8 +663,12 @@ h2.member-position {
 #sponsors.github {
   background-color: rgba(0, 176, 121, 0.5);
 }
+/* line 24, ../scss/_sponsors.scss */
+#sponsors.mda {
+  background-color: rgba(0, 102, 127, 0.5);
+}
 
-/* line 25, ../scss/_sponsors.scss */
+/* line 29, ../scss/_sponsors.scss */
 .sponsor {
   display: inline-block;
   width: 35%;
@@ -675,24 +679,28 @@ h2.member-position {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 900px) {
-  /* line 25, ../scss/_sponsors.scss */
+  /* line 29, ../scss/_sponsors.scss */
   .sponsor {
     height: 8em;
   }
 }
 @media screen and (max-width: 760px) {
-  /* line 25, ../scss/_sponsors.scss */
+  /* line 29, ../scss/_sponsors.scss */
   .sponsor {
     width: 60%;
   }
 }
-/* line 42, ../scss/_sponsors.scss */
+/* line 46, ../scss/_sponsors.scss */
 .sponsor#digital-ocean {
   background-image: url("/img/sponsors/digital-ocean.png");
 }
-/* line 46, ../scss/_sponsors.scss */
+/* line 50, ../scss/_sponsors.scss */
 .sponsor#github {
   background-image: url("/img/sponsors/github.png");
+}
+/* line 54, ../scss/_sponsors.scss */
+.sponsor#mda {
+  background-image: url("/img/sponsors/mda.png");
 }
 
 /* line 3, ../scss/_contact.scss */

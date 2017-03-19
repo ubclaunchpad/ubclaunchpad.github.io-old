@@ -20,6 +20,10 @@
 	&.github {
 		background-color: $github-transparent;
 	}
+
+	&.mda {
+		background-color: $mda-transparent;
+	}
 }
 
 .sponsor {
@@ -45,5 +49,9 @@
 
 	&#github {
 		background-image: url('/img/sponsors/github.png');
+	}
+
+	&#mda {
+		background-image: url('/img/sponsors/mda.png');
 	}
 }
