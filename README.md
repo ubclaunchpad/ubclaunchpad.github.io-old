@@ -1,4 +1,5 @@
 # UBC Launch Pad Site
+[![ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.com)
 
 Welcome to the source code for the Launch Pad site! The site is designed to look nice, but also to be clearly organized so that members can easily hack on it and make improvements.
 
