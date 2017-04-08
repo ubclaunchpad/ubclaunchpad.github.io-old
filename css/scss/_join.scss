@@ -21,17 +21,20 @@ $icon-size: 8em;
     flex-wrap: wrap;
     justify-content: center;
 
-       .newPosition {
+       .new-position {
           background: #eee;
           margin: 10px;
           width: 30%;
           flex-shrink: 1;
-          min-width: 300px;
+          min-width: 400px;
           padding: 20px 0 20px 0;
-          cursor: pointer;
           -webkit-transition: all .6s;
           -moz-transition: all .6s;
           -o-transition: all .6s;
+
+          p {
+            text-align: left;
+          }
 
           &:hover {
             box-shadow: #dedede 0 0 5px 5px;
@@ -44,7 +47,7 @@ $icon-size: 8em;
           @media screen and (max-width: $mobile) {
             width:80%;
             background: none;
-          }    
+          }
       }
   }
 
