@@ -158,6 +158,7 @@ a.button {
   font-weight: 300;
   letter-spacing: 1pt;
   color: white;
+  cursor: pointer;
   display: inline-block;
   padding: 0.62em 1em;
   border-radius: 4px;
@@ -166,11 +167,11 @@ a.button {
   transition: background-color, 0.5s;
   background-color: #1ca57a;
 }
-/* line 21, ../scss/_button.scss */
+/* line 22, ../scss/_button.scss */
 a.button:hover {
   background-color: #55bc9b;
 }
-/* line 25, ../scss/_button.scss */
+/* line 26, ../scss/_button.scss */
 a.button:focus, a.button:active {
   background-color: #8ed2bd;
 }
@@ -757,36 +758,39 @@ h2.member-position {
   justify-content: center;
 }
 /* line 24, ../scss/_join.scss */
-#join .contain .newPosition {
+#join .contain .new-position {
   background: #eee;
   margin: 10px;
   width: 30%;
   flex-shrink: 1;
-  min-width: 300px;
+  min-width: 400px;
   padding: 20px 0 20px 0;
-  cursor: pointer;
   -webkit-transition: all .6s;
   -moz-transition: all .6s;
   -o-transition: all .6s;
 }
-/* line 36, ../scss/_join.scss */
-#join .contain .newPosition:hover {
+/* line 35, ../scss/_join.scss */
+#join .contain .new-position p {
+  text-align: left;
+}
+/* line 39, ../scss/_join.scss */
+#join .contain .new-position:hover {
   box-shadow: #dedede 0 0 5px 5px;
 }
 @media screen and (max-width: 900px) {
   /* line 24, ../scss/_join.scss */
-  #join .contain .newPosition {
+  #join .contain .new-position {
     width: 40%;
   }
 }
 @media screen and (max-width: 480px) {
   /* line 24, ../scss/_join.scss */
-  #join .contain .newPosition {
+  #join .contain .new-position {
     width: 80%;
     background: none;
   }
 }
-/* line 51, ../scss/_join.scss */
+/* line 54, ../scss/_join.scss */
 #join .links {
   display: flex;
   align-items: center;
@@ -795,24 +799,24 @@ h2.member-position {
   flex-wrap: wrap;
 }
 @media screen and (max-width: 480px) {
-  /* line 51, ../scss/_join.scss */
+  /* line 54, ../scss/_join.scss */
   #join .links {
     flex-direction: column;
     justify-content: flex-start;
   }
 }
-/* line 63, ../scss/_join.scss */
+/* line 66, ../scss/_join.scss */
 #join .links a {
   margin: 1em 1em;
 }
 @media screen and (max-width: 1080px) {
-  /* line 63, ../scss/_join.scss */
+  /* line 66, ../scss/_join.scss */
   #join .links a {
     margin: 0.75em 0.5em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 63, ../scss/_join.scss */
+  /* line 66, ../scss/_join.scss */
   #join .links a {
     margin: 0.25em;
   }
