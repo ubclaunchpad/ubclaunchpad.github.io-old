@@ -16,20 +16,24 @@
     }
 }
 
-@mixin animation ($animation, $duration) {
+@mixin animation ($animation, $duration, $delay) {
     -webkit-animation-duration: $duration;
     -webkit-animation-name: $animation;
+    -webkit-animation-delay: $delay;
     -webkit-animation-fill-mode: forwards;
 
     -moz-animation-duration: $duration;
     -moz-animation-name: $animation;
+    -moz-animation-delay: $delay;
     -moz-animation-fill-mode: forwards;
 
     -o-animation-duration: $duration;
     -o-animation-name: $animation;
+    -o-animation-delay: $delay;
     -o-animation-fill-mode: forwards;
 
     animation-duration: $duration;
     animation-name: $animation;
+    animation-delay: $delay;
     animation-fill-mode: forwards;
 }

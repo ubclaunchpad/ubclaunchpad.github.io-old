@@ -393,15 +393,19 @@ a.button:focus, a.button:active {
 .banner-brand:before {
   -webkit-animation-duration: 5s;
   -webkit-animation-name: banner;
+  -webkit-animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-duration: 5s;
   -moz-animation-name: banner;
+  -moz-animation-delay: 3s;
   -moz-animation-fill-mode: forwards;
   -o-animation-duration: 5s;
   -o-animation-name: banner;
+  -o-animation-delay: 3s;
   -o-animation-fill-mode: forwards;
   animation-duration: 5s;
   animation-name: banner;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   position: absolute;
   width: 100%;
@@ -495,7 +499,7 @@ a.button:focus, a.button:active {
 
 @-webkit-keyframes banner {
   from {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: transparent;
   }
   to {
     background-color: rgba(0, 0, 0, 0.6);
@@ -503,7 +507,7 @@ a.button:focus, a.button:active {
 }
 @-moz-keyframes banner {
   from {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: transparent;
   }
   to {
     background-color: rgba(0, 0, 0, 0.6);
@@ -511,7 +515,7 @@ a.button:focus, a.button:active {
 }
 @-o-keyframes banner {
   from {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: transparent;
   }
   to {
     background-color: rgba(0, 0, 0, 0.6);
@@ -519,7 +523,7 @@ a.button:focus, a.button:active {
 }
 @keyframes banner {
   from {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: transparent;
   }
   to {
     background-color: rgba(0, 0, 0, 0.6);

@@ -18,7 +18,7 @@
 
   // Adds logo over the background video
   &:before {
-    @include animation(banner, 5s);
+    @include animation(banner, 5s, 3s);
     position: absolute;
     width: 100%;
     height: 100%;
