@@ -11,7 +11,7 @@
 		padding: 2em;
 	}
 
-	transition: background-color, 0.75s;
+	transition: background-color, 1s;
 
 	&.digital-ocean {
 		background-color: $digital-ocean-transparent;
@@ -41,6 +41,10 @@
 
 	@media screen and (max-width: $phablet) {
 		width: 60%;
+	}
+
+	&:hover {
+		opacity: 0.6;
 	}
 
 	&#digital-ocean {

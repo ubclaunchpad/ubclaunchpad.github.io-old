@@ -648,7 +648,7 @@ h2.member-position {
   background-color: #f9f9f9;
   text-align: center;
   padding: 4em;
-  transition: background-color, 0.75s;
+  transition: background-color, 1s;
 }
 @media screen and (max-width: 900px) {
   /* line 6, ../scss/_sponsors.scss */
@@ -692,14 +692,18 @@ h2.member-position {
   }
 }
 /* line 46, ../scss/_sponsors.scss */
+.sponsor:hover {
+  opacity: 0.6;
+}
+/* line 50, ../scss/_sponsors.scss */
 .sponsor#digital-ocean {
   background-image: url("/img/sponsors/digital-ocean.png");
 }
-/* line 50, ../scss/_sponsors.scss */
+/* line 54, ../scss/_sponsors.scss */
 .sponsor#github {
   background-image: url("/img/sponsors/github.png");
 }
-/* line 54, ../scss/_sponsors.scss */
+/* line 58, ../scss/_sponsors.scss */
 .sponsor#mda {
   background-image: url("/img/sponsors/mda.png");
 }
