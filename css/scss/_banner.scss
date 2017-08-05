@@ -23,10 +23,6 @@
     width: 100%;
     height: 100%;
 
-    background-image: url('/img/launchpad-logo.png');
-    background-position: 50% 35%;
-    background-size: 60%;
-    background-repeat: no-repeat;
     content: '';
 
     @media screen and (min-width: $phablet) and (max-width: $laptop) {

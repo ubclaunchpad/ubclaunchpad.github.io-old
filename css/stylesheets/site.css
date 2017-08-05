@@ -406,10 +406,6 @@ a.button:focus, a.button:active {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/img/launchpad-logo.png");
-  background-position: 50% 35%;
-  background-size: 60%;
-  background-repeat: no-repeat;
   content: '';
 }
 @media screen and (min-width: 760px) and (max-width: 1080px) {
@@ -434,14 +430,14 @@ a.button:focus, a.button:active {
   }
 }
 
-/* line 49, ../scss/_banner.scss */
+/* line 45, ../scss/_banner.scss */
 .banner-video {
   width: 100%;
   height: auto;
   z-index: -100;
 }
 
-/* line 55, ../scss/_banner.scss */
+/* line 51, ../scss/_banner.scss */
 .banner-tagline {
   position: absolute;
   width: 100%;
@@ -449,18 +445,18 @@ a.button:focus, a.button:active {
   z-index: 100;
 }
 @media screen and (min-width: 480px) and (max-width: 1080px) {
-  /* line 55, ../scss/_banner.scss */
+  /* line 51, ../scss/_banner.scss */
   .banner-tagline {
     top: 70%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 55, ../scss/_banner.scss */
+  /* line 51, ../scss/_banner.scss */
   .banner-tagline {
     top: 65%;
   }
 }
-/* line 69, ../scss/_banner.scss */
+/* line 65, ../scss/_banner.scss */
 .banner-tagline p {
   font-size: 1.2em;
   font-weight: 300;
@@ -470,27 +466,27 @@ a.button:focus, a.button:active {
   margin: 0 20%;
 }
 @media screen and (min-width: 900px) and (max-width: 1080px) {
-  /* line 69, ../scss/_banner.scss */
+  /* line 65, ../scss/_banner.scss */
   .banner-tagline p {
     margin: 0 10%;
   }
 }
 @media screen and (min-width: 760px) and (max-width: 900px) {
-  /* line 69, ../scss/_banner.scss */
+  /* line 65, ../scss/_banner.scss */
   .banner-tagline p {
     font-size: 1em;
     margin: 0 5%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 760px) {
-  /* line 69, ../scss/_banner.scss */
+  /* line 65, ../scss/_banner.scss */
   .banner-tagline p {
     font-size: 0.9em;
     margin: 0 5%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 69, ../scss/_banner.scss */
+  /* line 65, ../scss/_banner.scss */
   .banner-tagline p {
     font-size: 0.75em;
     margin: 0 5%;
@@ -499,34 +495,34 @@ a.button:focus, a.button:active {
 
 @-webkit-keyframes banner {
   from {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
   }
   to {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 @-moz-keyframes banner {
   from {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
   }
   to {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 @-o-keyframes banner {
   from {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
   }
   to {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 @keyframes banner {
   from {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
   }
   to {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 /* line 7, ../scss/_about.scss */
@@ -625,9 +621,9 @@ a.accordion.active {
 
 /* line 66, ../scss/_team.scss */
 .member-photo {
-  width: 16em;
-  height: 16em;
-  border-radius: 8em;
+  width: 192px;
+  height: 192px;
+  border-radius: 96px;
 }
 
 /* line 72, ../scss/_team.scss */
@@ -767,8 +763,8 @@ h2.member-position {
   margin: 10px;
   width: 30%;
   flex-shrink: 1;
-  min-width: 400px;
-  padding: 20px 0 20px 0;
+  min-width: 300px;
+  padding: 20px 0;
   -webkit-transition: all .6s;
   -moz-transition: all .6s;
   -o-transition: all .6s;
@@ -776,8 +772,9 @@ h2.member-position {
 /* line 35, ../scss/_join.scss */
 #join .contain .new-position p {
   text-align: left;
+  padding: 0 1em;
 }
-/* line 39, ../scss/_join.scss */
+/* line 40, ../scss/_join.scss */
 #join .contain .new-position:hover {
   box-shadow: #dedede 0 0 5px 5px;
 }
@@ -794,7 +791,7 @@ h2.member-position {
     background: none;
   }
 }
-/* line 54, ../scss/_join.scss */
+/* line 55, ../scss/_join.scss */
 #join .links {
   display: flex;
   align-items: center;
@@ -803,24 +800,24 @@ h2.member-position {
   flex-wrap: wrap;
 }
 @media screen and (max-width: 480px) {
-  /* line 54, ../scss/_join.scss */
+  /* line 55, ../scss/_join.scss */
   #join .links {
     flex-direction: column;
     justify-content: flex-start;
   }
 }
-/* line 66, ../scss/_join.scss */
+/* line 67, ../scss/_join.scss */
 #join .links a {
   margin: 1em 1em;
 }
 @media screen and (max-width: 1080px) {
-  /* line 66, ../scss/_join.scss */
+  /* line 67, ../scss/_join.scss */
   #join .links a {
     margin: 0.75em 0.5em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 66, ../scss/_join.scss */
+  /* line 67, ../scss/_join.scss */
   #join .links a {
     margin: 0.25em;
   }
