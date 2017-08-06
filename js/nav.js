@@ -91,7 +91,7 @@ function getSections () {
   var elements = [];
 
   // NOTE: when adding or removing nav sections, update this list.
-  var sections = ['about', 'team', 'join', 'sponsors'];
+  var sections = ['projects', 'about', 'team', 'join', 'sponsors'];
 
   return sections.map(function (id, i) {
     var el = document.getElementById(id);

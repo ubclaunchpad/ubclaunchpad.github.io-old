@@ -27,14 +27,14 @@ a.accordion {
 	box-sizing: border-box;
 	border-radius: 0;
 	color: $darkest-grey;
-	background-color: $background;
+	background-color: $background1;
 
 	&:hover {
 		background-color: $primary-lighter;
 	}
 
 	&:nth-child(4n-1) {
-		background-color: $background-light;
+		background-color: $background3;
 
 		&:hover {
 			background-color: $primary-lighter;

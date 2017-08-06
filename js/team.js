@@ -3,6 +3,7 @@
 
 (function() {
     var URL = 'http://rocket.ubclaunchpad.com/api/teams';
+    var DEFAULT_IMAGE = '/img/silhouette.jpg';
 
     // Creates a team member DOM node
     function createMember(member) {
@@ -11,7 +12,7 @@
 
         var image = document.createElement('img');
         image.className = 'member-photo';
-        image.src = member.imageUrl;
+        image.src = member.imageUrl || DEFAULT_IMAGE;
 
         var name = document.createElement('h1');
         name.className = 'member-name';

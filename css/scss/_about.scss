@@ -5,7 +5,7 @@
 $icon-size: 8em;
 
 #about {
-  background-color: $background;
+  background-color: $background2;
   padding: 4em;
   text-align: center;
   @media screen and (max-width: $tablet) {
@@ -22,7 +22,7 @@ $icon-size: 8em;
   }
 
   .icon-large {
-    color: $background;
+    color: $background2;
     font-size: $icon-size / 3;
     padding: $icon-size/8 0;
   }

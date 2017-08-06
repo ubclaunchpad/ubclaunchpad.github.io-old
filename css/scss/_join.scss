@@ -6,7 +6,7 @@
 $icon-size: 8em;
 
 #join {
-  background-color: $background-lighter;
+  background-color: $background4;
   padding: 4em;
   text-align: center;
   @media screen and (max-width: $tablet) {
@@ -14,67 +14,59 @@ $icon-size: 8em;
   }
 
   .contain {
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    .new-position {
+      background: #eee;
+      margin: 10px;
+      width: 30%;
+      flex-shrink: 1;
+      min-width: 300px;
+      padding: 20px 0;
+      -webkit-transition: all .6s;
+      -moz-transition: all .6s;
+      -o-transition: all .6s;
 
-       .new-position {
-          background: #eee;
-          margin: 10px;
-          width: 30%;
-          flex-shrink: 1;
-          min-width: 300px;
-          padding: 20px 0;
-          -webkit-transition: all .6s;
-          -moz-transition: all .6s;
-          -o-transition: all .6s;
-
-          p {
-            text-align: left;
-            padding: 0 1em;
-          }
-
-          &:hover {
-            box-shadow: #dedede 0 0 5px 5px;
-          }
-
-          @media screen and (max-width: $tablet) {
-            width:40%;
-          }
-
-          @media screen and (max-width: $mobile) {
-            width:80%;
-            background: none;
-          }
+      p {
+        text-align: left;
+        padding: 0 1em;
       }
-  }
 
-  .links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+      &:hover {
+        box-shadow: #dedede 0 0 5px 5px;
+      }
 
-    @media screen and (max-width: $mobile) {
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
-    a {
-      margin: 1em 1em;
-
-      @media screen and (max-width: $laptop) {
-        margin: 0.75em 0.5em;
+      @media screen and (max-width: $tablet) {
+        width:40%;
       }
 
       @media screen and (max-width: $mobile) {
-        margin: 0.25em;
+        width:80%;
+        background: none;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: $mobile) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      a {
+        margin: 1em 1em;
+
+        @media screen and (max-width: $laptop) {
+          margin: 0.75em 0.5em;
+        }
+
+        @media screen and (max-width: $mobile) {
+          margin: 0.25em;
+        }
       }
     }
   }
-
 }

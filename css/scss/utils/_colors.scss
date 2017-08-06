@@ -19,10 +19,11 @@ $light-grey: mix($darkest-grey, white, 40%);
 $lightest-grey: mix($darkest-grey, white, 20%);
 
 // Backgrounds
-$background: mix($darkest-grey, white, 10%);
-$background-light: mix($darkest-grey, white, 7.5%);
-$background-lighter: mix($darkest-grey, white, 5%);
-$background-lightest: mix($darkest-grey, white, 2.5%);
+$background1: mix($darkest-grey, white, 10%);
+$background2: mix($darkest-grey, white, 8%);
+$background3: mix($darkest-grey, white, 6%);
+$background4: mix($darkest-grey, white, 4%);
+$background5: mix($darkest-grey, white, 2%);
 
 // Bannery opacity
 $banner-dark: rgba(black, 0.6);

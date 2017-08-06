@@ -1,0 +1,24 @@
+// Styles for the `Projects` section
+
+@import './utils/_colors.scss';
+
+#projects {
+    background-color: $background1;
+    text-align: center;
+    padding: 4em;
+
+    @media screen and (max-width: $tablet) {
+		padding: 2em;
+    }
+    
+    .project-container {
+        a {
+            text-decoration: none;
+        }
+        width: 500px;
+        display: inline-block;
+        img {
+            width: 300px;
+        }
+    }
+}
