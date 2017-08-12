@@ -553,15 +553,19 @@ a.button:focus, a.button:active {
   }
 }
 /* line 14, ../scss/_projects.scss */
+#projects .contain {
+  padding-bottom: 2em;
+}
+/* line 18, ../scss/_projects.scss */
 #projects .project-container {
   width: 500px;
   display: inline-block;
 }
-/* line 15, ../scss/_projects.scss */
+/* line 19, ../scss/_projects.scss */
 #projects .project-container a {
   text-decoration: none;
 }
-/* line 20, ../scss/_projects.scss */
+/* line 24, ../scss/_projects.scss */
 #projects .project-container img {
   width: 300px;
 }
