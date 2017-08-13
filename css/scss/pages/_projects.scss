@@ -1,0 +1,28 @@
+.container {
+    padding: 10%;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+
+    h1 {
+        padding: 0;
+    }
+
+    h2 {
+        text-align: left;
+        padding-top: 0;
+        padding-bottom: 2em;
+    }
+
+    p {
+        padding-right: 2em;
+        line-height: 1.5;
+        padding-bottom: 1em;
+    }
+
+    img {
+        width: 300px;
+    }
+}

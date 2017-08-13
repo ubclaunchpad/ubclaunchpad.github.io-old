@@ -749,35 +749,35 @@ h2.member-position {
   background-image: url("/img/sponsors/mda.png");
 }
 
-/* line 3, ../scss/_contact.scss */
-#contact {
+/* line 3, ../scss/_footer.scss */
+.footer {
   background-color: #222;
   padding: 2em;
   text-align: center;
 }
-/* line 8, ../scss/_contact.scss */
-#contact h1 {
+/* line 8, ../scss/_footer.scss */
+.footer h1 {
   color: #f6f6f6;
 }
-/* line 12, ../scss/_contact.scss */
-#contact .row {
+/* line 12, ../scss/_footer.scss */
+.footer .row {
   flex-direction: row;
 }
-/* line 16, ../scss/_contact.scss */
-#contact .icon {
+/* line 16, ../scss/_footer.scss */
+.footer .icon {
   display: inline-block;
   padding: 1em;
 }
-/* line 20, ../scss/_contact.scss */
-#contact .icon a {
+/* line 20, ../scss/_footer.scss */
+.footer .icon a {
   color: #f6f6f6;
 }
-/* line 23, ../scss/_contact.scss */
-#contact .icon a:hover {
+/* line 23, ../scss/_footer.scss */
+.footer .icon a:hover {
   color: #8ed2bd;
 }
-/* line 27, ../scss/_contact.scss */
-#contact .icon a:active, #contact .icon a:focus {
+/* line 27, ../scss/_footer.scss */
+.footer .icon a:active, .footer .icon a:focus {
   color: #55bc9b;
 }
 
@@ -857,4 +857,35 @@ h2.member-position {
   #join .contain .links a {
     margin: 0.25em;
   }
+}
+
+/* line 1, ../scss/pages/_projects.scss */
+.container {
+  padding: 10%;
+}
+
+/* line 5, ../scss/pages/_projects.scss */
+.project-container {
+  display: flex;
+  flex-direction: row;
+}
+/* line 9, ../scss/pages/_projects.scss */
+.project-container h1 {
+  padding: 0;
+}
+/* line 13, ../scss/pages/_projects.scss */
+.project-container h2 {
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 2em;
+}
+/* line 19, ../scss/pages/_projects.scss */
+.project-container p {
+  padding-right: 2em;
+  line-height: 1.5;
+  padding-bottom: 1em;
+}
+/* line 25, ../scss/pages/_projects.scss */
+.project-container img {
+  width: 300px;
 }
