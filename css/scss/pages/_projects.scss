@@ -1,10 +1,23 @@
+@import './../utils/_breakpoints.scss';
+@import './../utils/_colors.scss';
+
 .container {
     padding: 10%;
+
+    @media screen and (max-width: $phablet) {
+        padding: 5% 1em;
+    }
 }
 
 .project-container {
     display: flex;
     flex-direction: row;
+    padding-bottom: 4em;
+
+    @media screen and (max-width: $phablet) {
+        flex-direction: column;
+        align-items: center;
+    }
 
     h1 {
         padding: 0;
@@ -24,5 +37,31 @@
 
     img {
         width: 300px;
+    }
+}
+
+.project-image-selector-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-image-selector {
+    width: 4px;
+    height: 4px;
+    padding: 2px;
+    margin: 0 4px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $light-grey;
+    background-color: white;
+
+    &.selected {
+        background-color: $light-grey;
+    }
+
+    &:hover {
+        cursor: pointer;
     }
 }

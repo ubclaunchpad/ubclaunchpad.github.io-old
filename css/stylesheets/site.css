@@ -859,33 +859,75 @@ h2.member-position {
   }
 }
 
-/* line 1, ../scss/pages/_projects.scss */
+/* line 4, ../scss/pages/_projects.scss */
 .container {
   padding: 10%;
 }
+@media screen and (max-width: 760px) {
+  /* line 4, ../scss/pages/_projects.scss */
+  .container {
+    padding: 5% 1em;
+  }
+}
 
-/* line 5, ../scss/pages/_projects.scss */
+/* line 12, ../scss/pages/_projects.scss */
 .project-container {
   display: flex;
   flex-direction: row;
+  padding-bottom: 4em;
 }
-/* line 9, ../scss/pages/_projects.scss */
+@media screen and (max-width: 760px) {
+  /* line 12, ../scss/pages/_projects.scss */
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* line 22, ../scss/pages/_projects.scss */
 .project-container h1 {
   padding: 0;
 }
-/* line 13, ../scss/pages/_projects.scss */
+/* line 26, ../scss/pages/_projects.scss */
 .project-container h2 {
   text-align: left;
   padding-top: 0;
   padding-bottom: 2em;
 }
-/* line 19, ../scss/pages/_projects.scss */
+/* line 32, ../scss/pages/_projects.scss */
 .project-container p {
   padding-right: 2em;
   line-height: 1.5;
   padding-bottom: 1em;
 }
-/* line 25, ../scss/pages/_projects.scss */
+/* line 38, ../scss/pages/_projects.scss */
 .project-container img {
   width: 300px;
+}
+
+/* line 43, ../scss/pages/_projects.scss */
+.project-image-selector-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* line 49, ../scss/pages/_projects.scss */
+.project-image-selector {
+  width: 4px;
+  height: 4px;
+  padding: 2px;
+  margin: 0 4px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a7a7a7;
+  background-color: white;
+}
+/* line 60, ../scss/pages/_projects.scss */
+.project-image-selector.selected {
+  background-color: #a7a7a7;
+}
+/* line 64, ../scss/pages/_projects.scss */
+.project-image-selector:hover {
+  cursor: pointer;
 }
