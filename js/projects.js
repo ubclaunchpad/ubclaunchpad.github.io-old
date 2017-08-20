@@ -11,11 +11,8 @@
         id: 'driver',
         images: ['driver1.png', 'driver2.png', 'driver3.png']
     }, {
-        id: 'cashout',
-        images: ['cashout1.png', 'cashout2.png', 'cashout3.png']
-    }, {
         id: 'rocketcast',
-        images: ['rocketcast1.jpg', 'rocketcast2.jpj', 'rocketcast3.jpg', 'rocketcast4.jpg']
+        images: ['rocketcast1.jpg', 'rocketcast2.jpg', 'rocketcast3.jpg', 'rocketcast4.jpg']
     }, {
         id: 'rocketpoll',
         images: ['rocketpoll1.jpg', 'rocketpoll2.jpg', 'rocketpoll3.jpg', 'rocketpoll4.jpg', 'rocketpoll5.jpg']

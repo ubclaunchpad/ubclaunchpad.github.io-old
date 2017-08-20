@@ -40,6 +40,29 @@
     }
 }
 
+.project-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-links {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 3em;
+
+    a {
+        color: $grey;
+        padding: 4px;
+        margin: 4px;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
 .project-image-selector-container {
     display: flex;
     flex-direction: row;
@@ -65,3 +88,4 @@
         cursor: pointer;
     }
 }
+
