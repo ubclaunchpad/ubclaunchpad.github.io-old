@@ -933,14 +933,19 @@ h2.member-position {
   opacity: 0.6;
 }
 
-/* line 66, ../scss/pages/_projects.scss */
+/* line 67, ../scss/pages/_projects.scss */
+.project-image-container img {
+  border: solid lightgray 1px;
+}
+
+/* line 72, ../scss/pages/_projects.scss */
 .project-image-selector-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 72, ../scss/pages/_projects.scss */
+/* line 78, ../scss/pages/_projects.scss */
 .project-image-selector {
   width: 4px;
   height: 4px;
@@ -952,11 +957,11 @@ h2.member-position {
   border-color: #a7a7a7;
   background-color: white;
 }
-/* line 83, ../scss/pages/_projects.scss */
+/* line 89, ../scss/pages/_projects.scss */
 .project-image-selector.selected {
   background-color: #a7a7a7;
 }
-/* line 87, ../scss/pages/_projects.scss */
+/* line 93, ../scss/pages/_projects.scss */
 .project-image-selector:hover {
   cursor: pointer;
 }

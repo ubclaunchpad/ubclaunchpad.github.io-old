@@ -63,6 +63,12 @@
     }
 }
 
+.project-image-container {
+    img {
+        border: solid $lightest-grey 1px;
+    }
+}
+
 .project-image-selector-container {
     display: flex;
     flex-direction: row;

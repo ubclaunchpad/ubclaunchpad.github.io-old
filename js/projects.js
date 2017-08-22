@@ -11,6 +11,9 @@
         id: 'driver',
         images: ['driver1.png', 'driver2.png', 'driver3.png']
     }, {
+        id: 'cashout',
+        images: ['cashout1.png', 'cashout2.png', 'cashout3.png']
+    }, {
         id: 'rocketcast',
         images: ['rocketcast1.jpg', 'rocketcast2.jpg', 'rocketcast3.jpg', 'rocketcast4.jpg']
     }, {
@@ -48,7 +51,6 @@
         }
 
         for (var i = 0; i < images.length; i++) {
-            console.log(i);
             selectors[i] = document.createElement('div');
             selectors[i].className = 'project-image-selector';
             selectors[i].onclick = onClickSelector.bind(this, i);
