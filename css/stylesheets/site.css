@@ -690,7 +690,7 @@ h2.member-position {
 
 /* line 6, ../scss/_sponsors.scss */
 #sponsors {
-  background-color: #fbfbfb;
+  background-color: white;
   text-align: center;
   padding: 4em;
   transition: background-color, 1s;
@@ -713,8 +713,12 @@ h2.member-position {
 #sponsors.mda {
   background-color: rgba(0, 102, 127, 0.5);
 }
+/* line 28, ../scss/_sponsors.scss */
+#sponsors.lighthouse-labs {
+  background-color: rgba(23, 163, 221, 0.5);
+}
 
-/* line 29, ../scss/_sponsors.scss */
+/* line 33, ../scss/_sponsors.scss */
 .sponsor {
   display: inline-block;
   width: 300px;
@@ -725,32 +729,36 @@ h2.member-position {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 900px) {
-  /* line 29, ../scss/_sponsors.scss */
+  /* line 33, ../scss/_sponsors.scss */
   .sponsor {
     height: 8em;
   }
 }
 @media screen and (max-width: 760px) {
-  /* line 29, ../scss/_sponsors.scss */
+  /* line 33, ../scss/_sponsors.scss */
   .sponsor {
     width: 60%;
   }
 }
-/* line 46, ../scss/_sponsors.scss */
+/* line 50, ../scss/_sponsors.scss */
 .sponsor:hover {
   opacity: 0.6;
 }
-/* line 50, ../scss/_sponsors.scss */
+/* line 54, ../scss/_sponsors.scss */
 .sponsor#digital-ocean {
   background-image: url("/img/sponsors/digital-ocean.png");
 }
-/* line 54, ../scss/_sponsors.scss */
+/* line 58, ../scss/_sponsors.scss */
 .sponsor#github {
   background-image: url("/img/sponsors/github.png");
 }
-/* line 58, ../scss/_sponsors.scss */
+/* line 62, ../scss/_sponsors.scss */
 .sponsor#mda {
   background-image: url("/img/sponsors/mda.png");
+}
+/* line 66, ../scss/_sponsors.scss */
+.sponsor#lighthouse-labs {
+  background-image: url("/img/sponsors/lighthouse-labs.jpg");
 }
 
 /* line 3, ../scss/_footer.scss */
