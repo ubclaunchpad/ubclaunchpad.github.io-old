@@ -872,17 +872,17 @@ h2.member-position {
 }
 
 /* line 4, ../scss/pages/_projects.scss */
-.header {
+.project-header {
   width: 100%;
   padding: 2em;
   background-color: #222;
 }
 /* line 9, ../scss/pages/_projects.scss */
-.header a, .header i {
+.project-header a, .project-header i {
   color: white;
 }
 /* line 13, ../scss/pages/_projects.scss */
-.header a:hover {
+.project-header a:hover {
   text-decoration: none;
 }
 
