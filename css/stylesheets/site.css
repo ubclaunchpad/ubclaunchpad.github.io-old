@@ -872,57 +872,72 @@ h2.member-position {
 }
 
 /* line 4, ../scss/pages/_projects.scss */
+.header {
+  width: 100%;
+  padding: 2em;
+  background-color: #222;
+}
+/* line 9, ../scss/pages/_projects.scss */
+.header a, .header i {
+  color: white;
+}
+/* line 13, ../scss/pages/_projects.scss */
+.header a:hover {
+  text-decoration: none;
+}
+
+/* line 18, ../scss/pages/_projects.scss */
 .container {
   padding: 10%;
 }
 @media screen and (max-width: 760px) {
-  /* line 4, ../scss/pages/_projects.scss */
+  /* line 18, ../scss/pages/_projects.scss */
   .container {
     padding: 5% 1em;
   }
 }
 
-/* line 12, ../scss/pages/_projects.scss */
+/* line 26, ../scss/pages/_projects.scss */
 .project-container {
   display: flex;
   flex-direction: row;
   padding-bottom: 4em;
 }
 @media screen and (max-width: 760px) {
-  /* line 12, ../scss/pages/_projects.scss */
+  /* line 26, ../scss/pages/_projects.scss */
   .project-container {
     flex-direction: column;
     align-items: center;
   }
 }
-/* line 22, ../scss/pages/_projects.scss */
+/* line 36, ../scss/pages/_projects.scss */
 .project-container h1 {
   padding: 0;
 }
-/* line 26, ../scss/pages/_projects.scss */
+/* line 40, ../scss/pages/_projects.scss */
 .project-container h2 {
   text-align: left;
   padding-top: 0;
   padding-bottom: 2em;
 }
-/* line 32, ../scss/pages/_projects.scss */
+/* line 46, ../scss/pages/_projects.scss */
 .project-container p {
   padding-right: 2em;
   line-height: 1.5;
   padding-bottom: 1em;
 }
-/* line 38, ../scss/pages/_projects.scss */
+/* line 52, ../scss/pages/_projects.scss */
 .project-container img {
   width: 300px;
 }
 
-/* line 43, ../scss/pages/_projects.scss */
+/* line 57, ../scss/pages/_projects.scss */
 .project-description {
   display: flex;
   flex-direction: column;
 }
 
-/* line 48, ../scss/pages/_projects.scss */
+/* line 62, ../scss/pages/_projects.scss */
 .project-links {
   flex-grow: 1;
   display: flex;
@@ -930,30 +945,30 @@ h2.member-position {
   justify-content: center;
   font-size: 3em;
 }
-/* line 55, ../scss/pages/_projects.scss */
+/* line 69, ../scss/pages/_projects.scss */
 .project-links a {
   color: #7a7a7a;
   padding: 4px;
   margin: 4px;
 }
-/* line 60, ../scss/pages/_projects.scss */
+/* line 74, ../scss/pages/_projects.scss */
 .project-links a:hover {
   opacity: 0.6;
 }
 
-/* line 67, ../scss/pages/_projects.scss */
+/* line 81, ../scss/pages/_projects.scss */
 .project-image-container img {
   border: solid lightgray 1px;
 }
 
-/* line 72, ../scss/pages/_projects.scss */
+/* line 86, ../scss/pages/_projects.scss */
 .project-image-selector-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 78, ../scss/pages/_projects.scss */
+/* line 92, ../scss/pages/_projects.scss */
 .project-image-selector {
   width: 4px;
   height: 4px;
@@ -965,11 +980,11 @@ h2.member-position {
   border-color: #a7a7a7;
   background-color: white;
 }
-/* line 89, ../scss/pages/_projects.scss */
+/* line 103, ../scss/pages/_projects.scss */
 .project-image-selector.selected {
   background-color: #a7a7a7;
 }
-/* line 93, ../scss/pages/_projects.scss */
+/* line 107, ../scss/pages/_projects.scss */
 .project-image-selector:hover {
   cursor: pointer;
 }
