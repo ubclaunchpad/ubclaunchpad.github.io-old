@@ -28,6 +28,10 @@
 	&.lighthouse-labs {
 		background-color: $lighthouse-labs-transparent;
 	}
+
+	&.vling {
+		background-color: $vling-transparent;
+	}
 }
 
 .sponsor {
@@ -64,6 +68,10 @@
 	}
 
 	&#lighthouse-labs {
-		background-image: url('/img/sponsors/lighthouse-labs.jpg');
+		background-image: url('/img/sponsors/lighthouse-labs.png');
+	}
+
+	&#vling {
+		background-image: url('/img/sponsors/vling.png');
 	}
 }
