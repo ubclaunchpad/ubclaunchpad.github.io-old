@@ -2,8 +2,8 @@
 // logo is moused over
 
 (function () {
-	// NOTE: Removing this for now because LHL logo doesn't have a
-	// transparent background. Can revisit later.
+	// NOTE: Removing this for now because VLING logo isn't black. 
+	// Can revisit later.
 	return;
 	var section = document.getElementById('sponsors');
 	var cl = section.classList;
@@ -12,6 +12,7 @@
 	var digitalOcean = document.getElementById('digital-ocean');
 	var mda = document.getElementById('mda');
 	var lighthouseLabs = document.getElementById('lighthouse-labs');
+	var vling = document.getElementById('vling')
 
 	github.addEventListener('mouseover', function () {
 		cl.add('github');
@@ -39,5 +40,12 @@
 	});
 	lighthouseLabs.addEventListener('mouseout', function () {
 		cl.remove('lighthouse-labs');
+	});
+
+	vling.addEventListener('mouseover', function () {
+		cl.add('vling');
+	});
+	vling.addEventListener('mouseout', function () {
+		cl.remove('vling');
 	});
 }())
