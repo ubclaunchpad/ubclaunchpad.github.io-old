@@ -32,6 +32,10 @@
 	&.vling {
 		background-color: $vling-transparent;
 	}
+
+	&.coastal-reign {
+		background-color: $coastal-reign-transparent;
+	}
 }
 
 .sponsor {
@@ -73,5 +77,9 @@
 
 	&#vling {
 		background-image: url('/img/sponsors/vling.png');
+	}
+
+	&#coastal-reign {
+		background-image: url('/img/sponsors/coastal-reign.png');
 	}
 }
