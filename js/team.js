@@ -2,7 +2,7 @@
 // renders them in the team section
 
 (function() {
-    var URL = 'http://rocket.ubclaunchpad.com/api/teams';
+    var URL = 'https://rocket.ubclaunchpad.com/api/teams';
     var DEFAULT_IMAGE = '/img/silhouette.jpg';
 
     // Creates a team member DOM node
