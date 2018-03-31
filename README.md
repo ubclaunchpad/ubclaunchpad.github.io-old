@@ -16,6 +16,12 @@ Start a local server
 python -m SimpleHTTPServer 8888
 ```
 
+or with Python 3
+
+```
+python3 -m http.server
+```
+
 The site will now be running on port 8888.
 
 ## Development
