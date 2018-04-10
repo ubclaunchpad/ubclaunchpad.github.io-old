@@ -5,6 +5,9 @@
     // Defines the data associated with each project. When adding a new project,
     // add it here in addition to in projects.html.
     var projects = [{
+        id: 'eat',
+        images: ['eat1.jpg', 'eat2.jpg', 'eat3.jpg', 'eat4.jpg']
+    }, {
         id: 'etch',
         images: ['etch.png']
     }, {
