@@ -1,0 +1,19 @@
+// Styles for the `FAQ` section
+
+@import './utils/_colors.scss';
+
+#faq {
+  background-color: $background5;
+  padding: 4em;
+  text-align: center;
+  @media screen and (max-width: $tablet) {
+    padding: 2em;
+  }
+
+  .col {
+    margin: 10px;
+    text-align: left;
+  }
+}
+
+

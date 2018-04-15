@@ -887,6 +887,24 @@ h2.member-position {
   }
 }
 
+/* line 5, ../scss/_faq.scss */
+#faq {
+  background-color: #fbfbfb;
+  padding: 4em;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  /* line 5, ../scss/_faq.scss */
+  #faq {
+    padding: 2em;
+  }
+}
+/* line 13, ../scss/_faq.scss */
+#faq .col {
+  margin: 10px;
+  text-align: left;
+}
+
 /* line 4, ../scss/pages/_projects.scss */
 .project-header {
   width: 100%;
