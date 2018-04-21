@@ -1,7 +1,7 @@
 // Pulls the list of current team members from our API and
 // renders them in the team section
 
-(function() {
+(function () {
     var URL = 'https://rocket.ubclaunchpad.com/api/teams';
     var DEFAULT_IMAGE = '/img/silhouette.jpg';
 
@@ -46,33 +46,24 @@
 
         node.appendChild(button);
         node.appendChild(panel);
+        addAccordion(button, panel);
     }
 
-    // Handles click events on drop-down accordions
-    function handleAccordions() {
-        var buttons = document.getElementsByClassName('accordion');
-        var panels = document.getElementsByClassName('panel');
-
-        function addAccordion (button, panel) {
-            button.addEventListener('click', function (event) {
-
-                if (button.classList.contains('active')) {
-                    button.classList.remove('active');
-                    button.children[0].classList.remove('fa-caret-down');
-                    button.children[0].classList.add('fa-caret-right');
-                    panel.classList.remove('active');
-                } else {
-                    button.classList.add('active');
-                    button.children[0].classList.remove('fa-caret-right');
-                    button.children[0].classList.add('fa-caret-down');
-                    panel.classList.add('active');
-                }
-            });
-        }
-
-        for (var i = 0; i < buttons.length; i++) {
-            addAccordion(buttons[i], panels[i]);
-        }
+    // Adds handlers for click events on drop-down accordions
+    function addAccordion(button, panel) {
+        button.addEventListener('click', function (event) {
+            if (button.classList.contains('active')) {
+                button.classList.remove('active');
+                button.children[0].classList.remove('fa-caret-down');
+                button.children[0].classList.add('fa-caret-right');
+                panel.classList.remove('active');
+            } else {
+                button.classList.add('active');
+                button.children[0].classList.remove('fa-caret-right');
+                button.children[0].classList.add('fa-caret-down');
+                panel.classList.add('active');
+            }
+        });
     }
 
     // Pull roster data and render it
@@ -86,7 +77,6 @@
                 console.log(team);
                 renderTeam(team, container);
             });
-            handleAccordions()
         });
     });
 }());

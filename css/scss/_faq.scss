@@ -4,16 +4,44 @@
 
 #faq {
   background-color: $background5;
-  padding: 4em;
   text-align: center;
-  @media screen and (max-width: $tablet) {
-    padding: 2em;
-  }
 
-  .col {
-    margin: 10px;
-    text-align: left;
+  h1 {
+    padding-top: 2em;
   }
+}
+
+#accordions {
+  .panel {
+    text-align: center;
+  }
+}
+
+// Full-width cell that opens to reveal a submenu
+a.accordion {
+	width: 100%;
+	text-align: left;
+	text-decoration: none;
+	box-sizing: border-box;
+	border-radius: 0;
+	color: $darkest-grey;
+	background-color: $background1;
+
+	&:hover {
+		background-color: $primary-lighter;
+	}
+
+	&:nth-child(4n-1) {
+		background-color: $background3;
+
+		&:hover {
+			background-color: $primary-lighter;
+		}
+	}
+
+	&.active {
+		background-color: $primary-light;
+	}
 }
 
 
