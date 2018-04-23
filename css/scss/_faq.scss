@@ -8,13 +8,20 @@
 
   h1 {
     padding-top: 2em;
-  }
-}
+	}
 
-#accordions {
-  .panel {
-    text-align: center;
-  }
+	.accordions {
+		.panel {
+			text-align: center;
+			padding-right: 4em;
+			padding-left: 4em;
+
+			p {
+				padding-right: 4em;
+				padding-left: 4em;
+			}
+		}
+	}
 }
 
 // Full-width cell that opens to reveal a submenu

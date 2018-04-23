@@ -896,13 +896,19 @@ h2.member-position {
 #faq h1 {
   padding-top: 2em;
 }
-
-/* line 15, ../scss/_faq.scss */
-#accordions .panel {
+/* line 14, ../scss/_faq.scss */
+#faq .accordions .panel {
   text-align: center;
+  padding-right: 4em;
+  padding-left: 4em;
+}
+/* line 19, ../scss/_faq.scss */
+#faq .accordions .panel p {
+  padding-right: 4em;
+  padding-left: 4em;
 }
 
-/* line 21, ../scss/_faq.scss */
+/* line 28, ../scss/_faq.scss */
 a.accordion {
   width: 100%;
   text-align: left;
@@ -912,19 +918,19 @@ a.accordion {
   color: #222;
   background-color: #e9e9e9;
 }
-/* line 30, ../scss/_faq.scss */
+/* line 37, ../scss/_faq.scss */
 a.accordion:hover {
   background-color: #8ed2bd;
 }
-/* line 34, ../scss/_faq.scss */
+/* line 41, ../scss/_faq.scss */
 a.accordion:nth-child(4n-1) {
   background-color: #f2f2f2;
 }
-/* line 37, ../scss/_faq.scss */
+/* line 44, ../scss/_faq.scss */
 a.accordion:nth-child(4n-1):hover {
   background-color: #8ed2bd;
 }
-/* line 42, ../scss/_faq.scss */
+/* line 49, ../scss/_faq.scss */
 a.accordion.active {
   background-color: #55bc9b;
 }
