@@ -13,12 +13,11 @@
 	.accordions {
 		.panel {
 			text-align: center;
-			padding-right: 4em;
-			padding-left: 4em;
 
-			p {
-				padding-right: 4em;
-				padding-left: 4em;
+
+			@media screen and (max-width: $tablet) {
+				padding-right: 0em;
+				padding-left: 0em;
 			}
 		}
 	}
