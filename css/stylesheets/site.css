@@ -890,19 +890,49 @@ h2.member-position {
 /* line 5, ../scss/_faq.scss */
 #faq {
   background-color: #fbfbfb;
-  padding: 4em;
+  text-align: center;
+}
+/* line 9, ../scss/_faq.scss */
+#faq h1 {
+  padding-top: 2em;
+}
+/* line 14, ../scss/_faq.scss */
+#faq .accordions .panel {
   text-align: center;
 }
 @media screen and (max-width: 900px) {
-  /* line 5, ../scss/_faq.scss */
-  #faq {
-    padding: 2em;
+  /* line 14, ../scss/_faq.scss */
+  #faq .accordions .panel {
+    padding-right: 0em;
+    padding-left: 0em;
   }
 }
-/* line 13, ../scss/_faq.scss */
-#faq .col {
-  margin: 10px;
+
+/* line 27, ../scss/_faq.scss */
+a.accordion {
+  width: 100%;
   text-align: left;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 0;
+  color: #222;
+  background-color: #e9e9e9;
+}
+/* line 36, ../scss/_faq.scss */
+a.accordion:hover {
+  background-color: #8ed2bd;
+}
+/* line 40, ../scss/_faq.scss */
+a.accordion:nth-child(4n-1) {
+  background-color: #f2f2f2;
+}
+/* line 43, ../scss/_faq.scss */
+a.accordion:nth-child(4n-1):hover {
+  background-color: #8ed2bd;
+}
+/* line 48, ../scss/_faq.scss */
+a.accordion.active {
+  background-color: #55bc9b;
 }
 
 /* line 4, ../scss/pages/_projects.scss */
