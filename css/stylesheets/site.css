@@ -572,6 +572,7 @@ a.button:focus, a.button:active {
   position: relative;
   background: #eee;
   margin-top: 10px;
+  margin-bottom: 10px;
   width: 30%;
   padding: 20px 0;
   -webkit-transition: all .6s;
@@ -590,33 +591,33 @@ a.button:focus, a.button:active {
     width: 95%;
   }
 }
-/* line 34, ../scss/_projects.scss */
+/* line 35, ../scss/_projects.scss */
 #projects .contain .project-container a {
   text-decoration: none;
 }
-/* line 38, ../scss/_projects.scss */
+/* line 39, ../scss/_projects.scss */
 #projects .contain .project-container h2 {
   padding-bottom: 0.75em;
   text-align: center;
 }
 @media screen and (max-width: 480px) {
-  /* line 43, ../scss/_projects.scss */
+  /* line 44, ../scss/_projects.scss */
   #projects .contain .project-container p {
     width: 90%;
   }
 }
-/* line 49, ../scss/_projects.scss */
+/* line 50, ../scss/_projects.scss */
 #projects .contain .project-container .media {
   display: table;
   width: 100%;
   height: 225px;
 }
-/* line 53, ../scss/_projects.scss */
+/* line 54, ../scss/_projects.scss */
 #projects .contain .project-container .media span {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 57, ../scss/_projects.scss */
+/* line 58, ../scss/_projects.scss */
 #projects .contain .project-container .media img {
   width: auto;
   max-width: 90%;
@@ -624,14 +625,14 @@ a.button:focus, a.button:active {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 66, ../scss/_projects.scss */
+/* line 67, ../scss/_projects.scss */
 #projects .contain .project-container .blurb {
   margin-left: auto;
   margin-right: auto;
   display: table;
   width: 70%;
 }
-/* line 71, ../scss/_projects.scss */
+/* line 72, ../scss/_projects.scss */
 #projects .contain .project-container .blurb h3 {
   white-space: normal;
   display: table-cell;
@@ -639,24 +640,24 @@ a.button:focus, a.button:active {
   vertical-align: middle;
   height: 75px;
 }
-/* line 80, ../scss/_projects.scss */
+/* line 81, ../scss/_projects.scss */
 #projects .contain .project-container .project-links {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   font-size: 3em;
 }
-/* line 85, ../scss/_projects.scss */
+/* line 86, ../scss/_projects.scss */
 #projects .contain .project-container .project-links a {
   color: #7a7a7a;
   padding: 4px;
   margin: 4px;
 }
-/* line 90, ../scss/_projects.scss */
+/* line 91, ../scss/_projects.scss */
 #projects .contain .project-container .project-links a:hover {
   opacity: 0.6;
 }
-/* line 96, ../scss/_projects.scss */
+/* line 97, ../scss/_projects.scss */
 #projects .contain .project-container:hover {
   box-shadow: #dedede 0 0 5px 5px;
 }
