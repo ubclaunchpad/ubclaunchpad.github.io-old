@@ -560,7 +560,6 @@ a.button:focus, a.button:active {
   padding: 4em;
   display: table;
   position: relative;
-  overflow: hidden;
 }
 @media screen and (max-width: 900px) {
   /* line 5, ../scss/_projects.scss */
@@ -568,13 +567,12 @@ a.button:focus, a.button:active {
     padding: 2em;
   }
 }
-/* line 17, ../scss/_projects.scss */
+/* line 16, ../scss/_projects.scss */
 #projects .contain {
   padding-bottom: 2em;
 }
-/* line 21, ../scss/_projects.scss */
+/* line 20, ../scss/_projects.scss */
 #projects .project-container {
-  width: 500px;
   display: table-cell;
   position: relative;
   background: #eee;
@@ -587,39 +585,40 @@ a.button:focus, a.button:active {
   -moz-transition: all .6s;
   -o-transition: all .6s;
 }
-/* line 35, ../scss/_projects.scss */
+/* line 33, ../scss/_projects.scss */
 #projects .project-container a {
   text-decoration: none;
 }
-/* line 38, ../scss/_projects.scss */
+/* line 37, ../scss/_projects.scss */
 #projects .project-container h2 {
   text-align: center;
 }
-/* line 42, ../scss/_projects.scss */
+/* line 41, ../scss/_projects.scss */
 #projects .project-container .media {
   display: table;
   width: 100%;
-  height: 250px;
+  height: 275px;
 }
-/* line 46, ../scss/_projects.scss */
+/* line 45, ../scss/_projects.scss */
 #projects .project-container .media img {
   display: table-cell;
   vertical-align: middle;
   width: auto;
   max-width: 90%;
-  max-height: 250px;
+  max-height: 275px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 57, ../scss/_projects.scss */
+/* line 56, ../scss/_projects.scss */
 #projects .project-container .blurb {
   margin-left: auto;
   margin-right: auto;
   display: table;
   width: 70%;
 }
-/* line 62, ../scss/_projects.scss */
+/* line 61, ../scss/_projects.scss */
 #projects .project-container .blurb h3 {
+  white-space: normal;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
@@ -630,13 +629,13 @@ a.button:focus, a.button:active {
   box-shadow: #dedede 0 0 5px 5px;
 }
 @media screen and (max-width: 900px) {
-  /* line 21, ../scss/_projects.scss */
+  /* line 20, ../scss/_projects.scss */
   #projects .project-container {
     width: 40%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 21, ../scss/_projects.scss */
+  /* line 20, ../scss/_projects.scss */
   #projects .project-container {
     width: 80%;
     background: none;
