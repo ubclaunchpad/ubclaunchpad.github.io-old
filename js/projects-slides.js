@@ -1,7 +1,7 @@
 (function () {
   $('.contain').slick({
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
 
     centerMode: true,
     centerPadding: '60px',
@@ -15,7 +15,7 @@
       {
         breakpoint: 1336,
         settings: {
-          autoplaySpeed: 2000,
+          autoplaySpeed: 1500,
           arrows: true,
           centerMode: true,
           centerPadding: '40px',
