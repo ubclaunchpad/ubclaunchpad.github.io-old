@@ -557,22 +557,25 @@ a.button:focus, a.button:active {
 #projects {
   background-color: #f2f2f2;
   text-align: center;
-  padding: 4em;
-  display: table;
+  padding-top: 4em;
+  padding-bottom: 4em;
   position: relative;
 }
-@media screen and (max-width: 900px) {
-  /* line 5, ../scss/_projects.scss */
-  #projects {
-    padding: 2em;
-  }
-}
-/* line 16, ../scss/_projects.scss */
+/* line 13, ../scss/_projects.scss */
 #projects .contain {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
-/* line 20, ../scss/_projects.scss */
-#projects .project-container {
+/* line 19, ../scss/_projects.scss */
+#projects .contain::-webkit-scrollbar {
+  display: none;
+}
+/* line 23, ../scss/_projects.scss */
+#projects .contain .project-container {
+  flex: 0 0 auto;
   display: table-cell;
   position: relative;
   background: #eee;
@@ -585,22 +588,22 @@ a.button:focus, a.button:active {
   -moz-transition: all .6s;
   -o-transition: all .6s;
 }
-/* line 33, ../scss/_projects.scss */
-#projects .project-container a {
+/* line 37, ../scss/_projects.scss */
+#projects .contain .project-container a {
   text-decoration: none;
 }
-/* line 37, ../scss/_projects.scss */
-#projects .project-container h2 {
+/* line 41, ../scss/_projects.scss */
+#projects .contain .project-container h2 {
   text-align: center;
 }
-/* line 41, ../scss/_projects.scss */
-#projects .project-container .media {
+/* line 45, ../scss/_projects.scss */
+#projects .contain .project-container .media {
   display: table;
   width: 100%;
   height: 275px;
 }
-/* line 45, ../scss/_projects.scss */
-#projects .project-container .media img {
+/* line 49, ../scss/_projects.scss */
+#projects .contain .project-container .media img {
   display: table-cell;
   vertical-align: middle;
   width: auto;
@@ -609,34 +612,34 @@ a.button:focus, a.button:active {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 56, ../scss/_projects.scss */
-#projects .project-container .blurb {
+/* line 60, ../scss/_projects.scss */
+#projects .contain .project-container .blurb {
   margin-left: auto;
   margin-right: auto;
   display: table;
   width: 70%;
 }
-/* line 61, ../scss/_projects.scss */
-#projects .project-container .blurb h3 {
+/* line 65, ../scss/_projects.scss */
+#projects .contain .project-container .blurb h3 {
   white-space: normal;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
   height: 75px;
 }
-/* line 70, ../scss/_projects.scss */
-#projects .project-container:hover {
+/* line 74, ../scss/_projects.scss */
+#projects .contain .project-container:hover {
   box-shadow: #dedede 0 0 5px 5px;
 }
 @media screen and (max-width: 900px) {
-  /* line 20, ../scss/_projects.scss */
-  #projects .project-container {
+  /* line 23, ../scss/_projects.scss */
+  #projects .contain .project-container {
     width: 40%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 20, ../scss/_projects.scss */
-  #projects .project-container {
+  /* line 23, ../scss/_projects.scss */
+  #projects .contain .project-container {
     width: 80%;
     background: none;
   }
