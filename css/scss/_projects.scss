@@ -34,9 +34,16 @@
             a {
                 text-decoration: none;
             }
-    
+            
             h2 {
+                padding-bottom: 0.75em;
                 text-align: center;
+            }
+
+            p {
+                @media screen and (max-width: $mobile) {
+                    width:85%;
+                }
             }
     
             .media {

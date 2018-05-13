@@ -12,6 +12,7 @@
   <title>UBC Launch Pad</title>
 
   <link href="css/stylesheets/site.css" rel="stylesheet" type="text/css">
+  <link href="css/stylesheets/slick.css" rel="stylesheet" type="text/css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
@@ -203,7 +204,9 @@
           <h2>INERTIA</h2>
         </a>
         <div class="media">
-          <img src="/img/projects/inertia/inertia.png" />
+          <span>
+            <img src="/img/projects/inertia/inertia.png" />
+          </span>
         </div>
         <div class="blurb">
           <h3>✈️ Effortless, self-hosted continuous deployments</h3>
@@ -301,33 +304,6 @@
       </div>
 
       <div class="project-container">
-        <a href="https://github.com/ubclaunchpad/sleuth" target="_blank">
-          <h2>SLEUTH</h2>
-        </a>
-        <div class="media">  
-          <span>
-            <img src="/img/projects/sleuth/sleuth.png" />
-          </span>      
-        </div>
-        <div class="blurb">
-          <h3>🕵🏻 Domain-specific search engine for UBC</h3>
-        </div>
-        <p class="small">
-          Sleuth is a search engine designed to automatically collect and provide tailored UBC-related content that are relevant to UBC students,
-          such as course sites, news articles, relevant social media content, and more. The website displays the results in a graph view that visualizes
-          the relations between results. Sleuth was built with React, Django, and Apache Solr, and uses Scrapy for content curation.
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/ubclaunchpad/sleuth">
-            <i class="fa fa-github"></i>
-          </a>
-          <a href="https://medium.com/ubc-launch-pad-software-engineering-blog/crawling-the-web-for-a-search-engine-a7988ee2e6e9">
-            <i class="fa fa-medium"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="project-container">
         <a href="https://github.com/ubclaunchpad/cashout" target="_blank">
           <h2>CASHOUT</h2>
         </a>
@@ -371,6 +347,33 @@
             <a href="https://itunes.apple.com/ca/app/rocketcast-podcast-player-by-ubclaunchpad/id1176388695?mt=8">
               <i class="fa fa-apple"></i>
             </a>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <a href="https://github.com/ubclaunchpad/sleuth" target="_blank">
+          <h2>SLEUTH</h2>
+        </a>
+        <div class="media">  
+          <span>
+            <img src="/img/projects/sleuth/sleuth.png" />
+          </span>      
+        </div>
+        <div class="blurb">
+          <h3>🕵🏻 Domain-specific search engine for UBC</h3>
+        </div>
+        <p class="small">
+          Sleuth is a search engine designed to automatically collect and provide tailored UBC-related content that are relevant to UBC students,
+          such as course sites, news articles, relevant social media content, and more. The website displays the results in a graph view that visualizes
+          the relations between results. Sleuth was built with React, Django, and Apache Solr, and uses Scrapy for content curation.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/ubclaunchpad/sleuth">
+            <i class="fa fa-github"></i>
+          </a>
+          <a href="https://medium.com/ubc-launch-pad-software-engineering-blog/crawling-the-web-for-a-search-engine-a7988ee2e6e9">
+            <i class="fa fa-medium"></i>
+          </a>
         </div>
       </div>
 
@@ -583,6 +586,11 @@
   <script src="js/nav.js"></script>
   <script src="js/sponsors.js"></script>
   <script src="js/faq.js"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/projects-slides.js"></script>
 </body>
 
 </html>
