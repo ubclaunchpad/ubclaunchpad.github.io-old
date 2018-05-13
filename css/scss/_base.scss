@@ -135,9 +135,10 @@ a {
 .col {
   display: inline-block;
   vertical-align: top;
-  width: 400px;
+  width: 30%;
   @media screen and (max-width: $phablet) {
     padding: 1em;
+    width: 90%;
   }
 }
 
