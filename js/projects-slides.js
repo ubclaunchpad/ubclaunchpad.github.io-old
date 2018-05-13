@@ -1,24 +1,37 @@
 (function () {
-    $('.contain').slick({
-        autoplay: true,
-        autoplaySpeed: 1500,
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        speed: 1000,
-        arrows: true,
+  $('.contain').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
 
-        responsive: [
-          {
-            breakpoint: 1336,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
-            }
-          },
-        ]
-    });
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+
+    arrows: true,
+    speed: 500,
+
+    responsive: [
+      {
+        breakpoint: 1336,
+        settings: {
+          autoplaySpeed: 2000,
+          arrows: true,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          autoplaySpeed: 1000,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '20px',
+          slidesToShow: 1
+        }
+      },
+    ]
+  });
 }());
