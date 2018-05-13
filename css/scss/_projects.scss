@@ -3,11 +3,10 @@
 @import './utils/_colors.scss';
 
 #projects {
-    background-color: $background3;
+    background-color: $background4;
     text-align: center;
     padding-top: 4em;
     padding-bottom: 4em;
-    position: relative;
     
     .contain {
         padding-bottom: 1em;
@@ -26,8 +25,7 @@
             background: #eee;
             margin: 10px;
             width: 30%;
-            flex-shrink: 1;
-            min-width: 360px;
+            min-width: 300px;
             padding: 20px 0;
             -webkit-transition: all .6s;
             -moz-transition: all .6s;
