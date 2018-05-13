@@ -555,10 +555,12 @@ a.button:focus, a.button:active {
 }
 /* line 5, ../scss/_projects.scss */
 #projects {
-  background-color: #e9e9e9;
+  background-color: #f2f2f2;
   text-align: center;
   padding: 4em;
   display: table;
+  position: relative;
+  overflow: hidden;
 }
 @media screen and (max-width: 900px) {
   /* line 5, ../scss/_projects.scss */
@@ -566,53 +568,79 @@ a.button:focus, a.button:active {
     padding: 2em;
   }
 }
-/* line 15, ../scss/_projects.scss */
+/* line 17, ../scss/_projects.scss */
 #projects .contain {
   padding-bottom: 2em;
 }
-/* line 19, ../scss/_projects.scss */
+/* line 21, ../scss/_projects.scss */
 #projects .project-container {
   width: 500px;
   display: table-cell;
   position: relative;
+  background: #eee;
+  margin: 10px;
+  width: 30%;
+  flex-shrink: 1;
+  min-width: 360px;
+  padding: 20px 0;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -o-transition: all .6s;
 }
-/* line 23, ../scss/_projects.scss */
+/* line 35, ../scss/_projects.scss */
 #projects .project-container a {
   text-decoration: none;
 }
-/* line 26, ../scss/_projects.scss */
+/* line 38, ../scss/_projects.scss */
 #projects .project-container h2 {
   text-align: center;
 }
-/* line 30, ../scss/_projects.scss */
+/* line 42, ../scss/_projects.scss */
 #projects .project-container .media {
   display: table;
   width: 100%;
-  height: 300px;
+  height: 250px;
 }
-/* line 34, ../scss/_projects.scss */
+/* line 46, ../scss/_projects.scss */
 #projects .project-container .media img {
   display: table-cell;
   vertical-align: middle;
   width: auto;
-  max-width: 100%;
-  max-height: 300px;
+  max-width: 90%;
+  max-height: 250px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 45, ../scss/_projects.scss */
+/* line 57, ../scss/_projects.scss */
 #projects .project-container .blurb {
   margin-left: auto;
   margin-right: auto;
   display: table;
   width: 70%;
 }
-/* line 50, ../scss/_projects.scss */
+/* line 62, ../scss/_projects.scss */
 #projects .project-container .blurb h3 {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
   height: 75px;
+}
+/* line 70, ../scss/_projects.scss */
+#projects .project-container:hover {
+  box-shadow: #dedede 0 0 5px 5px;
+}
+@media screen and (max-width: 900px) {
+  /* line 21, ../scss/_projects.scss */
+  #projects .project-container {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 21, ../scss/_projects.scss */
+  #projects .project-container {
+    width: 80%;
+    background: none;
+  }
 }
 
 /* line 7, ../scss/_about.scss */
