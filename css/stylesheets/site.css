@@ -30,6 +30,7 @@ html {
 h1 {
   font-size: 1.8em;
   font-weight: 900;
+  letter-spacing: 2pt;
   color: #222;
   padding-bottom: 1em;
   text-transform: uppercase;
@@ -49,7 +50,7 @@ h1 {
 
 /* line 49, ../scss/_base.scss */
 h2 {
-  font-size: 1em;
+  font-size: 1.25em;
   letter-spacing: 2pt;
   text-align: center;
   text-transform: uppercase;
@@ -59,11 +60,22 @@ h2 {
 }
 
 /* line 59, ../scss/_base.scss */
+h3 {
+  font-size: 1em;
+  letter-spacing: 0.5pt;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: #4e4e4e;
+}
+
+/* line 69, ../scss/_base.scss */
 p {
   font-weight: 300;
   line-height: 1.5em;
 }
-/* line 63, ../scss/_base.scss */
+/* line 73, ../scss/_base.scss */
 p.large {
   font-size: 1.25em;
   line-height: 2em;
@@ -72,60 +84,60 @@ p.large {
   padding-right: 8em;
 }
 @media screen and (max-width: 1300px) {
-  /* line 63, ../scss/_base.scss */
+  /* line 73, ../scss/_base.scss */
   p.large {
     padding-left: 4em;
     padding-right: 4em;
   }
 }
 @media screen and (max-width: 1080px) {
-  /* line 63, ../scss/_base.scss */
+  /* line 73, ../scss/_base.scss */
   p.large {
     padding-left: 0;
     padding-right: 0;
     font-size: 1em;
   }
 }
-/* line 82, ../scss/_base.scss */
+/* line 92, ../scss/_base.scss */
 p.small {
   padding: 0 2em;
   line-height: 2em;
 }
 @media screen and (max-width: 900px) {
-  /* line 82, ../scss/_base.scss */
+  /* line 92, ../scss/_base.scss */
   p.small {
     padding: 0 1em;
     line-height: 1.5em;
   }
 }
 
-/* line 93, ../scss/_base.scss */
+/* line 103, ../scss/_base.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 97, ../scss/_base.scss */
+/* line 107, ../scss/_base.scss */
 a {
   font-size: inherit;
   text-decoration: none;
   color: #e72750;
 }
-/* line 102, ../scss/_base.scss */
+/* line 112, ../scss/_base.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 107, ../scss/_base.scss */
+/* line 117, ../scss/_base.scss */
 .right {
   float: right;
 }
 
-/* line 111, ../scss/_base.scss */
+/* line 121, ../scss/_base.scss */
 .left {
   float: left;
 }
 
-/* line 115, ../scss/_base.scss */
+/* line 125, ../scss/_base.scss */
 .row {
   width: 100%;
   display: flex;
@@ -133,25 +145,27 @@ a:hover {
   justify-content: center;
 }
 @media screen and (max-width: 760px) {
-  /* line 115, ../scss/_base.scss */
+  /* line 125, ../scss/_base.scss */
   .row {
     flex-direction: column;
   }
 }
 
-/* line 125, ../scss/_base.scss */
+/* line 135, ../scss/_base.scss */
 .col {
   display: inline-block;
   vertical-align: top;
+  width: 30%;
 }
 @media screen and (max-width: 760px) {
-  /* line 125, ../scss/_base.scss */
+  /* line 135, ../scss/_base.scss */
   .col {
     padding: 1em;
+    width: 90%;
   }
 }
 
-/* line 133, ../scss/_base.scss */
+/* line 145, ../scss/_base.scss */
 .contain {
   display: flex;
   width: 90%;
@@ -542,36 +556,110 @@ a.button:focus, a.button:active {
 }
 /* line 5, ../scss/_projects.scss */
 #projects {
-  background-color: #e9e9e9;
+  background-color: #f6f6f6;
   text-align: center;
-  padding: 4em;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
-@media screen and (max-width: 900px) {
-  /* line 5, ../scss/_projects.scss */
-  #projects {
-    padding: 2em;
-  }
+/* line 11, ../scss/_projects.scss */
+#projects .contain {
+  padding-bottom: 1em;
 }
 /* line 14, ../scss/_projects.scss */
-#projects .contain {
-  padding-bottom: 2em;
+#projects .contain .project-container {
+  flex: 0 0 auto;
+  display: table-cell;
+  position: relative;
+  background: #eee;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 30%;
+  padding: 20px 0;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -o-transition: all .6s;
 }
-/* line 18, ../scss/_projects.scss */
-#projects .project-container {
-  width: 500px;
-  display: inline-block;
+@media screen and (max-width: 900px) {
+  /* line 14, ../scss/_projects.scss */
+  #projects .contain .project-container {
+    width: 50%;
+  }
 }
-/* line 19, ../scss/_projects.scss */
-#projects .project-container a {
+@media screen and (max-width: 480px) {
+  /* line 14, ../scss/_projects.scss */
+  #projects .contain .project-container {
+    width: 95%;
+  }
+}
+/* line 35, ../scss/_projects.scss */
+#projects .contain .project-container a {
   text-decoration: none;
 }
-/* line 22, ../scss/_projects.scss */
-#projects .project-container h2 {
+/* line 39, ../scss/_projects.scss */
+#projects .contain .project-container h2 {
+  padding-bottom: 0.75em;
   text-align: center;
 }
-/* line 27, ../scss/_projects.scss */
-#projects .project-container img {
-  width: 300px;
+@media screen and (max-width: 480px) {
+  /* line 44, ../scss/_projects.scss */
+  #projects .contain .project-container p {
+    width: 90%;
+  }
+}
+/* line 50, ../scss/_projects.scss */
+#projects .contain .project-container .media {
+  display: table;
+  width: 100%;
+  height: 225px;
+}
+/* line 54, ../scss/_projects.scss */
+#projects .contain .project-container .media span {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 58, ../scss/_projects.scss */
+#projects .contain .project-container .media img {
+  width: auto;
+  max-width: 90%;
+  max-height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 67, ../scss/_projects.scss */
+#projects .contain .project-container .blurb {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  width: 70%;
+}
+/* line 72, ../scss/_projects.scss */
+#projects .contain .project-container .blurb h3 {
+  white-space: normal;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 75px;
+}
+/* line 81, ../scss/_projects.scss */
+#projects .contain .project-container .project-links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 3em;
+}
+/* line 86, ../scss/_projects.scss */
+#projects .contain .project-container .project-links a {
+  color: #7a7a7a;
+  padding: 4px;
+  margin: 4px;
+}
+/* line 91, ../scss/_projects.scss */
+#projects .contain .project-container .project-links a:hover {
+  opacity: 0.6;
+}
+/* line 97, ../scss/_projects.scss */
+#projects .contain .project-container:hover {
+  box-shadow: #dedede 0 0 5px 5px;
 }
 
 /* line 7, ../scss/_about.scss */
@@ -933,6 +1021,189 @@ a.accordion:nth-child(4n-1):hover {
 /* line 48, ../scss/_faq.scss */
 a.accordion.active {
   background-color: #55bc9b;
+}
+
+/* Arrows */
+/* line 16, ../scss/_slick.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+/* line 34, ../scss/_slick.scss */
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+/* line 38, ../scss/_slick.scss */
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 0.6;
+}
+/* line 42, ../scss/_slick.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+/* line 45, ../scss/_slick.scss */
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  line-height: 1;
+  color: #222;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 55, ../scss/_slick.scss */
+.slick-prev {
+  left: -50px;
+}
+/* line 58, ../scss/_slick.scss */
+.slick-prev:before {
+  font-family: "FontAwesome";
+  content: "\f053";
+}
+
+/* line 64, ../scss/_slick.scss */
+.slick-next {
+  right: -50px;
+}
+/* line 67, ../scss/_slick.scss */
+.slick-next:before {
+  font-family: FontAwesome;
+  content: "\f054";
+}
+
+/* Slider */
+/* line 75, ../scss/_slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 89, ../scss/_slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding: 0;
+  margin: 0 -10px;
+}
+/* line 96, ../scss/_slick.scss */
+.slick-list:focus {
+  outline: none;
+}
+/* line 100, ../scss/_slick.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 105, ../scss/_slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 114, ../scss/_slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 122, ../scss/_slick.scss */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+/* line 128, ../scss/_slick.scss */
+.slick-track:after {
+  clear: both;
+}
+/* line 132, ../scss/_slick.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 136, ../scss/_slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  margin: 0 10px;
+  display: none;
+}
+/* line 142, ../scss/_slick.scss */
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+/* line 145, ../scss/_slick.scss */
+.slick-slide img {
+  display: block;
+}
+/* line 148, ../scss/_slick.scss */
+.slick-slide.slick-loading img {
+  display: none;
+}
+/* line 154, ../scss/_slick.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+/* line 158, ../scss/_slick.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+/* line 162, ../scss/_slick.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+/* line 166, ../scss/_slick.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 172, ../scss/_slick.scss */
+.slick-arrow.slick-hidden {
+  display: none;
 }
 
 /* line 4, ../scss/pages/_projects.scss */

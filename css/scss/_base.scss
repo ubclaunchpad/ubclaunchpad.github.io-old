@@ -32,7 +32,7 @@ html {
 h1 {
   font-size: 1.8em;
   font-weight: 900;
-  //letter-spacing: 2pt;
+  letter-spacing: 2pt;
   color: $darkest-grey;
   padding-bottom: 1em;
   text-transform: uppercase;
@@ -47,13 +47,23 @@ h1 {
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 1.25em;
   letter-spacing: 2pt;
   text-align: center;
   text-transform: uppercase;
   padding-top: 1em;
   padding-bottom: 0.5em;
   color: $primary;
+}
+
+h3 {
+  font-size: 1em;
+  letter-spacing: 0.5pt;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: $dark-grey;
 }
 
 p {
@@ -125,8 +135,10 @@ a {
 .col {
   display: inline-block;
   vertical-align: top;
+  width: 30%;
   @media screen and (max-width: $phablet) {
     padding: 1em;
+    width: 90%;
   }
 }
 
