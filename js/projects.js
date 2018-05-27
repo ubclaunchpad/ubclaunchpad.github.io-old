@@ -6,7 +6,7 @@
     // add it here in addition to in projects.html.
     var projects = [{
         id: 'eat',
-        images: ['eat1.jpg', 'eat2.jpg', 'eat3.jpg', 'eat4.jpg']
+        images: ['eat.jpg']
     }, {
         id: 'etch',
         images: ['etch.png']
@@ -15,16 +15,16 @@
         images: ['cumulus.png']
     }, {
         id: 'driver',
-        images: ['driver1.png', 'driver2.png', 'driver3.png']
+        images: ['driver.png']
     }, {
         id: 'cashout',
-        images: ['cashout1.png', 'cashout2.png', 'cashout3.png']
+        images: ['cashout.png']
     }, {
         id: 'rocketcast',
-        images: ['rocketcast1.jpg', 'rocketcast2.jpg', 'rocketcast3.jpg', 'rocketcast4.jpg']
+        images: ['rocketcast.jpg']
     }, {
         id: 'rocketpoll',
-        images: ['rocketpoll1.jpg', 'rocketpoll2.jpg', 'rocketpoll3.jpg', 'rocketpoll4.jpg', 'rocketpoll5.jpg']
+        images: ['rocketpoll.jpg']
     }];
 
     function imageUrl(project, i) {
