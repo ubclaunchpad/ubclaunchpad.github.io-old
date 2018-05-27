@@ -73,7 +73,8 @@
     }
 
 
-    if (window.location.hostname === "0.0.0.0" || window.location.hostname === "127.0.0.1") {
+    console.log(window.location.hostname)
+    if (window.location.hostname === "0.0.0.0" || window.location.hostname === "127.0.0.1" || window.location.hostname.indexOf("ubclaunchpad.netlify.com") > 0) {
         // Render mock data
         var teams = [
             {
