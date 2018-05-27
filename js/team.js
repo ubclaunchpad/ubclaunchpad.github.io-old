@@ -74,7 +74,8 @@
     }
 
     if (window.location.hostname === "0.0.0.0" || window.location.hostname === "127.0.0.1" || window.location.hostname.indexOf("ubclaunchpad.netlify.com") > 0) {
-        // Render mock data
+        // Render mock data - this is for test purposes, for situations where Rocket is inaccessible, such as
+        // when hosting the site locally or viewing the site on netlify's preview feature.
         var container = document.getElementById('team-accordions');
         [
             {
