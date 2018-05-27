@@ -81,16 +81,16 @@
                 name: "Inertia :cloud:",
                 platform: "DevOps",
                 members: [
-                    { name: "Robert Lin", githubUsername: "bobheadxi", major: "Mathematics", position: ":meat_on_bone: lunch eater", biography: "Tech lead @Inertia!", imageUrl: "https://avatars.slack-edge.com/2018-03-31/339451741573_cf430013fb5ae00e1999_192.png" },
-                    { name: "John Lee", githubUsername: "PiggySpeed", major: "BCS", position: "big pharma", biography: "<http://cnstimulant.com|cnstimulant.com>", imageUrl: "https://avatars.slack-edge.com/2018-01-14/298931205877_b481e87f890db81eb354_192.jpg"},
+                    { name: "Robert Lin", githubUsername: "bobheadxi", major: "Mathematics", position: ":meat_on_bone: lunch eater", biography: "Tech lead @Inertia!", imageUrl: "/img/silhouette.jpg" },
+                    { name: "John Lee", githubUsername: "PiggySpeed", major: "BCS", position: "big pharma", biography: "hi im john", imageUrl: "/img/silhouette.jpg" },
                 ]
             },
             {
                 name: "Inertia2",
                 platform: "DevOps",
                 members: [
-                    { name: "Robert Lin", githubUsername: "bobheadxi", major: "Mathematics", position: "lunch eater", biography: "Tech lead @Inertia!", imageUrl: "https://avatars.slack-edge.com/2018-03-31/339451741573_cf430013fb5ae00e1999_192.png" },
-                    { name: "John Lee", githubUsername: "PiggySpeed", major: "BCS", position: "big pharma", biography: "<http://cnstimulant.com|cnstimulant.com>", imageUrl: "https://avatars.slack-edge.com/2018-01-14/298931205877_b481e87f890db81eb354_192.jpg"},
+                    { name: "Robert Lin", githubUsername: "bobheadxi", major: "Mathematics", position: "lunch eater", biography: "Tech lead @Inertia!", imageUrl: "/img/silhouette.jpg" },
+                    { name: "John Lee", githubUsername: "PiggySpeed", major: "BCS", position: "big pharma", biography: "hi im also john", imageUrl: "/img/silhouette.jpg" },
                 ]
             },
         ].forEach(function (team) {
