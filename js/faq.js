@@ -1,8 +1,9 @@
 // Adds handlers for clicks on FAQ accordions
 
 (function () {
-    var buttons = document.getElementsByClassName('accordion');
-    var panels = document.getElementsByClassName('panel');
+    var faq = document.getElementById("faq");
+    var buttons = faq.getElementsByClassName('accordion');
+    var panels = faq.getElementsByClassName('panel');
 
     // Handles click events on drop-down accordions
     function addAccordion(button, panel) {

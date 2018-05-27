@@ -1,5 +1,5 @@
 # UBC Launch Pad Site
-[![ZenHub](https://img.shields.io/badge/Shipping_faster_with-ZenHub-5e60ba.svg?style=flat)](https://zenhub.com)
+[![ZenHub](https://img.shields.io/badge/Shipping_faster_with-ZenHub-5e60ba.svg?style=flat)](https://zenhub.com) [![Live!](https://img.shields.io/badge/website-live!-brightgreen.svg)](https://www.ubclaunchpad.com)
 
 Welcome to the source code for the Launch Pad site! The site is designed to look nice, but also to be clearly organized so that members can easily hack on it and make improvements.
 
