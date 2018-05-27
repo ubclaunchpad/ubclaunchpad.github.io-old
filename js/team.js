@@ -40,6 +40,7 @@
         var button = document.createElement('a');
         button.className = 'button accordion';
         button.innerText = emoji.replace_colons(team.name);
+
         var icon = document.createElement('i');
         icon.className = 'right fa fa-caret-right';
         button.appendChild(icon);
@@ -72,30 +73,27 @@
         });
     }
 
-
-    console.log(window.location.hostname)
     if (window.location.hostname === "0.0.0.0" || window.location.hostname === "127.0.0.1" || window.location.hostname.indexOf("ubclaunchpad.netlify.com") > 0) {
         // Render mock data
-        var teams = [
+        var container = document.getElementById('team-accordions');
+        [
             {
                 name: "Inertia :cloud:",
                 platform: "DevOps",
                 members: [
-                    { name: "Robert Lin", githubUsername: "bobheadxi", major: "Mathematics", position: "lunch eater", biography: "Tech lead @Inertia!", imageUrl: "https://avatars.slack-edge.com/2018-03-31/339451741573_cf430013fb5ae00e1999_192.png" },
+                    { name: "Robert Lin", githubUsername: "bobheadxi", major: "Mathematics", position: ":meat_on_bone: lunch eater", biography: "Tech lead @Inertia!", imageUrl: "https://avatars.slack-edge.com/2018-03-31/339451741573_cf430013fb5ae00e1999_192.png" },
                     { name: "John Lee", githubUsername: "PiggySpeed", major: "BCS", position: "big pharma", biography: "<http://cnstimulant.com|cnstimulant.com>", imageUrl: "https://avatars.slack-edge.com/2018-01-14/298931205877_b481e87f890db81eb354_192.jpg"},
                 ]
             },
             {
-                name: "Inertia2 :cloud:",
+                name: "Inertia2",
                 platform: "DevOps",
                 members: [
                     { name: "Robert Lin", githubUsername: "bobheadxi", major: "Mathematics", position: "lunch eater", biography: "Tech lead @Inertia!", imageUrl: "https://avatars.slack-edge.com/2018-03-31/339451741573_cf430013fb5ae00e1999_192.png" },
                     { name: "John Lee", githubUsername: "PiggySpeed", major: "BCS", position: "big pharma", biography: "<http://cnstimulant.com|cnstimulant.com>", imageUrl: "https://avatars.slack-edge.com/2018-01-14/298931205877_b481e87f890db81eb354_192.jpg"},
                 ]
             },
-        ];
-        var container = document.getElementById('team-accordions');
-        teams.forEach(function (team) {
+        ].forEach(function (team) {
             renderTeam(team, container);
         });
     } else {
