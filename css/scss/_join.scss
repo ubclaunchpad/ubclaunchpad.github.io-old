@@ -13,60 +13,29 @@ $icon-size: 8em;
     padding: 2em;
   }
 
-  .contain {
-    .new-position {
-      background: #eee;
-      margin: 10px;
-      width: 30%;
-      flex-shrink: 1;
-      min-width: 360px;
-      padding: 20px 0;
-      -webkit-transition: all .6s;
-      -moz-transition: all .6s;
-      -o-transition: all .6s;
+  .new-position {
+    background: #eee;
+    margin: 10px;
 
-      p {
-        text-align: left;
-        padding: 0 1em;
-      }
-
-      &:hover {
-        box-shadow: #dedede 0 0 5px 5px;
-      }
-
-      @media screen and (max-width: $tablet) {
-        width:40%;
-      }
-
-      @media screen and (max-width: $mobile) {
-        width:80%;
-        background: none;
-      }
+    @media screen and (max-width: $mobile) {
+      margin: 0px;
     }
 
-    .links {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
+    &:hover {
+      box-shadow: #dedede 0 0 5px 5px;
+    }
+  }
 
-      @media screen and (max-width: $mobile) {
-        flex-direction: column;
-        justify-content: flex-start;
-      }
+  a {
+    margin: 1em 1em;
 
-      a {
-        margin: 1em 1em;
+    @media screen and (max-width: $laptop) {
+      margin: 0.75em 0.5em;
+    }
 
-        @media screen and (max-width: $laptop) {
-          margin: 0.75em 0.5em;
-        }
-
-        @media screen and (max-width: $mobile) {
-          margin: 0.25em;
-        }
-      }
+    @media screen and (max-width: $mobile) {
+      margin: 0.25em;
     }
   }
 }
+

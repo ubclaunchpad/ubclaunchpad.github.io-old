@@ -909,68 +909,34 @@ h2.member-position {
     padding: 2em;
   }
 }
-/* line 17, ../scss/_join.scss */
-#join .contain .new-position {
+/* line 16, ../scss/_join.scss */
+#join .new-position {
   background: #eee;
   margin: 10px;
-  width: 30%;
-  flex-shrink: 1;
-  min-width: 360px;
-  padding: 20px 0;
-  -webkit-transition: all .6s;
-  -moz-transition: all .6s;
-  -o-transition: all .6s;
 }
-/* line 28, ../scss/_join.scss */
-#join .contain .new-position p {
-  text-align: left;
-  padding: 0 1em;
+@media screen and (max-width: 480px) {
+  /* line 16, ../scss/_join.scss */
+  #join .new-position {
+    margin: 0px;
+  }
 }
-/* line 33, ../scss/_join.scss */
-#join .contain .new-position:hover {
+/* line 24, ../scss/_join.scss */
+#join .new-position:hover {
   box-shadow: #dedede 0 0 5px 5px;
 }
-@media screen and (max-width: 900px) {
-  /* line 17, ../scss/_join.scss */
-  #join .contain .new-position {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 480px) {
-  /* line 17, ../scss/_join.scss */
-  #join .contain .new-position {
-    width: 80%;
-    background: none;
-  }
-}
-/* line 47, ../scss/_join.scss */
-#join .contain .links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-@media screen and (max-width: 480px) {
-  /* line 47, ../scss/_join.scss */
-  #join .contain .links {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-}
-/* line 59, ../scss/_join.scss */
-#join .contain .links a {
+/* line 29, ../scss/_join.scss */
+#join a {
   margin: 1em 1em;
 }
 @media screen and (max-width: 1080px) {
-  /* line 59, ../scss/_join.scss */
-  #join .contain .links a {
+  /* line 29, ../scss/_join.scss */
+  #join a {
     margin: 0.75em 0.5em;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 59, ../scss/_join.scss */
-  #join .contain .links a {
+  /* line 29, ../scss/_join.scss */
+  #join a {
     margin: 0.25em;
   }
 }
