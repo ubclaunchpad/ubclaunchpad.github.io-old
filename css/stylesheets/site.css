@@ -813,8 +813,12 @@ h2.member-position {
 #sponsors.coastal-reign {
   background-color: rgba(47, 190, 175, 0.5);
 }
+/* line 40, ../scss/_sponsors.scss */
+#sponsors.pull-reminders {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-/* line 41, ../scss/_sponsors.scss */
+/* line 45, ../scss/_sponsors.scss */
 .sponsor {
   display: inline-block;
   width: 300px;
@@ -825,44 +829,48 @@ h2.member-position {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 900px) {
-  /* line 41, ../scss/_sponsors.scss */
+  /* line 45, ../scss/_sponsors.scss */
   .sponsor {
     height: 8em;
   }
 }
 @media screen and (max-width: 760px) {
-  /* line 41, ../scss/_sponsors.scss */
+  /* line 45, ../scss/_sponsors.scss */
   .sponsor {
     width: 60%;
   }
 }
-/* line 58, ../scss/_sponsors.scss */
+/* line 62, ../scss/_sponsors.scss */
 .sponsor:hover {
   opacity: 0.6;
 }
-/* line 62, ../scss/_sponsors.scss */
+/* line 66, ../scss/_sponsors.scss */
 .sponsor#digital-ocean {
   background-image: url("/img/sponsors/digital-ocean.png");
 }
-/* line 66, ../scss/_sponsors.scss */
+/* line 70, ../scss/_sponsors.scss */
 .sponsor#github {
   background-image: url("/img/sponsors/github.png");
 }
-/* line 70, ../scss/_sponsors.scss */
+/* line 74, ../scss/_sponsors.scss */
 .sponsor#mda {
   background-image: url("/img/sponsors/mda.png");
 }
-/* line 74, ../scss/_sponsors.scss */
+/* line 78, ../scss/_sponsors.scss */
 .sponsor#lighthouse-labs {
   background-image: url("/img/sponsors/lighthouse-labs.png");
 }
-/* line 78, ../scss/_sponsors.scss */
+/* line 82, ../scss/_sponsors.scss */
 .sponsor#vling {
   background-image: url("/img/sponsors/vling.png");
 }
-/* line 82, ../scss/_sponsors.scss */
+/* line 86, ../scss/_sponsors.scss */
 .sponsor#coastal-reign {
   background-image: url("/img/sponsors/coastal-reign.png");
+}
+/* line 90, ../scss/_sponsors.scss */
+.sponsor#pull-reminders {
+  background-image: url("/img/sponsors/pull-reminders.png");
 }
 
 /* line 3, ../scss/_footer.scss */

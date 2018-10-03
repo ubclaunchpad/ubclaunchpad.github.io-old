@@ -12,7 +12,8 @@
 	var digitalOcean = document.getElementById('digital-ocean');
 	var mda = document.getElementById('mda');
 	var lighthouseLabs = document.getElementById('lighthouse-labs');
-	var vling = document.getElementById('vling')
+	var vling = document.getElementById('vling');
+	var pullreminders = document.getElementById('pull-reminders');
 
 	github.addEventListener('mouseover', function () {
 		cl.add('github');
@@ -47,5 +48,12 @@
 	});
 	vling.addEventListener('mouseout', function () {
 		cl.remove('vling');
+	});
+
+	pullreminders.addEventListener('mouseover', function () {
+		cl.add('pull-reminders');
+	});
+	pullreminders.addEventListener('mouseout', function () {
+		cl.remove('pull-reminders');
 	});
 }())

@@ -36,6 +36,10 @@
 	&.coastal-reign {
 		background-color: $coastal-reign-transparent;
 	}
+
+	&.pull-reminders {
+		background-color: $pull-reminders-transparent;
+	}
 }
 
 .sponsor {
@@ -81,5 +85,9 @@
 
 	&#coastal-reign {
 		background-image: url('/img/sponsors/coastal-reign.png');
+	}
+
+	&#pull-reminders {
+		background-image: url('/img/sponsors/pull-reminders.png');
 	}
 }
