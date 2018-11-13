@@ -16,7 +16,7 @@ h1.team {
 	display: block;
 	width: 100%;
 	text-align: center;
-	top: 1em;
+	top: 0.8em;
 }
 
 // Full-width cell that opens to reveal a submenu
@@ -78,4 +78,10 @@ h1.member-name {
 h2.member-position {
 	text-transform: uppercase;
 	padding-top: 0.25em;
+}
+
+@media screen and (max-width: $mobile) {
+	h1.team {
+		top: 0.1em;
+	}
 }

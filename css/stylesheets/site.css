@@ -708,7 +708,7 @@ h1.team {
   display: block;
   width: 100%;
   text-align: center;
-  top: 1em;
+  top: 0.8em;
 }
 
 /* line 23, ../scss/_team.scss */
@@ -776,6 +776,12 @@ h2.member-position {
   padding-top: 0.25em;
 }
 
+@media screen and (max-width: 480px) {
+  /* line 84, ../scss/_team.scss */
+  h1.team {
+    top: 0.1em;
+  }
+}
 /* line 6, ../scss/_sponsors.scss */
 #sponsors {
   background-color: white;
