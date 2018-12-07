@@ -40,6 +40,10 @@
 	&.pull-reminders {
 		background-color: $pull-reminders-transparent;
 	}
+
+	&.east-side-games {
+		background-color: $east-side-games-transparent;
+	}
 }
 
 .sponsor {
@@ -89,5 +93,9 @@
 
 	&#pull-reminders {
 		background-image: url('/img/sponsors/pull-reminders.png');
+	}
+
+	&#east-side-games {
+		background-image: url('/img/sponsors/east-side-games.png');
 	}
 }
