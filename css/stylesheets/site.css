@@ -919,50 +919,93 @@ h2.member-position {
   color: #55bc9b;
 }
 
-/* line 8, ../scss/_join.scss */
-#join {
-  background-color: #f6f6f6;
-  padding: 4em;
-  text-align: center;
-}
-@media screen and (max-width: 900px) {
-  /* line 8, ../scss/_join.scss */
-  #join {
-    padding: 2em;
-  }
-}
-/* line 16, ../scss/_join.scss */
-#join .new-position {
-  background: #eee;
-  margin: 10px;
-  position: relative;
+/* line 1, ../scss/_join.scss */
+.join .flex-container {
+  background-color: #0A052E;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-@media screen and (max-width: 480px) {
-  /* line 16, ../scss/_join.scss */
-  #join .new-position {
-    margin: 0px;
-  }
-}
-/* line 28, ../scss/_join.scss */
-#join .new-position:hover {
-  box-shadow: #dedede 0 0 5px 5px;
-}
-/* line 33, ../scss/_join.scss */
-#join .info {
-  width: 100%;
-  align-self: flex-end;
-  flex-grow: 1;
-}
-/* line 39, ../scss/_join.scss */
-#join a {
-  margin: auto;
-  margin-bottom: 1em;
-  margin-top: 1em;
+  flex-direction: row;
+  justify-content: center;
+  /* height: 50vh; */
+  padding: 150px;
 }
 
+/* line 10, ../scss/_join.scss */
+.join .column {
+  height: 400px;
+  padding: 120px;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 21, ../scss/_join.scss */
+.join .roles {
+  border-bottom: 1px solid black;
+}
+
+/* line 26, ../scss/_join.scss */
+.join .divider-line {
+  height: 1px;
+  width: 200px;
+  background-color: #fff;
+  margin: 17px;
+}
+
+/* line 33, ../scss/_join.scss */
+.join img {
+  display: block;
+  max-width: 600px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
+
+/* line 41, ../scss/_join.scss */
+.join a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Lato', serif;
+  font-size: 24px;
+}
+
+/* line 48, ../scss/_join.scss */
+.join h2 {
+  color: #fff;
+  font-family: 'Lato', serif;
+  font-size: 28px;
+}
+
+/* line 54, ../scss/_join.scss */
+.join p {
+  color: #fff;
+  font-family: 'Lato', serif;
+}
+
+/* line 59, ../scss/_join.scss */
+.join body {
+  background-color: #0A052E;
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 65, ../scss/_join.scss */
+  .join .flex-container {
+    flex-direction: column;
+  }
+
+  /* line 69, ../scss/_join.scss */
+  .join .column {
+    padding: 20px;
+    width: 100%;
+  }
+
+  /* line 74, ../scss/_join.scss */
+  .join #column-left p {
+    width: 50vw;
+  }
+}
 /* line 5, ../scss/_faq.scss */
 #faq {
   background-color: #fbfbfb;
