@@ -1,45 +1,82 @@
-// Styles for the `Join` section
-
-@import './utils/_colors.scss';
-@import './utils/_breakpoints.scss';
-
-$icon-size: 8em;
-
-#join {
-  background-color: $background4;
-  padding: 4em;
+.join .flex-container {
+  background-color: #0A052E;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* height: 50vh; */
+  padding: 150px;
+  }
+    
+  .join .column {
+  height: 400px;
+  padding: 120px;
+  width: 50%;
   text-align: center;
-  @media screen and (max-width: $tablet) {
-    padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .join .roles {
+  border-bottom: 1px solid black;
+    
+  }
+  
+  .join .divider-line {
+    height: 1px;
+    width: 200px;
+    background-color: #fff;
+    margin: 17px;
+  }
+  
+  .blurb {
+    margin-top: 10px;
   }
 
-  .new-position {
-    background: #eee;
-    margin: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-
-    @media screen and (max-width: $mobile) {
-      margin: 0px;
+  .join img {
+  display: block;
+  max-width:600px;
+  max-height:200px;
+  width: auto;
+  height: auto;
+  }
+  
+  .join a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Lato', serif;
+  font-size: 24px;
+  }
+  
+  .join h2 {
+  color: #fff;
+  font-family: 'Lato', serif;
+  font-size: 28px;
+  }
+  
+  .join p {
+  color: #fff;
+  font-family: 'Lato', serif;
+  }
+  
+  .join body {
+  background-color: #0A052E;
+    
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .join .flex-container {
+      flex-direction: column;
     }
-
-    &:hover {
-      box-shadow: #dedede 0 0 5px 5px;
+    
+    .join .column {
+      padding: 20px;
+      width: 100%;
+    }
+    
+    .join #column-left p {
+      width: 50vw;
     }
   }
-
-  .info {
-    width: 100%;
-    align-self: flex-end;
-    flex-grow: 1;
-  }
-
-  a {
-    margin: auto;
-    margin-bottom: 1em;
-    margin-top: 1em;
-  }
-}
-
+  
